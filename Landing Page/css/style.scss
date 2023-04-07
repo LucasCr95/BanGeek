@@ -1,9 +1,28 @@
+@charset "utf-8";
+:root{
+    --cor0: #FFFFFF;
+    --cor1: #F7F3FF;
+    --cor2: #E9E1FF;
+    --cor3: #C5ACFF;
+    --cor4: #8B68DF;
+    --cor5: #5B31C1;
+    --cor6: #320995;
+    --cor7: #26E55F;
+    --cor8: #E2306C;
+    --cor9: #393939;
+    ---cor10: #000000;
+    --font0: font-family: 'Montserrat', sans-serif;
+    --font1: font-family: 'Roboto', sans-serif;
+}
 // font-family: 'Montserrat', sans-serif;
 // font-family: 'Roboto', sans-serif;
-
-body{
-    font-family: 'Roboto', sans-serif;
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 @media screen and (min-width: 375px) and (max-width: 430px){
-    
+    body{
+        background-color: ;
+    }
 }
