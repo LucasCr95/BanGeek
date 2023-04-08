@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="108.963" height="110.666" viewBox="0 0 108.963 110.666">
+  <defs>
+    <filter id="Subtração_26" x="35.779" y="45.485" width="73.184" height="65.181" filterUnits="userSpaceOnUse">
+      <feOffset dx="2" dy="2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1" result="blur"/>
+      <feFlood flood-color="#e2306c" flood-opacity="0.361"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="logo" transform="translate(-150.5 -328.391)">
+    <g transform="matrix(1, 0, 0, 1, 150.5, 328.39)" filter="url(#Subtração_26)">
+      <path id="Subtração_26-2" data-name="Subtração 26" d="M29.216,33.273a48.6,48.6,0,0,1-11.372-1.308A35.643,35.643,0,0,1,8.556,28.4,19.978,19.978,0,0,1,2.3,23.111,10.748,10.748,0,0,1,0,16.636a10.75,10.75,0,0,1,2.3-6.475A20,20,0,0,1,8.556,4.872a35.628,35.628,0,0,1,9.287-3.565A48.636,48.636,0,0,1,29.216,0,48.63,48.63,0,0,1,40.587,1.307a35.618,35.618,0,0,1,9.286,3.565,20,20,0,0,1,6.261,5.289,10.753,10.753,0,0,1,2.3,6.475,10.752,10.752,0,0,1-2.3,6.475A19.985,19.985,0,0,1,49.873,28.4a35.627,35.627,0,0,1-9.286,3.565A48.592,48.592,0,0,1,29.216,33.273ZM27.226,1.407a34.579,34.579,0,0,0-17.073,4.1C5.592,8.158,3.08,11.677,3.08,15.42s2.512,7.261,7.072,9.907a34.571,34.571,0,0,0,17.073,4.1,34.57,34.57,0,0,0,17.075-4.1c4.561-2.647,7.072-6.166,7.072-9.907S48.861,8.158,44.3,5.511A34.578,34.578,0,0,0,27.226,1.407Z" transform="matrix(0.85, -0.53, 0.53, 0.85, 36.78, 77.45)" fill="#e2306c"/>
+    </g>
+    <text id="ban" transform="translate(151.5 387.818)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="bevel" stroke-width="0.5" font-size="24" font-family="Montserrat-Bold, Montserrat" font-weight="700" letter-spacing="-0.06em"><tspan x="0" y="0">ban</tspan></text>
+    <text id="gee" transform="translate(151.5 405.02)" fill="#fff" stroke="#fff" stroke-width="1" font-size="27" font-family="Montserrat-SemiBold, Montserrat" font-weight="600" letter-spacing="-0.06em"><tspan x="0" y="0">gee</tspan></text>
+    <text id="k" transform="translate(200.301 408.221) rotate(-15)" fill="#fff" stroke="#fff" stroke-width="1" font-size="69" font-family="Roboto-Regular, Roboto" letter-spacing="0.016em"><tspan x="0" y="0">k</tspan></text>
+  </g>
+</svg>

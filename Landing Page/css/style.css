@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2? family= Montserrat:wght@100;200;300;400;500;600;700;800;900 & family= Roboto:wght@ 100;300;400;500;700;900 & display=swap");
 :root {
   --cor0: #FFFFFF;
   --cor1: #F7F3FF;
@@ -10,12 +11,79 @@
   --cor8: #E2306C;
   --cor9: #393939;
   ---cor10: #000000;
-  --font0: font-family: "Montserrat", sans-serif;
-  --font1: font-family: "Roboto", sans-serif;
+  --font0: "Montserrat", sans-serif;
+  --font1: "Roboto", sans-serif;
 }
 
 * {
   margin: 0;
   padding: 0;
   list-style: none;
+  text-decoration: none;
+}
+
+.btnTransp {
+  background-color: transparent;
+  border-radius: 0.5em;
+  border: 1px solid var(--cor2);
+  padding: 0.5em;
+  width: 13em;
+}
+.btnTransp a {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.btnPrinc {
+  background-color: var(--cor8);
+  border-radius: 0.5em;
+  border: none;
+  padding: 0.5em;
+  width: 13em;
+}
+.btnPrinc a {
+  letter-spacing: 0.1em;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+@media screen and (max-width: 430px) {
+  body {
+    background-color: var(--cor6);
+    font-family: var(--font1);
+    color: var(--cor0);
+  }
+  header {
+    width: 100%;
+  }
+  #logo {
+    text-align: center;
+    height: 62px;
+  }
+  #logo img {
+    height: 100%;
+  }
+  nav {
+    width: 100%;
+  }
+  nav ul {
+    text-align: center;
+    padding: 0.5em;
+  }
+  nav ul li {
+    width: 100%;
+    margin-bottom: 0.3em;
+    letter-spacing: 0.1em;
+  }
+  nav ul li a {
+    padding: 0.3em;
+    display: block;
+    color: var(--cor0);
+    width: 100%;
+  }
+  #imgUser {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */
