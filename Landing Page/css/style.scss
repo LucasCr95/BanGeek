@@ -53,6 +53,7 @@ body{
 
 @media screen and (max-width: 430px){
     header{
+        width: 100%;
         height: 70px;
         padding: 0 20px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.658);
@@ -107,10 +108,10 @@ body{
 
     main{
         width: 100vw;
-        height: calc(100vh - 70px);
 
         #sessaoUm{
-            padding: 25px 10px;
+            height: calc(100vh - 70px);
+            padding: 20px 10px;
 
             img{
                 width: 100%;
@@ -118,7 +119,7 @@ body{
 
             #conteudo{
                 width: 95%;
-                margin: 20px auto;
+                margin: 15px auto;
 
                 h1{
                     font-family: var(--font0);
@@ -129,50 +130,103 @@ body{
 
                 p{
                     text-align: center;
-                    margin-top: 10px;
+                    margin: 7px auto;
                     font-size: 14px;
                     font-weight: lighter;
+                    width: 80%;
                 }
                 a{
                     height: 36px;
                     width: 200px;
                     display: block;
-                    margin: 15px auto;
+                    margin: 20px auto;
                     font-size: 14px;
                     text-align: center;
                     box-sizing: border-box;
-                    padding-top: .6em;
+                    padding-top: .5em;
                 }
             }
         }
 
         #sessaoDois{
+            height: calc(100vh - 70px);
+            box-sizing: border-box;
+            padding: 20px 10px;
+
+
+            #sessaoDoisImg{
+                width: 80%;
+                margin: 30px auto 0;
+
+            }
+
             img{
                 width: 100%;
+            }
+
+            h2{
+                font-family: var(--font0);
+                text-align: center;
+                font-size: 24px;
+                font-weight: 500;
+            }
+            p{
+                text-align: center;
+                margin: 15px auto;
+                font-size: 14px;
+                font-weight: lighter;
+                width: 90%;
             }
         }
 
         #sessaoTres{
-            img{
-                width: 100%;
+            padding: 20px 20px;
+
+            #containerTres{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
             }
+
+            .elementos{
+                width: 45%;
+                height: 140px;
+                margin: 15px 0;
+            }
+
+            h3{
+                font-family: var(--font0);
+                font-weight: 500;
+                font-size: 16px;
+                padding-bottom: 10px;
+                width: 100%;
+                border-bottom: 3px solid;
+                border-image: linear-gradient(to right, var(--cor8) 30%, transparent 30%) 1;
+            }
+
+            p{
+                font-size: 12px;
+                width: 100%;
+                margin-top: 10px;
+            }
+
         }
 
         #sessaoQuatro{
             img{
-                width: 100%;
+
             }
         }
 
         #sessaoCinco{
             img{
-                width: 100%;
+
             }
         }
 
         #sessaoSeis{
             img{
-                width: 100%;
+
             }
         }
 
@@ -180,7 +234,7 @@ body{
 
     footer{
         img{
-            width: 100%;
+
         }
     }
     
