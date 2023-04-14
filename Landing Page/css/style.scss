@@ -9,10 +9,11 @@
     --cor4: #8B68DF;
     --cor5: #5B31C1;
     --cor6: #320995;
-    --cor7: #26E55F;
-    --cor8: #E2306C;
-    --cor9: #393939;
-    ---cor10: #000000;
+    --cor7: #260180;
+    --cor8: #26E55F;
+    --cor9: #E2306C;
+    --cor10: #393939;
+    ---cor11: #000000;
     --font0: 'Montserrat', sans-serif;
     --font1: 'Roboto', sans-serif;
 }
@@ -45,18 +46,26 @@ body{
 }
 
 .btnPrinc{
-    background-color:var(--cor8);
+    background-color:var(--cor9);
     border-radius: .5em;
     border: none;
-    box-shadow: 0 0 10px #F3709C;    
+    box-shadow: 0 0 10px #F3709C; 
+    height: 42px;
+    width: 230px;
+    display: block;
+    font-size: 16px;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: .6em;   
 }
 
 @media screen and (max-width: 430px){
     header{
         width: 100%;
-        height: 70px;
+        height: 60px;
         padding: 0 20px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.658);
+        box-sizing: border-box;
 
         #container-header{
             display: flex;
@@ -64,7 +73,7 @@ body{
         }
 
         #logo{
-            height: 70px;
+            height: 60px;
             display: flex;
             align-items: center;
     
@@ -74,7 +83,7 @@ body{
         }
 
         #hamburguer{
-            height: 70px;
+            height: 60px;
             display: flex;
             align-items: center;
 
@@ -111,7 +120,7 @@ body{
 
         #sessaoUm{
             height: calc(100vh - 70px);
-            padding: 20px 10px;
+            padding: 10px 10px 0;
 
             img{
                 width: 100%;
@@ -119,31 +128,26 @@ body{
 
             #conteudo{
                 width: 95%;
-                margin: 15px auto;
+                margin: 10px auto;
 
                 h1{
                     font-family: var(--font0);
                     text-align: center;
-                    font-size: 24px;
+                    font-size: 22px;
                     font-weight: 500;
+                    width: 80%;
+                    margin: 0 auto;
                 }
 
                 p{
                     text-align: center;
-                    margin: 7px auto;
+                    margin: 10px auto 20px;
                     font-size: 14px;
                     font-weight: lighter;
-                    width: 80%;
+                    width: 70%;
                 }
                 a{
-                    height: 36px;
-                    width: 200px;
-                    display: block;
-                    margin: 20px auto;
-                    font-size: 14px;
-                    text-align: center;
-                    box-sizing: border-box;
-                    padding-top: .5em;
+                    margin: auto;
                 }
             }
         }
@@ -169,23 +173,31 @@ body{
                 text-align: center;
                 font-size: 24px;
                 font-weight: 500;
+                width: 80%;
+                margin: 20px auto;
             }
             p{
                 text-align: center;
-                margin: 15px auto;
+                margin: 20px auto;
                 font-size: 14px;
                 font-weight: lighter;
-                width: 90%;
+                width: 70%;
             }
         }
 
         #sessaoTres{
-            padding: 20px 20px;
+            padding: 20px 0;
+            margin: 50px 0 50px;
+            
 
             #containerTres{
+                background-color: var(--cor7);
+                margin: 30px 0;
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: space-between;
+                padding: 30px 20px;
+                
             }
 
             .elementos{
@@ -201,7 +213,7 @@ body{
                 padding-bottom: 10px;
                 width: 100%;
                 border-bottom: 3px solid;
-                border-image: linear-gradient(to right, var(--cor8) 30%, transparent 30%) 1;
+                border-image: linear-gradient(to right, var(--cor9) 30%, transparent 30%) 1;
             }
 
             p{
@@ -210,17 +222,53 @@ body{
                 margin-top: 10px;
             }
 
+
+
         }
 
         #sessaoQuatro{
-            img{
+            #imgMan {
+                width: 100vw;
+                padding: 0 10px;
+                box-sizing: border-box;
+                
+                img{
+                    width: 100%;
+                }
+            } 
+            
+            p{
+                text-align: center;
+                width: 80%;
+                margin: auto;
+                font-size: 16px;
+            }
+            #imgCartoes{
+                width: 90%;
+                margin: 30px auto;
 
+                img{
+                    width: 100% ;
+                }
+            }
+            
+            a{
+                margin: 50px auto;
             }
         }
 
         #sessaoCinco{
-            img{
+            width: 100vw;
+            box-sizing: border-box;
+            background-color: var(--cor7);
+            padding: 20px 0;
 
+            #logoSessaoCinco{
+
+                img{
+                    height: 100px;
+                    width: 100%;
+                }
             }
         }
 
