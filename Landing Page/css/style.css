@@ -22,6 +22,7 @@
   list-style: none;
   text-decoration: none;
   color: var(--cor0);
+  box-sizing: border-box;
 }
 
 body {
@@ -53,8 +54,14 @@ body {
   display: block;
   font-size: 16px;
   text-align: center;
-  box-sizing: border-box;
   padding-top: 0.6em;
+}
+
+.btnDownApp {
+  background-color: var(--cor9);
+  border-radius: 0.5em;
+  border: none;
+  box-shadow: 0 0 10px #F3709C;
 }
 
 @media screen and (max-width: 430px) {
@@ -114,8 +121,8 @@ body {
   main #sessaoUm #conteudo h1 {
     font-family: var(--font0);
     text-align: center;
-    font-size: 22px;
-    font-weight: 500;
+    font-size: 24px;
+    font-weight: 600;
     width: 80%;
     margin: 0 auto;
   }
@@ -145,7 +152,7 @@ body {
     font-family: var(--font0);
     text-align: center;
     font-size: 24px;
-    font-weight: 500;
+    font-weight: 600;
     width: 80%;
     margin: 20px auto;
   }
@@ -214,12 +221,50 @@ body {
   }
   main #sessaoCinco {
     width: 100vw;
-    box-sizing: border-box;
     background-color: var(--cor7);
     padding: 20px 0;
   }
+  main #sessaoCinco #logoSessaoCinco {
+    margin: 0 0 30px;
+  }
   main #sessaoCinco #logoSessaoCinco img {
     height: 100px;
+    width: 100%;
+  }
+  main #sessaoCinco #conteudoCinco h4 {
+    font-family: var(--font0);
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+  }
+  main #sessaoCinco #conteudoCinco p {
+    text-align: center;
+    font-size: 14px;
+    margin: 5px 0;
+  }
+  main #sessaoCinco #sessaoBtn {
+    margin: 30px 0;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  main #sessaoCinco #sessaoBtn a {
+    height: 50px;
+    width: 160px;
+    padding: 0.5em;
+    display: flex;
+    justify-content: center;
+  }
+  main #sessaoCinco #sessaoBtn a img {
+    width: 2em;
+    margin-right: 0.6em;
+  }
+  main #sessaoCinco #sessaoBtn a #conteudoBtn p {
+    font-size: 0.8em;
+  }
+  main #sessaoCinco #sessaoBtn a #conteudoBtn span {
+    font-size: 1em;
+  }
+  main #sessaoCinco img {
     width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */
