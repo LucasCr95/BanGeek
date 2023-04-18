@@ -264,8 +264,8 @@ body{
 
         #sessaoCinco{
             width: 100vw;
+            padding:0 20px;
             background-color: var(--cor7);
-            padding: 20px 0;
 
             #logoSessaoCinco{
                 margin: 0 auto 30px;
@@ -328,11 +328,17 @@ body{
             img{
                 width: 100%;
             }
+
         }
 
         #sessaoSeis{
             width: 100vw;
-            padding: 4em 20px;
+
+            .bgSvg{
+                width: 100%;
+                fill: var(--cor7);
+            }
+
 
             h5{
                 font: 600 24px var(--font0);
@@ -348,6 +354,7 @@ body{
             }
 
             img{
+                padding: 0 20px;
                 width: 100%;
             }
 
@@ -426,8 +433,29 @@ body{
                     }
                 }
 
+                #containerLinksRedes{
+                    display: flex;
+                }
+
                 
             }
+        }
+
+        #ultimoContainerFooter{
+            border-top: 1px solid white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+            font-size: 14px;
+
+              #logoFooter{
+                width: 3em;
+
+                img{
+                    width: 100%;
+                }
+              }
         }
     }
 

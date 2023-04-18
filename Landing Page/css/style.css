@@ -221,8 +221,8 @@ body {
   }
   main #sessaoCinco {
     width: 100vw;
+    padding: 0 20px;
     background-color: var(--cor7);
-    padding: 20px 0;
   }
   main #sessaoCinco #logoSessaoCinco {
     margin: 0 auto 30px;
@@ -271,7 +271,10 @@ body {
   }
   main #sessaoSeis {
     width: 100vw;
-    padding: 4em 20px;
+  }
+  main #sessaoSeis .bgSvg {
+    width: 100%;
+    fill: var(--cor7);
   }
   main #sessaoSeis h5 {
     font: 600 24px var(--font0);
@@ -285,6 +288,7 @@ body {
     margin: 0 auto 3em;
   }
   main #sessaoSeis img {
+    padding: 0 20px;
     width: 100%;
   }
   main #sessaoSeis a {
@@ -342,5 +346,22 @@ body {
   }
   footer #segundaSessaoFooter .elementos #sessaoBtnFooter a #conteudoBtn span {
     font-size: 1em;
+  }
+  footer #segundaSessaoFooter .elementos #containerLinksRedes {
+    display: flex;
+  }
+  footer #ultimoContainerFooter {
+    border-top: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    font-size: 14px;
+  }
+  footer #ultimoContainerFooter #logoFooter {
+    width: 3em;
+  }
+  footer #ultimoContainerFooter #logoFooter img {
+    width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */
