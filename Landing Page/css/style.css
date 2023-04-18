@@ -225,10 +225,12 @@ body {
     padding: 20px 0;
   }
   main #sessaoCinco #logoSessaoCinco {
-    margin: 0 0 30px;
+    margin: 0 auto 30px;
+    width: 100px;
+    padding: 0.2em;
   }
   main #sessaoCinco #logoSessaoCinco img {
-    height: 100px;
+    margin: auto;
     width: 100%;
   }
   main #sessaoCinco #conteudoCinco h4 {

@@ -270,9 +270,11 @@ body{
             padding: 20px 0;
 
             #logoSessaoCinco{
-                margin: 0 0 30px;
+                margin: 0 auto 30px;
+                width: 100px;
+                padding: .2em;
                 img{
-                    height: 100px;
+                    margin: auto;
                     width: 100%;
                 }
             }
