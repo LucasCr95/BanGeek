@@ -54,7 +54,7 @@ body {
   display: block;
   font-size: 16px;
   text-align: center;
-  padding-top: 0.6em;
+  padding-top: 0.7em;
 }
 
 .btnDownApp {
@@ -268,5 +268,79 @@ body {
   }
   main #sessaoCinco img {
     width: 100%;
+  }
+  main #sessaoSeis {
+    width: 100vw;
+    padding: 4em 20px;
+  }
+  main #sessaoSeis h5 {
+    font: 600 24px var(--font0);
+    text-align: center;
+    margin: 0 0 1em 0;
+  }
+  main #sessaoSeis p {
+    text-align: center;
+    font-size: 14px;
+    width: 80%;
+    margin: 0 auto 3em;
+  }
+  main #sessaoSeis img {
+    width: 100%;
+  }
+  main #sessaoSeis a {
+    margin: 2em auto 0;
+  }
+  footer #primeiraSessaoFooter {
+    background-color: var(--cor7);
+    width: 100vw;
+    padding: 4em 20px 0;
+  }
+  footer #primeiraSessaoFooter img {
+    width: 100%;
+  }
+  footer #segundaSessaoFooter {
+    padding: 4em 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 30px 20px;
+  }
+  footer #segundaSessaoFooter .elementos {
+    width: 45%;
+    height: 140px;
+    margin: 15px 0;
+  }
+  footer #segundaSessaoFooter .elementos dt {
+    font-family: var(--font0);
+    font-weight: 500;
+    font-size: 16px;
+    padding-bottom: 10px;
+    width: 100%;
+    border-bottom: 3px solid;
+    -o-border-image: linear-gradient(to right, var(--cor9) 30%, transparent 30%) 1;
+       border-image: linear-gradient(to right, var(--cor9) 30%, transparent 30%) 1;
+  }
+  footer #segundaSessaoFooter .elementos li {
+    font-size: 12px;
+    width: 100%;
+    margin-top: 10px;
+  }
+  footer #segundaSessaoFooter .elementos #sessaoBtnFooter a {
+    margin-top: 10px;
+    height: 50px;
+    width: 140px;
+    padding: 0.4em;
+    display: flex;
+    justify-content: center;
+  }
+  footer #segundaSessaoFooter .elementos #sessaoBtnFooter a img {
+    width: 1.5em;
+    margin-right: 0.8em;
+  }
+  footer #segundaSessaoFooter .elementos #sessaoBtnFooter a #conteudoBtn p {
+    font-size: 0.8em;
+  }
+  footer #segundaSessaoFooter .elementos #sessaoBtnFooter a #conteudoBtn span {
+    font-size: 1em;
   }
 }/*# sourceMappingURL=style.css.map */

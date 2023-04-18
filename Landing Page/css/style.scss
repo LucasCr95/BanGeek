@@ -56,7 +56,7 @@ body{
     display: block;
     font-size: 16px;
     text-align: center;
-    padding-top: .6em;   
+    padding-top: .7em;   
 }
 
 .btnDownApp{
@@ -229,8 +229,6 @@ body{
                 margin-top: 10px;
             }
 
-
-
         }
 
         #sessaoQuatro{
@@ -333,15 +331,105 @@ body{
         }
 
         #sessaoSeis{
-            img{
+            width: 100vw;
+            padding: 4em 20px;
 
+            h5{
+                font: 600 24px var(--font0);
+                text-align: center;
+                margin: 0 0 1em 0;
+            }
+            
+            p{
+                text-align: center;
+                font-size: 14px;
+                width: 80%;
+                margin: 0 auto 3em;
+            }
+
+            img{
+                width: 100%;
+            }
+
+            a{
+                margin: 2em auto 0;
             }
         }
-        
-        footer{
-        img{
+    }
 
+    footer{
+
+        #primeiraSessaoFooter{
+            background-color: var(--cor7);
+            width: 100vw;
+            padding: 4em 20px 0;
+
+            img{
+                width: 100%;
+            }
         }
+
+        #segundaSessaoFooter{
+            padding: 4em 20px 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 30px 20px;
+
+            .elementos{
+                width: 45%;
+                height: 140px;
+                margin: 15px 0;
+
+                dt{
+                    font-family: var(--font0);
+                    font-weight: 500;
+                    font-size: 16px;
+                    padding-bottom: 10px;
+                    width: 100%;
+                    border-bottom: 3px solid;
+                    border-image: linear-gradient(to right, var(--cor9) 30%, transparent 30%) 1;
+                }
+
+                li{
+                    font-size: 12px;
+                    width: 100%;
+                    margin-top: 10px;
+                }
+
+                #sessaoBtnFooter{
+                    
+    
+                    a{
+                        margin-top: 10px;
+                        height: 50px;
+                        width: 140px;
+                        padding: .4em;
+                        display: flex;
+                        justify-content: center;
+                        
+    
+                        img{
+                            width: 1.5em;
+                            margin-right: .8em;
+                        }
+    
+                        #conteudoBtn{
+                            p{
+                                font-size: .8em;
+                            }
+        
+                            span{
+                                font-size: 1em;
+                            }
+                        }
+                    }
+                }
+
+                
+            }
         }
     }
+
+    
 }
