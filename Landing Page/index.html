@@ -10,29 +10,31 @@
 </head>
 <body>
     <header>
-        <div id="container-header">
+        <div id="containerHeader">
             <div id="logo">
                 <img src="img/logo.svg" alt="Logotipo do banco">
             </div>
-            <div id="hamburguer">
-                <input type="checkbox" id="icon-menu">
-                <img src="img/Grupo 438.svg" alt="Menu escondido">
+            <div id="Menu">
+                <input type="checkbox" id="iconMenu">
+                <label for="iconMenu" id="iconMenu"><img src="img/Grupo 438.svg" alt="Menu escondido"></label>
             </div>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#">Parceiros</a></li>
-                <li><a href="#">Loja Geek</a></li>
-                <li><a href="#">Sobre Nós</a></li>
-                <li><button class="btnTransp"><a href="#">Criar conta</a></button></li>
-                <li><button class="btnPrinc"><a href="#">Iniciar sessão</a></button></li>
-            </ul>
-        </nav>
+            <nav>
+                <ul>
+                    <li><a href="#">Parceiros</a></li>
+                    <li><a href="#">Loja Geek</a></li>
+                    <li><a href="#">Sobre Nós</a></li>
+                    <li><button class="btnTransp"><a href="#">Criar conta</a></button></li>
+                    <li><button class="btnPrinc"><a href="#">Iniciar sessão</a></button></li>
+                </ul>
+            </nav>
+        </div>
+        
         <div id="imgUser"><img src="img/Imagem 5.png" alt="Imagem do usuário"></div>
     </header>
     <main>
         <section id="sessaoUm">
-            <div>
+            <div id="imgPrimeiraSessao">
                 <picture>
                     <source media="(max-width: 430px)" srcset="img/imgSessaoUm430px.png" alt="Imagem de uma garota de óculos segurando o cabelo">
                      <img src="img/imgSessaoUm.png" alt="Imagem de uma garota de óculos segurando o cabelo">
@@ -46,7 +48,7 @@
             </div>
         </section>
         <section id="sessaoDois">
-            <div id="sessaoDoisImg">
+            <div id="imgSegundaSessao">
                 <picture>
                     <source media="(max-width: 430px)" srcset="img/imgSessaoDois430px.png" alt="Imagem de um celular com a tela principal do aplicativo do banco">
                     <img src="img/imgSessaoDois.png" alt="Imagem de um celular com a tela de login do aplicativo do banco">
@@ -58,6 +60,10 @@
             </div>
         </section>
         <section id="sessaoTres">
+            <svg xmlns="http://www.w3.org/2000/svg" id="bgSvgTerceiraSessao" viewBox="0 0 414 53.379">
+                <path id="Caminho_7612" data-name="Caminho 7612" d="M-155.963,754.74h414v-52.3s-38.848,17.237-95.02,15.782c-60.962-1.579-141.409-21.66-195.126-15.782-103.5,11.326-123.854,27.411-123.854,27.411Z" transform="translate(155.963 -701.361)"/>
+              </svg>
+
             <div id="containerTres">
                 <div class="elementos">
                     <h3>Saques nos caixas da rede Banco24Horas</h3>
@@ -86,6 +92,10 @@
             </div>
         </section>
         <section id="sessaoQuatro">
+            <svg xmlns="http://www.w3.org/2000/svg" id="bgSvgQuartaSessao" viewBox="0 0 414 53.379">
+                <path id="Caminho_7612" data-name="Caminho 7612" d="M-155.963,754.74h414v-52.3s-38.848,17.237-95.02,15.782c-60.962-1.579-141.409-21.66-195.126-15.782-103.5,11.326-123.854,27.411-123.854,27.411Z" transform="translate(155.963 -701.361)"/>
+              </svg>
+
             <div id="imgMan">
                 <picture>
                     <source media="(max-width: 430px)" srcset="img/imgSessaoQuatro430px.png" alt="Imagem de um homem com óculos 3D">
@@ -106,10 +116,14 @@
             </div>
         </section>
         <aside id="sessaoCinco">
-                 <div id="logoSessaoCinco">
-                    <img src="img/logo.svg" alt="Logotipo">
-                </div>
-            <div id="conteudo Cinco">
+
+            <svg xmlns="http://www.w3.org/2000/svg" id="bgSvgQuintaSessao" viewBox="0 0 414 53.379">
+                <path id="Caminho_7612" data-name="Caminho 7612" d="M-155.963,754.74h414v-52.3s-38.848,17.237-95.02,15.782c-60.962-1.579-141.409-21.66-195.126-15.782-103.5,11.326-123.854,27.411-123.854,27.411Z" transform="translate(155.963 -701.361)"/>
+            </svg>
+            <div id="logoSessaoCinco">
+                <img src="img/logo.svg" alt="Logotipo">
+            </div>
+            <div id="conteudoCinco">
                 <h4>Baixe o app do BanGeek</h4>
                 <p>e abra sua conta em poucos minutos</p>
             </div>
@@ -131,17 +145,16 @@
                 </a>
             </div>
 
-            <div>
-                <source media="(max-width: 430px)" srcset="img/imgSessaoCinco430px.png" alt="Imagem de um celular com a tela principal do aplicativo, demonstrando algumas funções">
-                <img src="img/imgSessaoCinco.png" alt="Imagem de um celular com a tela principal do aplicativo, demonstrando algumas funções">
+            <div id="containerImgSessaoCinco">
+                <picture>
+                    <source media="(max-width: 430px)" srcset="img/imgSessaoCinco430px.png">
+                    <img src="img/imgSessaoCinco.png" alt="">
+                </picture>
             </div>
-
-            
-              
         </aside>
         <article id="sessaoSeis">
-            <svg xmlns="http://www.w3.org/2000/svg" class="bgSvg" viewBox="0 0 414 43.637">
-                <path id="Caminho_7612" data-name="Caminho 7612" d="M-155.963,686.211h414v16.225s-38.848,17.237-95.02,15.782c-60.962-1.579-141.409-21.66-195.126-15.782-103.5,11.326-123.854,27.411-123.854,27.411Z" transform="translate(155.963 -686.211)"/>
+            <svg xmlns="http://www.w3.org/2000/svg" class="bgSvg" viewBox="0 0 414 53.379">
+                <path id="Caminho_7612" data-name="Caminho 7612" d="M-155.963,754.74h414v-52.3s-38.848,17.237-95.02,15.782c-60.962-1.579-141.409-21.66-195.126-15.782-103.5,11.326-123.854,27.411-123.854,27.411Z" transform="translate(155.963 -701.361)"/>
               </svg>
 
             <div>
@@ -158,6 +171,10 @@
         </article>
     </main>
     <footer>
+        <svg xmlns="http://www.w3.org/2000/svg" id="bgSvgFooterSessao" viewBox="0 0 414 53.379">
+            <path id="Caminho_7612" data-name="Caminho 7612" d="M-155.963,754.74h414v-52.3s-38.848,17.237-95.02,15.782c-60.962-1.579-141.409-21.66-195.126-15.782-103.5,11.326-123.854,27.411-123.854,27.411Z" transform="translate(155.963 -701.361)"/>
+        </svg>
+
         <div id="primeiraSessaoFooter">
             <picture>
                 <source media="(max-width: 430px)" srcset="img/imgSessaoSete430px.png">
@@ -210,10 +227,10 @@
             <div class="elementos ">
                 <dt>Redes Sociais</dt>
                 <ul id="containerLinksRedes">
-                    <li><a href=""><img src="img/IconFacebook.svg" alt="ícone do facebook"></a></li>
-                    <li><a href=""><img src="img/IconInstagram.svg" alt="ícone do instagram"></a></li>
-                    <li><a href=""><img src="img/IconLinkedin.svg" alt="ícone do linkedin"></a></li>
-                    <li><a href=""><img src="img/IconYoutube.svg" alt="ícone do youtube"></a></li>
+                    <li class="iconsRedesSociaisFooter"><a href=""><img src="img/IconFacebook.svg" alt="ícone do facebook"></a></li>
+                    <li class="iconsRedesSociaisFooter"><a href=""><img src="img/IconInstagram.svg" alt="ícone do instagram"></a></li>
+                    <li class="iconsRedesSociaisFooter"><a href=""><img src="img/IconLinkedin.svg" alt="ícone do linkedin"></a></li>
+                    <li class="iconsRedesSociaisFooter"><a href=""><img src="img/IconYoutube.svg" alt="ícone do youtube"></a></li>
                 </ul>
             </div>
         </div>

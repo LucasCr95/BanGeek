@@ -36,12 +36,10 @@ body {
   border-radius: 0.5em;
   border: 1px solid var(--cor2);
   padding: 0.5em;
-  width: 13em;
-}
-.btnTransp a {
-  text-align: center;
-  text-transform: uppercase;
+  width: 230px;
+  height: 42px;
   font-size: 12px;
+  text-transform: uppercase;
 }
 
 .btnPrinc {
@@ -51,10 +49,10 @@ body {
   box-shadow: 0 0 10px #F3709C;
   height: 42px;
   width: 230px;
-  display: block;
-  font-size: 16px;
+  font-size: 12px;
   text-align: center;
-  padding-top: 0.7em;
+  padding: 0.5em;
+  text-transform: uppercase;
 }
 
 .btnDownApp {
@@ -64,55 +62,64 @@ body {
   box-shadow: 0 0 10px #F3709C;
 }
 
+img {
+  width: 100%;
+}
+
 @media screen and (max-width: 430px) {
   header {
     width: 100%;
     height: 60px;
-    padding: 0 20px;
+    background-color: var(--cor6);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.658);
-    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    z-index: 1;
   }
   header #container-header {
+    padding: 0 20px;
     display: flex;
     justify-content: space-between;
   }
-  header #logo {
+  header #container-header #logo {
     height: 60px;
     display: flex;
     align-items: center;
   }
-  header #logo img {
+  header #container-header #logo img {
     height: 100%;
   }
-  header #hamburguer {
-    height: 60px;
+  header #container-header #containerMenu {
+    height: 3.75em;
     display: flex;
     align-items: center;
   }
-  header #hamburguer img {
-    height: 16px;
-  }
-  header #hamburguer input[type=checkbox] {
+  header #container-header #containerMenu input[type=checkbox] {
     display: none;
   }
-  header #hamburguer input[type=checkbox]:checked ~ nav {
-    transform: translate(0);
+  header #container-header #containerMenu #iconMenu img {
+    width: 2em;
   }
-  header nav {
-    display: none;
+  header #container-header nav {
+    height: calc(100vh - 60px);
+    background-color: var(--cor6);
+    width: 100%;
   }
   header #imgUser {
     display: none;
   }
   main {
     width: 100vw;
+    position: relative;
   }
   main #sessaoUm {
     height: calc(100vh - 70px);
-    padding: 10px 10px 0;
+    bottom: 0;
+    padding: 70px 10px 0;
   }
-  main #sessaoUm img {
-    width: 100%;
+  main #sessaoUm #imgPrimeiraSessao {
+    max-width: 340px;
+    margin: auto;
   }
   main #sessaoUm #conteudo {
     width: 95%;
@@ -134,53 +141,50 @@ body {
     width: 70%;
   }
   main #sessaoUm #conteudo a {
-    margin: auto;
+    margin: 0 auto;
   }
   main #sessaoDois {
     height: calc(100vh - 70px);
-    box-sizing: border-box;
-    padding: 20px 10px;
+    padding: 0 20px;
+    margin: 6em 0 0 0;
   }
-  main #sessaoDois #sessaoDoisImg {
-    width: 80%;
-    margin: 30px auto 0;
-  }
-  main #sessaoDois img {
-    width: 100%;
+  main #sessaoDois #imgSegundaSessao {
+    max-width: 70%;
+    margin: auto;
   }
   main #sessaoDois h2 {
     font-family: var(--font0);
     text-align: center;
     font-size: 24px;
     font-weight: 600;
-    width: 80%;
+    width: 90%;
     margin: 20px auto;
   }
   main #sessaoDois p {
     text-align: center;
-    margin: 20px auto;
+    margin: 20px auto 0;
     font-size: 14px;
     font-weight: lighter;
-    width: 70%;
+    width: 80%;
   }
-  main #sessaoTres {
-    padding: 20px 0;
-    margin: 50px 0 50px;
+  main #sessaoTres #bgSvgTerceiraSessao {
+    margin-bottom: -3em;
+    fill: var(--cor7);
   }
   main #sessaoTres #containerTres {
     background-color: var(--cor7);
-    margin: 30px 0;
+    margin: 1em 0 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 30px 20px;
+    padding: 3em 20px 3em;
   }
-  main #sessaoTres .elementos {
+  main #sessaoTres #containerTres .elementos {
     width: 45%;
     height: 140px;
     margin: 15px 0;
   }
-  main #sessaoTres h3 {
+  main #sessaoTres #containerTres .elementos h3 {
     font-family: var(--font0);
     font-weight: 500;
     font-size: 16px;
@@ -190,18 +194,19 @@ body {
     -o-border-image: linear-gradient(to right, var(--cor9) 30%, transparent 30%) 1;
        border-image: linear-gradient(to right, var(--cor9) 30%, transparent 30%) 1;
   }
-  main #sessaoTres p {
+  main #sessaoTres #containerTres .elementos p {
     font-size: 12px;
     width: 100%;
     margin-top: 10px;
   }
+  main #sessaoQuatro #bgSvgQuartaSessao {
+    fill: var(--cor6);
+    margin-top: -6em;
+  }
   main #sessaoQuatro #imgMan {
     width: 100vw;
-    padding: 0 10px;
+    padding: 3em 10px 0;
     box-sizing: border-box;
-  }
-  main #sessaoQuatro #imgMan img {
-    width: 100%;
   }
   main #sessaoQuatro p {
     text-align: center;
@@ -213,29 +218,30 @@ body {
     width: 90%;
     margin: 30px auto;
   }
-  main #sessaoQuatro #imgCartoes img {
-    width: 100%;
-  }
   main #sessaoQuatro a {
-    margin: 50px auto;
+    margin: 50px auto 6em;
   }
   main #sessaoCinco {
     width: 100vw;
-    padding: 0 20px;
     background-color: var(--cor7);
   }
-  main #sessaoCinco #logoSessaoCinco {
-    margin: 0 auto 30px;
-    width: 100px;
-    padding: 0.2em;
+  main #sessaoCinco #bgSvgQuintaSessao {
+    margin-top: -2em;
+    fill: var(--cor7);
   }
-  main #sessaoCinco #logoSessaoCinco img {
-    margin: auto;
-    width: 100%;
+  main #sessaoCinco #logoSessaoCinco {
+    height: 6em;
+    width: 6em;
+    margin: -1em auto 30px;
+  }
+  main #sessaoCinco #conteudoCinco {
+    padding: 0 20px;
+    width: 100vw;
   }
   main #sessaoCinco #conteudoCinco h4 {
     font-family: var(--font0);
     text-align: center;
+    width: 99%;
     font-size: 24px;
     font-weight: 600;
   }
@@ -251,7 +257,7 @@ body {
   }
   main #sessaoCinco #sessaoBtn a {
     height: 50px;
-    width: 160px;
+    width: 9em;
     padding: 0.5em;
     display: flex;
     justify-content: center;
@@ -261,25 +267,28 @@ body {
     margin-right: 0.6em;
   }
   main #sessaoCinco #sessaoBtn a #conteudoBtn p {
-    font-size: 0.8em;
+    font-size: 0.7em;
   }
   main #sessaoCinco #sessaoBtn a #conteudoBtn span {
-    font-size: 1em;
+    font-size: 0.9em;
   }
-  main #sessaoCinco img {
-    width: 100%;
+  main #sessaoCinco #containerImgSessaoCinco {
+    width: 80%;
+    margin: auto;
   }
   main #sessaoSeis {
     width: 100vw;
   }
   main #sessaoSeis .bgSvg {
     width: 100%;
-    fill: var(--cor7);
+    fill: var(--cor6);
+    margin-top: -2em;
   }
   main #sessaoSeis h5 {
     font: 600 24px var(--font0);
     text-align: center;
     margin: 0 0 1em 0;
+    padding-top: 1em;
   }
   main #sessaoSeis p {
     text-align: center;
@@ -292,15 +301,16 @@ body {
     width: 100%;
   }
   main #sessaoSeis a {
-    margin: 2em auto 0;
+    margin: 2em auto 4em;
+  }
+  footer #bgSvgFooterSessao {
+    fill: var(--cor7);
   }
   footer #primeiraSessaoFooter {
     background-color: var(--cor7);
     width: 100vw;
-    padding: 4em 20px 0;
-  }
-  footer #primeiraSessaoFooter img {
-    width: 100%;
+    margin-top: -1em;
+    padding: 2em 20px 0;
   }
   footer #segundaSessaoFooter {
     padding: 4em 20px 0;
@@ -349,6 +359,11 @@ body {
   }
   footer #segundaSessaoFooter .elementos #containerLinksRedes {
     display: flex;
+    justify-content: space-evenly;
+  }
+  footer #segundaSessaoFooter .elementos #containerLinksRedes .iconsRedesSociaisFooter {
+    padding: 0.3em;
+    width: 3em;
   }
   footer #ultimoContainerFooter {
     border-top: 1px solid white;
