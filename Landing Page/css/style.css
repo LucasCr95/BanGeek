@@ -51,7 +51,7 @@ body {
   width: 230px;
   font-size: 12px;
   text-align: center;
-  padding: 0.5em;
+  padding: 1em;
   text-transform: uppercase;
 }
 
@@ -67,59 +67,57 @@ img {
 }
 
 @media screen and (max-width: 430px) {
-  header {
+  header #containerHeader {
+    height: 4em;
     width: 100%;
-    height: 60px;
     background-color: var(--cor6);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.658);
-    position: fixed;
-    top: 0;
-    z-index: 1;
-  }
-  header #container-header {
     padding: 0 20px;
     display: flex;
+    align-items: center;
     justify-content: space-between;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.66);
+    position: fixed;
+    z-index: 1;
   }
-  header #container-header #logo {
-    height: 60px;
-    display: flex;
-    align-items: center;
+  header #containerHeader #logo {
+    height: 4em;
+    width: 4em;
   }
-  header #container-header #logo img {
-    height: 100%;
-  }
-  header #container-header #containerMenu {
-    height: 3.75em;
-    display: flex;
-    align-items: center;
-  }
-  header #container-header #containerMenu input[type=checkbox] {
+  header #containerHeader #menu #iconMenu {
     display: none;
   }
-  header #container-header #containerMenu #iconMenu img {
-    width: 2em;
+  header #containerHeader #menu #iconMenu:checked ~ nav {
+    display: none;
   }
-  header #container-header nav {
-    height: calc(100vh - 60px);
-    background-color: var(--cor6);
+  header #containerHeader #menu nav {
+    min-height: 15em;
     width: 100%;
+    background-color: var(--cor6);
+    position: absolute;
+    top: 4em;
+    left: 0;
+    padding: 1em 0;
+    transition: all 2s ease-in;
   }
-  header #imgUser {
-    display: none;
+  header #containerHeader #menu nav ul li {
+    text-align: center;
+    padding: 0.6em;
+  }
+  header #containerHeader #menu nav ul li a {
+    font-family: var(--font0);
   }
   main {
     width: 100vw;
     position: relative;
   }
   main #sessaoUm {
-    height: calc(100vh - 70px);
+    height: calc(100vh - 4em);
     bottom: 0;
     padding: 70px 10px 0;
   }
   main #sessaoUm #imgPrimeiraSessao {
     max-width: 340px;
-    margin: auto;
+    margin: 1em auto;
   }
   main #sessaoUm #conteudo {
     width: 95%;

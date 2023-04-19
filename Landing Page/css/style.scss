@@ -17,8 +17,6 @@
     --font0: 'Montserrat', sans-serif;
     --font1: 'Roboto', sans-serif;
 }
-// font-family: 'Montserrat', sans-serif;
-// font-family: 'Roboto', sans-serif;
 *{
     margin: 0;
     padding: 0;
@@ -52,7 +50,7 @@ body{
     width: 230px;
     font-size: 12px;
     text-align: center;
-    padding: .5em;
+    padding: 1em;
     text-transform: uppercase;
 }
 
@@ -68,28 +66,64 @@ img{
 
 @media screen and (max-width: 430px){
     header{
-
         #containerHeader{
+            height: 4em;
+            width: 100%;
+            background-color: var(--cor6);
+            padding: 0 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.66);
+            position: fixed;
+            z-index: 1;
+
+            #logo{
+                height: 4em;
+                width: 4em;
+            }
+
+            #menu{
+                
+                #iconMenu{
+                    display: none;
+
+                    &:checked ~ nav{
+                        display: none;
+                    }
+                }
+
+                nav{
+                    min-height: 15em;
+                    width: 100%;
+                    background-color: var(--cor6);
+                    position: absolute;
+                    top: 4em;
+                    left: 0;
+                    padding: 1em 0;
+                    transition: all 2s ease-in;
+
+                    ul{
+                        li{
+                            text-align: center;
+                            padding: .6em;
+                            
+                            a{
+                                font-family: var(--font0);
+                            }
+                        }
+                    }
+                }
+                
+            }
+
+            
+
             
         }
         
-        nav{
-            height: calc(100vh - 60px);
-            width: 100%;
-            background-color: $cor6;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            position: absolute;
-            top: 0;
-            left: 0;
-            transform: translateX(-100%);
-            transition: all 1s ease;
-        }
+        
 
-        #imgUser{
-            display: none;
-        }
     }
 
     main{
@@ -97,13 +131,13 @@ img{
         position: relative;
         
         #sessaoUm{
-            height: calc(100vh - 70px);
+            height: calc(100vh - 4em);
             bottom: 0;
             padding: 70px 10px 0;
 
             #imgPrimeiraSessao{
                 max-width: 340px;
-                margin: auto;
+                margin: 1em auto;
             }
 
 
