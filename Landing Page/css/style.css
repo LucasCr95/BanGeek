@@ -22,7 +22,6 @@
   list-style: none;
   text-decoration: none;
   color: var(--cor0);
-  box-sizing: border-box;
 }
 
 body {
@@ -33,26 +32,28 @@ body {
 
 .btnTransp {
   background-color: transparent;
+  border: 1px solid white;
   border-radius: 0.5em;
-  border: 1px solid var(--cor2);
-  padding: 0.5em;
-  width: 230px;
-  height: 42px;
-  font-size: 12px;
+  padding: 1.1em !important;
+  display: block;
+  width: 13em !important;
+  text-align: center;
   text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 0.1em;
 }
 
 .btnPrinc {
   background-color: var(--cor9);
   border-radius: 0.5em;
-  border: none;
-  box-shadow: 0 0 10px #F3709C;
-  height: 42px;
-  width: 230px;
-  font-size: 12px;
+  padding: 1.1em !important;
+  display: block;
+  width: 13em !important;
   text-align: center;
-  padding: 1em;
   text-transform: uppercase;
+  font-size: 12px;
+  box-shadow: 0 0 6px #F3709C;
+  letter-spacing: 0.1em;
 }
 
 .btnDownApp {
@@ -67,53 +68,61 @@ img {
 }
 
 @media screen and (max-width: 430px) {
-  header #containerHeader {
-    height: 4em;
+  header {
+    padding: 0 0 0.7em 0;
+    box-shadow: 0 0 10px hwb(0 0% 100%/0.8);
     width: 100%;
-    background-color: var(--cor6);
-    padding: 0 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.66);
-    position: fixed;
-    z-index: 1;
   }
-  header #containerHeader #logo {
-    height: 4em;
+  header #container-header {
+    height: 3.2em;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.1em 20px;
+    background-color: var(--cor6);
+  }
+  header #container-header #logo {
     width: 4em;
   }
-  header #containerHeader #menu #iconMenu {
+  header #container-header #menu {
+    width: 1.7em;
+    padding: 1.5em 0;
+  }
+  header #icon-menu {
     display: none;
   }
-  header #containerHeader #menu #iconMenu:checked ~ nav {
-    display: none;
+  header #icon-menu:checked ~ #navbar {
+    max-height: 15em;
   }
-  header #containerHeader #menu nav {
-    min-height: 15em;
-    width: 100%;
-    background-color: var(--cor6);
+  header #navbar {
+    transition: all 0.5s;
+    max-height: 0;
+    overflow: hidden;
     position: absolute;
     top: 4em;
-    left: 0;
-    padding: 1em 0;
-    transition: all 2s ease-in;
+    background-color: var(--cor6);
+    width: 100%;
+    box-shadow: 2px 8px 10px 0px rgba(0, 0, 0, 0.404);
   }
-  header #containerHeader #menu nav ul li {
+  header #navbar ul {
     text-align: center;
-    padding: 0.6em;
   }
-  header #containerHeader #menu nav ul li a {
+  header #navbar ul li {
+    margin: 1em auto;
+    width: 100%;
+  }
+  header #navbar ul li a {
     font-family: var(--font0);
+    letter-spacing: 0.1em;
+    margin: auto;
+    padding: 0.7em;
   }
   main {
     width: 100vw;
-    position: relative;
   }
   main #sessaoUm {
-    height: calc(100vh - 4em);
+    height: 100vh;
     bottom: 0;
-    padding: 70px 10px 0;
+    padding: 0 10px;
   }
   main #sessaoUm #imgPrimeiraSessao {
     max-width: 340px;
