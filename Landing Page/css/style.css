@@ -9,9 +9,11 @@
   --cor6: #320995;
   --cor7: #260180;
   --cor8: #26E55F;
-  --cor9: #E2306C;
-  --cor10: #393939;
-  ---cor11: #000000;
+  --cor9: #F3709C;
+  --cor10: #E2306C;
+  --cor11: #393939;
+  ---cor12: #000000;
+  --fonte-titulo: 600 1.5em var(--font0);
   --font0: "Montserrat", sans-serif;
   --font1: "Roboto", sans-serif;
 }
@@ -27,57 +29,53 @@
 body {
   background-color: var(--cor6);
   font-family: var(--font1);
+  font-size: 16px;
   width: 100vw;
-}
-
-.btnTransp {
-  background-color: transparent;
-  border: 1px solid white;
-  border-radius: 0.5em;
-  padding: 1.1em !important;
-  display: block;
-  width: 13em !important;
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 12px;
-  letter-spacing: 0.1em;
-}
-
-.btnPrinc {
-  background-color: var(--cor9);
-  border-radius: 0.5em;
-  padding: 1.1em !important;
-  display: block;
-  width: 13em !important;
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 12px;
-  box-shadow: 0 0 6px #F3709C;
-  letter-spacing: 0.1em;
-}
-
-.btnDownApp {
-  background-color: var(--cor9);
-  border-radius: 0.5em;
-  border: none;
-  box-shadow: 0 0 10px #F3709C;
 }
 
 img {
   width: 100%;
 }
 
+.btnTransp, .btnPrinc {
+  border-radius: 0.5em;
+  padding: 1.1em !important;
+  display: block;
+  width: 13em !important;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 0.75em;
+  letter-spacing: 0.1em;
+}
+
+.btnTransp {
+  background-color: transparent;
+  border: 0.1em solid var(--cor0);
+}
+
+.btnPrinc {
+  box-shadow: 0 0 0.6em var(--cor9);
+  background-color: var(--cor10);
+}
+
+.btn-down-app {
+  background-color: var(--cor10);
+  border-radius: 0.5em;
+  border: none;
+  box-shadow: 0 0 0.6em var(--cor9);
+}
+
 @media screen and (max-width: 430px) {
   header {
     padding: 0 0 0.7em 0;
-    box-shadow: 0 0 10px hwb(0 0% 100%/0.8);
+    box-shadow: 0 0 0.6em hwb(0 0% 100%/0.7);
     width: 100%;
   }
   header #container-header {
     height: 3.2em;
     display: flex;
     justify-content: space-between;
-    padding: 0.1em 20px;
+    padding: 0 1em 0.3em;
     background-color: var(--cor6);
   }
   header #container-header #logo {
@@ -101,7 +99,7 @@ img {
     top: 4em;
     background-color: var(--cor6);
     width: 100%;
-    box-shadow: 2px 8px 10px 0px rgba(0, 0, 0, 0.404);
+    box-shadow: 0 0.4em 0.5em 0 hwb(0 0% 100%/0.35);
   }
   header #navbar ul {
     text-align: center;
@@ -117,62 +115,53 @@ img {
     padding: 0.7em;
   }
   main {
-    width: 100vw;
+    width: 100%;
   }
   main #sessaoUm {
-    height: 100vh;
-    bottom: 0;
-    padding: 0 10px;
+    padding: 0 1em;
   }
   main #sessaoUm #imgPrimeiraSessao {
-    max-width: 340px;
-    margin: 1em auto;
+    max-width: 21.26em;
+    margin: 0.7em auto;
   }
   main #sessaoUm #conteudo {
-    width: 95%;
-    margin: 10px auto;
+    width: 100%;
+    margin: 0.625rem auto;
   }
   main #sessaoUm #conteudo h1 {
-    font-family: var(--font0);
+    font: var(--fonte-titulo);
     text-align: center;
-    font-size: 24px;
-    font-weight: 600;
-    width: 80%;
+    max-width: 16.25rem;
     margin: 0 auto;
   }
   main #sessaoUm #conteudo p {
+    font-size: 0.937em;
     text-align: center;
-    margin: 10px auto 20px;
-    font-size: 14px;
-    font-weight: lighter;
-    width: 70%;
+    width: 15rem;
+    margin: 0.625rem auto 1.2rem;
   }
   main #sessaoUm #conteudo a {
     margin: 0 auto;
   }
   main #sessaoDois {
-    height: calc(100vh - 70px);
-    padding: 0 20px;
-    margin: 6em 0 0 0;
+    height: 100vh;
+    padding: 0 1em;
   }
   main #sessaoDois #imgSegundaSessao {
-    max-width: 70%;
-    margin: auto;
+    max-width: 18em;
+    margin: 3em auto;
   }
   main #sessaoDois h2 {
-    font-family: var(--font0);
+    font: var(--fonte-titulo);
     text-align: center;
-    font-size: 24px;
-    font-weight: 600;
-    width: 90%;
-    margin: 20px auto;
+    width: 16.25rem;
+    margin: auto;
   }
   main #sessaoDois p {
+    font-size: 1em;
     text-align: center;
-    margin: 20px auto 0;
-    font-size: 14px;
-    font-weight: lighter;
-    width: 80%;
+    margin: 1.5rem auto 0;
+    max-width: 17rem;
   }
   main #sessaoTres #bgSvgTerceiraSessao {
     margin-bottom: -3em;
@@ -184,52 +173,50 @@ img {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 3em 20px 3em;
+    padding: 3em 1.25rem 3em;
   }
   main #sessaoTres #containerTres .elementos {
     width: 45%;
-    height: 140px;
-    margin: 15px 0;
+    height: 8.75rem;
+    margin: 0.937rem 0;
   }
   main #sessaoTres #containerTres .elementos h3 {
-    font-family: var(--font0);
-    font-weight: 500;
-    font-size: 16px;
-    padding-bottom: 10px;
+    font: 500 1em var(--font0);
+    padding-bottom: 0.625rem;
     width: 100%;
-    border-bottom: 3px solid;
-    -o-border-image: linear-gradient(to right, var(--cor9) 30%, transparent 30%) 1;
-       border-image: linear-gradient(to right, var(--cor9) 30%, transparent 30%) 1;
+    border-bottom: 0.2rem solid;
+    -o-border-image: linear-gradient(to right, var(--cor10) 30%, transparent 30%) 1;
+       border-image: linear-gradient(to right, var(--cor10) 30%, transparent 30%) 1;
   }
   main #sessaoTres #containerTres .elementos p {
-    font-size: 12px;
+    font-size: 0.85em;
     width: 100%;
-    margin-top: 10px;
+    margin-top: 0.625rem;
   }
   main #sessaoQuatro #bgSvgQuartaSessao {
     fill: var(--cor6);
     margin-top: -6em;
   }
   main #sessaoQuatro #imgMan {
-    width: 100vw;
-    padding: 3em 10px 0;
+    width: 100%;
+    padding: 3em 1rem 0;
     box-sizing: border-box;
   }
   main #sessaoQuatro p {
     text-align: center;
     width: 80%;
     margin: auto;
-    font-size: 16px;
+    font-size: 1em;
   }
   main #sessaoQuatro #imgCartoes {
     width: 90%;
-    margin: 30px auto;
+    margin: 1.87rem auto;
   }
   main #sessaoQuatro a {
-    margin: 50px auto 6em;
+    margin: 3.125rem auto 6rem;
   }
   main #sessaoCinco {
-    width: 100vw;
+    width: 100%;
     background-color: var(--cor7);
   }
   main #sessaoCinco #bgSvgQuintaSessao {
@@ -239,33 +226,31 @@ img {
   main #sessaoCinco #logoSessaoCinco {
     height: 6em;
     width: 6em;
-    margin: -1em auto 30px;
+    margin: -1em auto 1rem;
   }
   main #sessaoCinco #conteudoCinco {
-    padding: 0 20px;
-    width: 100vw;
+    padding: 0 1.25rem;
+    margin: 0 auto;
+    text-align: center;
   }
   main #sessaoCinco #conteudoCinco h4 {
-    font-family: var(--font0);
+    font: var(--fonte-titulo);
     text-align: center;
-    width: 99%;
-    font-size: 24px;
-    font-weight: 600;
   }
   main #sessaoCinco #conteudoCinco p {
     text-align: center;
-    font-size: 14px;
-    margin: 5px 0;
+    font-size: 1em;
+    margin: 0.312rem 0;
   }
   main #sessaoCinco #sessaoBtn {
-    margin: 30px 0;
+    margin: 2.3rem 0;
     display: flex;
     justify-content: space-evenly;
   }
   main #sessaoCinco #sessaoBtn a {
-    height: 50px;
-    width: 9em;
-    padding: 0.5em;
+    height: 3rem;
+    min-width: 6em;
+    padding: 0.1em 1em;
     display: flex;
     justify-content: center;
   }
@@ -274,17 +259,21 @@ img {
     margin-right: 0.6em;
   }
   main #sessaoCinco #sessaoBtn a #conteudoBtn p {
-    font-size: 0.7em;
+    font-size: 0.8em;
+    display: block;
+    margin-top: 0.2em;
   }
   main #sessaoCinco #sessaoBtn a #conteudoBtn span {
-    font-size: 0.9em;
+    font-size: 1em;
+    margin: 0.5em 0 0 0;
+    display: block;
   }
   main #sessaoCinco #containerImgSessaoCinco {
     width: 80%;
     margin: auto;
   }
   main #sessaoSeis {
-    width: 100vw;
+    width: 100%;
   }
   main #sessaoSeis .bgSvg {
     width: 100%;
@@ -292,20 +281,19 @@ img {
     margin-top: -2em;
   }
   main #sessaoSeis h5 {
-    font: 600 24px var(--font0);
+    font: var(--fonte-titulo);
     text-align: center;
-    margin: 0 0 1em 0;
-    padding-top: 1em;
+    margin: 1.5em 0 0.8em 0;
   }
   main #sessaoSeis p {
     text-align: center;
-    font-size: 14px;
+    font-size: 1em;
     width: 80%;
     margin: 0 auto 3em;
   }
-  main #sessaoSeis img {
-    padding: 0 20px;
-    width: 100%;
+  main #sessaoSeis #container-img-sessao-seis {
+    width: 90%;
+    margin: auto;
   }
   main #sessaoSeis a {
     margin: 2em auto 4em;
@@ -313,72 +301,80 @@ img {
   footer #bgSvgFooterSessao {
     fill: var(--cor7);
   }
-  footer #primeiraSessaoFooter {
+  footer #primeira-sessao-footer {
     background-color: var(--cor7);
-    width: 100vw;
     margin-top: -1em;
-    padding: 2em 20px 0;
+    padding: 2em 0;
   }
-  footer #segundaSessaoFooter {
-    padding: 4em 20px 0;
+  footer #primeira-sessao-footer img {
+    display: block;
+    width: 90%;
+    margin: auto;
+  }
+  footer #segunda-sessao-footer {
+    padding: 4em 1.25rem 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 30px 20px;
+    padding: 1.875rem 1.25rem;
   }
-  footer #segundaSessaoFooter .elementos {
+  footer #segunda-sessao-footer .elementos {
     width: 45%;
-    height: 140px;
-    margin: 15px 0;
+    height: 8.75rem;
+    margin: 0.937rem 0;
   }
-  footer #segundaSessaoFooter .elementos dt {
-    font-family: var(--font0);
-    font-weight: 500;
-    font-size: 16px;
-    padding-bottom: 10px;
+  footer #segunda-sessao-footer .elementos dt {
+    font: 500 1em var(--font0);
+    padding-bottom: 0.625rem;
     width: 100%;
-    border-bottom: 3px solid;
+    border-bottom: 0.19rem solid;
     -o-border-image: linear-gradient(to right, var(--cor9) 30%, transparent 30%) 1;
        border-image: linear-gradient(to right, var(--cor9) 30%, transparent 30%) 1;
   }
-  footer #segundaSessaoFooter .elementos li {
-    font-size: 12px;
+  footer #segunda-sessao-footer .elementos li {
+    font-size: 0.8em;
     width: 100%;
-    margin-top: 10px;
+    margin-top: 0.625rem;
   }
-  footer #segundaSessaoFooter .elementos #sessaoBtnFooter a {
-    margin-top: 10px;
-    height: 50px;
-    width: 140px;
-    padding: 0.4em;
+  footer #segunda-sessao-footer .elementos #sessao-btn-footer a {
+    margin-top: 1em;
+    height: 3em;
+    min-width: 6em;
+    padding: 0.1em 0.2em;
     display: flex;
+    align-items: center;
     justify-content: center;
   }
-  footer #segundaSessaoFooter .elementos #sessaoBtnFooter a img {
-    width: 1.5em;
-    margin-right: 0.8em;
+  footer #segunda-sessao-footer .elementos #sessao-btn-footer a img {
+    width: 2em;
+    height: 2em;
+    margin-right: 0.6em;
   }
-  footer #segundaSessaoFooter .elementos #sessaoBtnFooter a #conteudoBtn p {
+  footer #segunda-sessao-footer .elementos #sessao-btn-footer a #conteudoBtn p {
+    font-size: 0.7em;
+    display: block;
+    margin-bottom: 0.5em;
+  }
+  footer #segunda-sessao-footer .elementos #sessao-btn-footer a #conteudoBtn span {
     font-size: 0.8em;
+    display: block;
   }
-  footer #segundaSessaoFooter .elementos #sessaoBtnFooter a #conteudoBtn span {
-    font-size: 1em;
-  }
-  footer #segundaSessaoFooter .elementos #containerLinksRedes {
+  footer #segunda-sessao-footer .elementos #container-link-redes {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    text-align: left;
   }
-  footer #segundaSessaoFooter .elementos #containerLinksRedes .iconsRedesSociaisFooter {
-    padding: 0.3em;
-    width: 3em;
+  footer #segunda-sessao-footer .elementos #container-link-redes .icon-redes {
+    max-width: 2.7em;
+    margin: 1rem 0.1em 0 0;
   }
   footer #ultimoContainerFooter {
-    border-top: 1px solid white;
+    border-top: 0.1em solid white;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 20px;
-    font-size: 14px;
+    padding: 0 1.25rem;
+    font-size: 0.875em;
   }
   footer #ultimoContainerFooter #logoFooter {
     width: 3em;
