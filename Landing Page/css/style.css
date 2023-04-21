@@ -37,7 +37,7 @@ img {
   width: 100%;
 }
 
-.btnTransp, .btnPrinc {
+.btn-trans, .btn-princ {
   border-radius: 0.5em;
   padding: 1.1em !important;
   display: block;
@@ -48,17 +48,17 @@ img {
   letter-spacing: 0.1em;
 }
 
-.btnTransp {
+.btn-trans {
   background-color: transparent;
   border: 0.1em solid var(--cor0);
 }
 
-.btnPrinc {
+.btn-princ {
   box-shadow: 0 0 0.6em var(--cor9);
   background-color: var(--cor10);
 }
 
-.btn-down-app {
+.btn-down {
   background-color: var(--cor10);
   border-radius: 0.5em;
   border: none;
@@ -117,57 +117,57 @@ img {
   main {
     width: 100%;
   }
-  main #sessaoUm {
+  main #sessao-um {
     padding: 0 1em;
   }
-  main #sessaoUm #imgPrimeiraSessao {
+  main #sessao-um #img-sessao-um {
     max-width: 21.26em;
     margin: 0.7em auto;
   }
-  main #sessaoUm #conteudo {
+  main #sessao-um #conteudo-sessao-um {
     width: 100%;
     margin: 0.625rem auto;
   }
-  main #sessaoUm #conteudo h1 {
+  main #sessao-um #conteudo-sessao-um h1 {
     font: var(--fonte-titulo);
     text-align: center;
     max-width: 16.25rem;
     margin: 0 auto;
   }
-  main #sessaoUm #conteudo p {
+  main #sessao-um #conteudo-sessao-um p {
     font-size: 0.937em;
     text-align: center;
     width: 15rem;
     margin: 0.625rem auto 1.2rem;
   }
-  main #sessaoUm #conteudo a {
+  main #sessao-um #conteudo-sessao-um a {
     margin: 0 auto;
   }
-  main #sessaoDois {
+  main #sessao-dois {
     height: 100vh;
     padding: 0 1em;
   }
-  main #sessaoDois #imgSegundaSessao {
+  main #sessao-dois #img-sessao-dois {
     max-width: 18em;
     margin: 3em auto;
   }
-  main #sessaoDois h2 {
+  main #sessao-dois h2 {
     font: var(--fonte-titulo);
     text-align: center;
     width: 16.25rem;
     margin: auto;
   }
-  main #sessaoDois p {
+  main #sessao-dois p {
     font-size: 1em;
     text-align: center;
     margin: 1.5rem auto 0;
     max-width: 17rem;
   }
-  main #sessaoTres #bgSvgTerceiraSessao {
+  main #sessao-tres #svg-onda-sessao-tres {
     margin-bottom: -3em;
     fill: var(--cor7);
   }
-  main #sessaoTres #containerTres {
+  main #sessao-tres #container-sessao-tres {
     background-color: var(--cor7);
     margin: 1em 0 0;
     display: flex;
@@ -175,12 +175,12 @@ img {
     justify-content: space-between;
     padding: 3em 1.25rem 3em;
   }
-  main #sessaoTres #containerTres .elementos {
+  main #sessao-tres #container-sessao-tres .elementos {
     width: 45%;
     height: 8.75rem;
     margin: 0.937rem 0;
   }
-  main #sessaoTres #containerTres .elementos h3 {
+  main #sessao-tres #container-sessao-tres .elementos h3 {
     font: 500 1em var(--font0);
     padding-bottom: 0.625rem;
     width: 100%;
@@ -188,117 +188,117 @@ img {
     -o-border-image: linear-gradient(to right, var(--cor10) 30%, transparent 30%) 1;
        border-image: linear-gradient(to right, var(--cor10) 30%, transparent 30%) 1;
   }
-  main #sessaoTres #containerTres .elementos p {
+  main #sessao-tres #container-sessao-tres .elementos p {
     font-size: 0.85em;
     width: 100%;
     margin-top: 0.625rem;
   }
-  main #sessaoQuatro #bgSvgQuartaSessao {
+  main #sessao-quatro #svg-onda-sessao-quatro {
     fill: var(--cor6);
     margin-top: -6em;
   }
-  main #sessaoQuatro #imgMan {
+  main #sessao-quatro #img-sessao-quatro {
     width: 100%;
     padding: 3em 1rem 0;
     box-sizing: border-box;
   }
-  main #sessaoQuatro p {
+  main #sessao-quatro p {
     text-align: center;
     width: 80%;
     margin: auto;
     font-size: 1em;
   }
-  main #sessaoQuatro #imgCartoes {
+  main #sessao-quatro #img-cartoes-sessao-quatro {
     width: 90%;
     margin: 1.87rem auto;
   }
-  main #sessaoQuatro a {
+  main #sessao-quatro a {
     margin: 3.125rem auto 6rem;
   }
-  main #sessaoCinco {
+  main #sessao-cinco {
     width: 100%;
     background-color: var(--cor7);
   }
-  main #sessaoCinco #bgSvgQuintaSessao {
+  main #sessao-cinco #svg-onda-sessao-cinco {
     margin-top: -2em;
     fill: var(--cor7);
   }
-  main #sessaoCinco #logoSessaoCinco {
+  main #sessao-cinco #logo-sessao-cinco {
     height: 6em;
     width: 6em;
     margin: -1em auto 1rem;
   }
-  main #sessaoCinco #conteudoCinco {
+  main #sessao-cinco #conteudo-sessao-cinco {
     padding: 0 1.25rem;
     margin: 0 auto;
     text-align: center;
   }
-  main #sessaoCinco #conteudoCinco h4 {
+  main #sessao-cinco #conteudo-sessao-cinco h4 {
     font: var(--fonte-titulo);
     text-align: center;
   }
-  main #sessaoCinco #conteudoCinco p {
+  main #sessao-cinco #conteudo-sessao-cinco p {
     text-align: center;
     font-size: 1em;
     margin: 0.312rem 0;
   }
-  main #sessaoCinco #sessaoBtn {
+  main #sessao-cinco #sessao-btn {
     margin: 2.3rem 0;
     display: flex;
     justify-content: space-evenly;
   }
-  main #sessaoCinco #sessaoBtn a {
+  main #sessao-cinco #sessao-btn a {
     height: 3rem;
     min-width: 6em;
     padding: 0.1em 1em;
     display: flex;
     justify-content: center;
   }
-  main #sessaoCinco #sessaoBtn a img {
+  main #sessao-cinco #sessao-btn a img {
     width: 2em;
     margin-right: 0.6em;
   }
-  main #sessaoCinco #sessaoBtn a #conteudoBtn p {
+  main #sessao-cinco #sessao-btn a #conteudo-btn p {
     font-size: 0.8em;
     display: block;
     margin-top: 0.2em;
   }
-  main #sessaoCinco #sessaoBtn a #conteudoBtn span {
+  main #sessao-cinco #sessao-btn a #conteudo-btn span {
     font-size: 1em;
     margin: 0.5em 0 0 0;
     display: block;
   }
-  main #sessaoCinco #containerImgSessaoCinco {
+  main #sessao-cinco #container-img-sessao-cinco {
     width: 80%;
     margin: auto;
   }
-  main #sessaoSeis {
+  main #sessao-seis {
     width: 100%;
   }
-  main #sessaoSeis .bgSvg {
+  main #sessao-seis #svg-onda-sessao-seis {
     width: 100%;
     fill: var(--cor6);
     margin-top: -2em;
   }
-  main #sessaoSeis h5 {
+  main #sessao-seis h5 {
     font: var(--fonte-titulo);
     text-align: center;
     margin: 1.5em 0 0.8em 0;
   }
-  main #sessaoSeis p {
+  main #sessao-seis p {
     text-align: center;
     font-size: 1em;
     width: 80%;
     margin: 0 auto 3em;
   }
-  main #sessaoSeis #container-img-sessao-seis {
+  main #sessao-seis #container-img-sessao-seis {
     width: 90%;
     margin: auto;
   }
-  main #sessaoSeis a {
+  main #sessao-seis a {
     margin: 2em auto 4em;
   }
-  footer #bgSvgFooterSessao {
+  footer #svg-onda-footer {
     fill: var(--cor7);
   }
   footer #primeira-sessao-footer {
@@ -350,12 +350,12 @@ img {
     height: 2em;
     margin-right: 0.6em;
   }
-  footer #segunda-sessao-footer .elementos #sessao-btn-footer a #conteudoBtn p {
+  footer #segunda-sessao-footer .elementos #sessao-btn-footer a #conteudo-btn p {
     font-size: 0.7em;
     display: block;
     margin-bottom: 0.5em;
   }
-  footer #segunda-sessao-footer .elementos #sessao-btn-footer a #conteudoBtn span {
+  footer #segunda-sessao-footer .elementos #sessao-btn-footer a #conteudo-btn span {
     font-size: 0.8em;
     display: block;
   }
@@ -368,7 +368,7 @@ img {
     max-width: 2.7em;
     margin: 1rem 0.1em 0 0;
   }
-  footer #ultimoContainerFooter {
+  footer #rodape-footer {
     border-top: 0.1em solid white;
     display: flex;
     align-items: center;
@@ -376,10 +376,10 @@ img {
     padding: 0 1.25rem;
     font-size: 0.875em;
   }
-  footer #ultimoContainerFooter #logoFooter {
+  footer #rodape-footer #logo-footer {
     width: 3em;
   }
-  footer #ultimoContainerFooter #logoFooter img {
+  footer #rodape-footer #logo-footer img {
     width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */
