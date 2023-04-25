@@ -13,6 +13,8 @@
   --cor10: #E2306C;
   --cor11: #393939;
   ---cor12: #000000;
+  --corHoverBtnPrinc:#F56394;
+  --corHoverBtnTrans:#5B31C1;
   --fonte-titulo: 600 1.5em var(--font0);
   --font0: "Montserrat", sans-serif;
   --font1: "Roboto", sans-serif;
@@ -52,10 +54,16 @@ img {
   background-color: transparent;
   border: 0.1em solid var(--cor0);
 }
+.btn-trans:checked {
+  background-color: var(--corHoverBtnTrans);
+}
 
 .btn-princ {
   box-shadow: 0 0 0.6em var(--cor9);
   background-color: var(--cor10);
+}
+.btn-princ:checked {
+  background-color: var(--corHoverBtnPrinc);
 }
 
 .btn-down {
@@ -64,26 +72,48 @@ img {
   border: none;
   box-shadow: 0 0 0.6em var(--cor9);
 }
+.btn-down:checked {
+  background-color: var(--corHoverBtnPrinc);
+}
+
+header {
+  box-shadow: 0 0 0.6em hwb(0 0% 100%/0.7);
+  width: 100%;
+}
+header #container-header {
+  height: 3.2em;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1em 0.3em;
+  background-color: var(--cor6);
+}
+header #logo {
+  width: 4em;
+}
+header #menu {
+  width: 1.7em;
+  padding: 1.5em 0;
+}
+header #navbar ul li a {
+  font-family: var(--font0);
+  letter-spacing: 0.1em;
+  margin: auto;
+  padding: 0.7em;
+}
+
+main {
+  width: 100%;
+}
+main h1, main h2, main h4, main h5 {
+  font: var(--fonte-titulo);
+}
+main h3 {
+  font: 500 1em var(--font0);
+}
 
 @media screen and (max-width: 430px) {
   header {
     padding: 0 0 0.7em 0;
-    box-shadow: 0 0 0.6em hwb(0 0% 100%/0.7);
-    width: 100%;
-  }
-  header #container-header {
-    height: 3.2em;
-    display: flex;
-    justify-content: space-between;
-    padding: 0 1em 0.3em;
-    background-color: var(--cor6);
-  }
-  header #container-header #logo {
-    width: 4em;
-  }
-  header #container-header #menu {
-    width: 1.7em;
-    padding: 1.5em 0;
   }
   header #icon-menu {
     display: none;
@@ -114,9 +144,6 @@ img {
     margin: auto;
     padding: 0.7em;
   }
-  main {
-    width: 100%;
-  }
   main #sessao-um {
     padding: 0 1em;
   }
@@ -129,7 +156,6 @@ img {
     margin: 0.625rem auto;
   }
   main #sessao-um #conteudo-sessao-um h1 {
-    font: var(--fonte-titulo);
     text-align: center;
     max-width: 16.25rem;
     margin: 0 auto;
@@ -144,15 +170,13 @@ img {
     margin: 0 auto;
   }
   main #sessao-dois {
-    height: 100vh;
-    padding: 0 1em;
+    padding: 2em 2em;
   }
   main #sessao-dois #img-sessao-dois {
     max-width: 18em;
     margin: 3em auto;
   }
   main #sessao-dois h2 {
-    font: var(--fonte-titulo);
     text-align: center;
     width: 16.25rem;
     margin: auto;
@@ -173,7 +197,7 @@ img {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 3em 1.25rem 3em;
+    padding: 3em 1.25rem 5em;
   }
   main #sessao-tres #container-sessao-tres .elementos {
     width: 45%;
@@ -181,7 +205,6 @@ img {
     margin: 0.937rem 0;
   }
   main #sessao-tres #container-sessao-tres .elementos h3 {
-    font: 500 1em var(--font0);
     padding-bottom: 0.625rem;
     width: 100%;
     border-bottom: 0.2rem solid;
@@ -191,7 +214,7 @@ img {
   main #sessao-tres #container-sessao-tres .elementos p {
     font-size: 0.85em;
     width: 100%;
-    margin-top: 0.625rem;
+    margin: 0.625rem 0;
   }
   main #sessao-quatro #svg-onda-sessao-quatro {
     fill: var(--cor6);
@@ -209,7 +232,7 @@ img {
     font-size: 1em;
   }
   main #sessao-quatro #img-cartoes-sessao-quatro {
-    width: 90%;
+    width: 85%;
     margin: 1.87rem auto;
   }
   main #sessao-quatro a {
@@ -234,7 +257,6 @@ img {
     text-align: center;
   }
   main #sessao-cinco #conteudo-sessao-cinco h4 {
-    font: var(--fonte-titulo);
     text-align: center;
   }
   main #sessao-cinco #conteudo-sessao-cinco p {
@@ -281,7 +303,6 @@ img {
     margin-top: -2em;
   }
   main #sessao-seis h5 {
-    font: var(--fonte-titulo);
     text-align: center;
     margin: 1.5em 0 0.8em 0;
   }
@@ -296,7 +317,7 @@ img {
     margin: auto;
   }
   main #sessao-seis a {
-    margin: 2em auto 4em;
+    margin: 2em auto 8em;
   }
   footer #svg-onda-footer {
     fill: var(--cor7);

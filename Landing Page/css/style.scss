@@ -15,6 +15,8 @@
     --cor10: #E2306C;
     --cor11: #393939;
     ---cor12: #000000;
+    --corHoverBtnPrinc:#F56394;
+    --corHoverBtnTrans:#5B31C1;
     --fonte-titulo: 600 1.5em var(--font0); 
     --font0: 'Montserrat', sans-serif;
     --font1: 'Roboto', sans-serif;
@@ -51,11 +53,19 @@ img{
 .btn-trans{
     background-color: transparent;
     border: .1em solid var(--cor0);
+
+    &:checked{
+        background-color: var(--corHoverBtnTrans);
+    }
 }
 
 .btn-princ{
     box-shadow: 0 0 .6em var(--cor9);
     background-color: var(--cor10);
+
+    &:checked{
+        background-color: var(--corHoverBtnPrinc);
+    }
 
 }
 
@@ -64,31 +74,63 @@ img{
     border-radius: .5em;
     border: none;
     box-shadow: 0 0 .6em var(--cor9); 
+
+    &:checked{
+        background-color: var(--corHoverBtnPrinc);
+    }
+}
+
+header{
+    box-shadow: 0 0 .6em hwb(0 0% 100% / 0.70);
+    width: 100%;
+
+    #container-header{
+        height: 3.2em;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 1em .3em ;
+        background-color: var(--cor6);
+
+    }
+
+    #logo{
+        width: 4em;
+    }
+
+    #menu{
+        width: 1.7em;
+        padding: 1.5em 0;
+    }
+
+    #navbar{
+        ul{
+            li{
+                a{
+                    font-family: var(--font0);
+                    letter-spacing: .1em;
+                    margin: auto;
+                    padding: .7em;
+                }
+            }
+        }
+    }
+}
+
+main{
+    width: 100%;
+
+    h1, h2, h4, h5{
+        font: var(--fonte-titulo);
+    }
+
+    h3{
+        font: 500 1em var(--font0);
+    }
 }
 
 @media screen and (max-width: 430px){
     header{
         padding: 0 0 .7em 0;
-        box-shadow: 0 0 .6em hwb(0 0% 100% / 0.70);
-        width: 100%;
-
-        #container-header{
-            height: 3.2em;
-            display: flex;
-            justify-content: space-between;
-            padding: 0 1em .3em ;
-            background-color: var(--cor6);
-            
-
-            #logo{
-                width: 4em;
-            }
-
-            #menu{
-                width: 1.7em;
-                padding: 1.5em 0;
-            }
-        }
 
         #icon-menu{
             display: none;
@@ -128,7 +170,6 @@ img{
     }
 
     main{
-        width: 100%;
         
         #sessao-um{
             padding: 0 1em;
@@ -143,7 +184,6 @@ img{
                 margin: .625rem auto;
 
                 h1{
-                    font: var(--fonte-titulo);
                     text-align: center;
                     max-width: 16.25rem;
                     margin: 0 auto;
@@ -163,8 +203,8 @@ img{
         }
 
         #sessao-dois{
-            height: 100vh;
-            padding: 0 1em;
+            padding: 2em 2em;
+
 
             #img-sessao-dois{
                 max-width: 18em;
@@ -172,7 +212,6 @@ img{
             }
 
             h2{
-                font: var(--fonte-titulo);
                 text-align: center;
                 width: 16.25rem;
                 margin: auto;
@@ -197,7 +236,7 @@ img{
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: space-between;
-                padding: 3em 1.25rem 3em;
+                padding: 3em 1.25rem 5em;
 
                 .elementos{
                     width: 45%;
@@ -205,7 +244,6 @@ img{
                     margin: .937rem 0;
 
                     h3{
-                        font: 500 1em var(--font0);
                         padding-bottom: .625rem;
                         width: 100%;
                         border-bottom: .2rem solid;
@@ -215,7 +253,7 @@ img{
                     p{
                         font-size: 0.850em;
                         width: 100%;
-                        margin-top: .625rem;
+                        margin: .625rem 0;
                     }
                 }
                 
@@ -243,7 +281,7 @@ img{
             }
 
             #img-cartoes-sessao-quatro{
-                width: 90%;
+                width: 85%;
                 margin: 1.87rem auto;
             }
             
@@ -273,7 +311,6 @@ img{
                 text-align: center;
 
                 h4{
-                    font: var(--fonte-titulo);
                     text-align: center;
                 }
 
@@ -337,7 +374,6 @@ img{
             }
 
             h5{
-                font: var(--fonte-titulo);
                 text-align: center;
                 margin: 1.5em 0 .8em 0;
             }
@@ -355,7 +391,7 @@ img{
             }
 
             a{
-                margin: 2em auto 4em;
+                margin: 2em auto 8em;
             }
         }
     }
@@ -470,4 +506,8 @@ img{
               }
         }
     }
+}
+
+@media (max-width: 800px){
+    
 }
