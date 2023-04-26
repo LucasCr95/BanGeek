@@ -251,7 +251,6 @@ body{
             #img-sessao-quatro{
                 width: 100%;
                 padding: 3em 1rem 0;
-                box-sizing: border-box;
             } 
             
             p{
@@ -504,6 +503,9 @@ body{
     }
 }
 
-@media screen and (min-width: 430px){
+@media screen and (min-width: 490px){
 
+    body{
+        
+    }
 }
