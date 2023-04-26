@@ -28,13 +28,6 @@
   color: var(--cor0);
 }
 
-body {
-  background-color: var(--cor6);
-  font-family: var(--font1);
-  font-size: 16px;
-  width: 100vw;
-}
-
 img {
   width: 100%;
 }
@@ -47,6 +40,7 @@ img {
   text-align: center;
   text-transform: uppercase;
   font-size: 0.75em;
+  color: var(--cor0) !important;
   letter-spacing: 0.1em;
 }
 
@@ -54,7 +48,7 @@ img {
   background-color: transparent;
   border: 0.1em solid var(--cor0);
 }
-.btn-trans:checked {
+.btn-trans:active {
   background-color: var(--corHoverBtnTrans);
 }
 
@@ -62,7 +56,7 @@ img {
   box-shadow: 0 0 0.6em var(--cor9);
   background-color: var(--cor10);
 }
-.btn-princ:checked {
+.btn-princ:active {
   background-color: var(--corHoverBtnPrinc);
 }
 
@@ -72,335 +66,342 @@ img {
   border: none;
   box-shadow: 0 0 0.6em var(--cor9);
 }
-.btn-down:checked {
+.btn-down:active {
   background-color: var(--corHoverBtnPrinc);
 }
 
-header {
-  box-shadow: 0 0 0.6em hwb(0 0% 100%/0.7);
-  width: 100%;
+h1, h2, h4, h5 {
+  font: var(--fonte-titulo);
 }
-header #container-header {
+
+body {
+  background-color: var(--cor6);
+  font-family: var(--font1);
+  font-size: 16px;
+  width: 100vw;
+}
+body header {
+  width: 100%;
+  padding: 0 0 0.7em 0;
+  box-shadow: 0 0 0.6em hwb(0 0% 100%/0.7);
+}
+body header #container-header {
   height: 3.2em;
   display: flex;
   justify-content: space-between;
   padding: 0 1em 0.3em;
   background-color: var(--cor6);
 }
-header #logo {
+body header #container-header #logo {
   width: 4em;
 }
-header #menu {
+body header #container-header #menu {
   width: 1.7em;
   padding: 1.5em 0;
 }
-header #navbar ul li a {
+body header #icon-menu {
+  display: none;
+}
+body header #icon-menu:checked ~ nav {
+  max-height: 15em;
+}
+body header #navbar {
+  transition: all 0.5s;
+  max-height: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 4em;
+  background-color: var(--cor6);
+  width: 100%;
+  box-shadow: 0 0.4em 0.5em 0 hwb(0 0% 100%/0.35);
+}
+body header #navbar ul {
+  text-align: center;
+}
+body header #navbar ul li {
+  margin: 1em auto;
+  width: 100%;
+}
+body header #navbar ul li a {
   font-family: var(--font0);
   letter-spacing: 0.1em;
   margin: auto;
   padding: 0.7em;
 }
-
-main {
+body header #navbar ul li a:active {
+  color: var(--cor9);
+}
+body main {
   width: 100%;
 }
-main h1, main h2, main h4, main h5 {
-  font: var(--fonte-titulo);
+body main #sessao-um {
+  padding: 0 1em;
 }
-main h3 {
+body main #sessao-um #img-sessao-um {
+  max-width: 21.26em;
+  margin: 0.7em auto;
+}
+body main #sessao-um #conteudo-sessao-um {
+  width: 100%;
+  margin: 0.625rem auto;
+}
+body main #sessao-um #conteudo-sessao-um h1 {
+  text-align: center;
+  max-width: 16.25rem;
+  margin: 0 auto;
+}
+body main #sessao-um #conteudo-sessao-um p {
+  font-size: 0.937em;
+  text-align: center;
+  width: 15rem;
+  margin: 0.625rem auto 1.2rem;
+}
+body main #sessao-um #conteudo-sessao-um a {
+  margin: 0 auto;
+}
+body main #sessao-dois {
+  padding: 2em 2em;
+}
+body main #sessao-dois #img-sessao-dois {
+  max-width: 18em;
+  margin: 3em auto;
+}
+body main #sessao-dois h2 {
+  text-align: center;
+  width: 16.25rem;
+  margin: auto;
+}
+body main #sessao-dois p {
+  font-size: 1em;
+  text-align: center;
+  margin: 1.5rem auto 0;
+  max-width: 17rem;
+}
+body main #sessao-tres #svg-onda-sessao-tres {
+  margin-bottom: -3em;
+  fill: var(--cor7);
+}
+body main #sessao-tres #container-sessao-tres {
+  background-color: var(--cor7);
+  margin: 1em 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 3em 1.25rem 5em;
+}
+body main #sessao-tres #container-sessao-tres .elementos {
+  width: 45%;
+  height: 8.75rem;
+  margin: 0.937rem 0;
+}
+body main #sessao-tres #container-sessao-tres .elementos h3 {
   font: 500 1em var(--font0);
+  padding-bottom: 0.625rem;
+  width: 100%;
+  border-bottom: 0.2rem solid;
+  -o-border-image: linear-gradient(to right, var(--cor10) 30%, transparent 30%) 1;
+     border-image: linear-gradient(to right, var(--cor10) 30%, transparent 30%) 1;
 }
-
-@media screen and (max-width: 430px) {
-  header {
-    padding: 0 0 0.7em 0;
-  }
-  header #icon-menu {
-    display: none;
-  }
-  header #icon-menu:checked ~ #navbar {
-    max-height: 15em;
-  }
-  header #navbar {
-    transition: all 0.5s;
-    max-height: 0;
-    overflow: hidden;
-    position: absolute;
-    top: 4em;
-    background-color: var(--cor6);
-    width: 100%;
-    box-shadow: 0 0.4em 0.5em 0 hwb(0 0% 100%/0.35);
-  }
-  header #navbar ul {
-    text-align: center;
-  }
-  header #navbar ul li {
-    margin: 1em auto;
-    width: 100%;
-  }
-  header #navbar ul li a {
-    font-family: var(--font0);
-    letter-spacing: 0.1em;
-    margin: auto;
-    padding: 0.7em;
-  }
-  main #sessao-um {
-    padding: 0 1em;
-  }
-  main #sessao-um #img-sessao-um {
-    max-width: 21.26em;
-    margin: 0.7em auto;
-  }
-  main #sessao-um #conteudo-sessao-um {
-    width: 100%;
-    margin: 0.625rem auto;
-  }
-  main #sessao-um #conteudo-sessao-um h1 {
-    text-align: center;
-    max-width: 16.25rem;
-    margin: 0 auto;
-  }
-  main #sessao-um #conteudo-sessao-um p {
-    font-size: 0.937em;
-    text-align: center;
-    width: 15rem;
-    margin: 0.625rem auto 1.2rem;
-  }
-  main #sessao-um #conteudo-sessao-um a {
-    margin: 0 auto;
-  }
-  main #sessao-dois {
-    padding: 2em 2em;
-  }
-  main #sessao-dois #img-sessao-dois {
-    max-width: 18em;
-    margin: 3em auto;
-  }
-  main #sessao-dois h2 {
-    text-align: center;
-    width: 16.25rem;
-    margin: auto;
-  }
-  main #sessao-dois p {
-    font-size: 1em;
-    text-align: center;
-    margin: 1.5rem auto 0;
-    max-width: 17rem;
-  }
-  main #sessao-tres #svg-onda-sessao-tres {
-    margin-bottom: -3em;
-    fill: var(--cor7);
-  }
-  main #sessao-tres #container-sessao-tres {
-    background-color: var(--cor7);
-    margin: 1em 0 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 3em 1.25rem 5em;
-  }
-  main #sessao-tres #container-sessao-tres .elementos {
-    width: 45%;
-    height: 8.75rem;
-    margin: 0.937rem 0;
-  }
-  main #sessao-tres #container-sessao-tres .elementos h3 {
-    padding-bottom: 0.625rem;
-    width: 100%;
-    border-bottom: 0.2rem solid;
-    -o-border-image: linear-gradient(to right, var(--cor10) 30%, transparent 30%) 1;
-       border-image: linear-gradient(to right, var(--cor10) 30%, transparent 30%) 1;
-  }
-  main #sessao-tres #container-sessao-tres .elementos p {
-    font-size: 0.85em;
-    width: 100%;
-    margin: 0.625rem 0;
-  }
-  main #sessao-quatro #svg-onda-sessao-quatro {
-    fill: var(--cor6);
-    margin-top: -6em;
-  }
-  main #sessao-quatro #img-sessao-quatro {
-    width: 100%;
-    padding: 3em 1rem 0;
-    box-sizing: border-box;
-  }
-  main #sessao-quatro p {
-    text-align: center;
-    width: 80%;
-    margin: auto;
-    font-size: 1em;
-  }
-  main #sessao-quatro #img-cartoes-sessao-quatro {
-    width: 85%;
-    margin: 1.87rem auto;
-  }
-  main #sessao-quatro a {
-    margin: 3.125rem auto 6rem;
-  }
-  main #sessao-cinco {
-    width: 100%;
-    background-color: var(--cor7);
-  }
-  main #sessao-cinco #svg-onda-sessao-cinco {
-    margin-top: -2em;
-    fill: var(--cor7);
-  }
-  main #sessao-cinco #logo-sessao-cinco {
-    height: 6em;
-    width: 6em;
-    margin: -1em auto 1rem;
-  }
-  main #sessao-cinco #conteudo-sessao-cinco {
-    padding: 0 1.25rem;
-    margin: 0 auto;
-    text-align: center;
-  }
-  main #sessao-cinco #conteudo-sessao-cinco h4 {
-    text-align: center;
-  }
-  main #sessao-cinco #conteudo-sessao-cinco p {
-    text-align: center;
-    font-size: 1em;
-    margin: 0.312rem 0;
-  }
-  main #sessao-cinco #sessao-btn {
-    margin: 2.3rem 0;
-    display: flex;
-    justify-content: space-evenly;
-  }
-  main #sessao-cinco #sessao-btn a {
-    height: 3rem;
-    min-width: 6em;
-    padding: 0.1em 1em;
-    display: flex;
-    justify-content: center;
-  }
-  main #sessao-cinco #sessao-btn a img {
-    width: 2em;
-    margin-right: 0.6em;
-  }
-  main #sessao-cinco #sessao-btn a #conteudo-btn p {
-    font-size: 0.8em;
-    display: block;
-    margin-top: 0.2em;
-  }
-  main #sessao-cinco #sessao-btn a #conteudo-btn span {
-    font-size: 1em;
-    margin: 0.5em 0 0 0;
-    display: block;
-  }
-  main #sessao-cinco #container-img-sessao-cinco {
-    width: 80%;
-    margin: auto;
-  }
-  main #sessao-seis {
-    width: 100%;
-  }
-  main #sessao-seis #svg-onda-sessao-seis {
-    width: 100%;
-    fill: var(--cor6);
-    margin-top: -2em;
-  }
-  main #sessao-seis h5 {
-    text-align: center;
-    margin: 1.5em 0 0.8em 0;
-  }
-  main #sessao-seis p {
-    text-align: center;
-    font-size: 1em;
-    width: 80%;
-    margin: 0 auto 3em;
-  }
-  main #sessao-seis #container-img-sessao-seis {
-    width: 90%;
-    margin: auto;
-  }
-  main #sessao-seis a {
-    margin: 2em auto 8em;
-  }
-  footer #svg-onda-footer {
-    fill: var(--cor7);
-  }
-  footer #primeira-sessao-footer {
-    background-color: var(--cor7);
-    margin-top: -1em;
-    padding: 2em 0;
-  }
-  footer #primeira-sessao-footer img {
-    display: block;
-    width: 90%;
-    margin: auto;
-  }
-  footer #segunda-sessao-footer {
-    padding: 4em 1.25rem 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 1.875rem 1.25rem;
-  }
-  footer #segunda-sessao-footer .elementos {
-    width: 45%;
-    height: 8.75rem;
-    margin: 0.937rem 0;
-  }
-  footer #segunda-sessao-footer .elementos dt {
-    font: 500 1em var(--font0);
-    padding-bottom: 0.625rem;
-    width: 100%;
-    border-bottom: 0.19rem solid;
-    -o-border-image: linear-gradient(to right, var(--cor9) 30%, transparent 30%) 1;
-       border-image: linear-gradient(to right, var(--cor9) 30%, transparent 30%) 1;
-  }
-  footer #segunda-sessao-footer .elementos li {
-    font-size: 0.8em;
-    width: 100%;
-    margin-top: 0.625rem;
-  }
-  footer #segunda-sessao-footer .elementos #sessao-btn-footer a {
-    margin-top: 1em;
-    height: 3em;
-    min-width: 6em;
-    padding: 0.1em 0.2em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  footer #segunda-sessao-footer .elementos #sessao-btn-footer a img {
-    width: 2em;
-    height: 2em;
-    margin-right: 0.6em;
-  }
-  footer #segunda-sessao-footer .elementos #sessao-btn-footer a #conteudo-btn p {
-    font-size: 0.7em;
-    display: block;
-    margin-bottom: 0.5em;
-  }
-  footer #segunda-sessao-footer .elementos #sessao-btn-footer a #conteudo-btn span {
-    font-size: 0.8em;
-    display: block;
-  }
-  footer #segunda-sessao-footer .elementos #container-link-redes {
-    display: flex;
-    justify-content: space-between;
-    text-align: left;
-  }
-  footer #segunda-sessao-footer .elementos #container-link-redes .icon-redes {
-    max-width: 2.7em;
-    margin: 1rem 0.1em 0 0;
-  }
-  footer #rodape-footer {
-    border-top: 0.1em solid white;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 1.25rem;
-    font-size: 0.875em;
-  }
-  footer #rodape-footer #logo-footer {
-    width: 3em;
-  }
-  footer #rodape-footer #logo-footer img {
-    width: 100%;
-  }
+body main #sessao-tres #container-sessao-tres .elementos p {
+  font-size: 0.85em;
+  width: 100%;
+  margin: 0.625rem 0;
+}
+body main #sessao-quatro #svg-onda-sessao-quatro {
+  fill: var(--cor6);
+  margin-top: -6em;
+}
+body main #sessao-quatro #img-sessao-quatro {
+  width: 100%;
+  padding: 3em 1rem 0;
+  box-sizing: border-box;
+}
+body main #sessao-quatro p {
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  font-size: 1em;
+}
+body main #sessao-quatro #img-cartoes-sessao-quatro {
+  width: 85%;
+  margin: 1.87rem auto;
+}
+body main #sessao-quatro a {
+  margin: 3.125rem auto 6rem;
+}
+body main #sessao-cinco {
+  width: 100%;
+  background-color: var(--cor7);
+}
+body main #sessao-cinco #svg-onda-sessao-cinco {
+  margin-top: -2em;
+  fill: var(--cor7);
+}
+body main #sessao-cinco #logo-sessao-cinco {
+  height: 6em;
+  width: 6em;
+  margin: -1em auto 1rem;
+}
+body main #sessao-cinco #conteudo-sessao-cinco {
+  padding: 0 1.25rem;
+  margin: 0 auto;
+  text-align: center;
+}
+body main #sessao-cinco #conteudo-sessao-cinco h4 {
+  text-align: center;
+}
+body main #sessao-cinco #conteudo-sessao-cinco p {
+  text-align: center;
+  font-size: 1em;
+  margin: 0.312rem 0;
+}
+body main #sessao-cinco #sessao-btn {
+  margin: 2.3rem 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+body main #sessao-cinco #sessao-btn a {
+  height: 3rem;
+  min-width: 6em;
+  padding: 0.1em 1em;
+  display: flex;
+  justify-content: center;
+}
+body main #sessao-cinco #sessao-btn a img {
+  width: 2em;
+  margin-right: 0.6em;
+}
+body main #sessao-cinco #sessao-btn a #conteudo-btn p {
+  font-size: 0.8em;
+  display: block;
+  margin-top: 0.2em;
+}
+body main #sessao-cinco #sessao-btn a #conteudo-btn span {
+  font-size: 1em;
+  margin: 0.5em 0 0 0;
+  display: block;
+}
+body main #sessao-cinco #container-img-sessao-cinco {
+  width: 80%;
+  margin: auto;
+}
+body main #sessao-seis {
+  width: 100%;
+}
+body main #sessao-seis #svg-onda-sessao-seis {
+  width: 100%;
+  fill: var(--cor6);
+  margin-top: -2em;
+}
+body main #sessao-seis h5 {
+  text-align: center;
+  margin: 1.5em 0 0.8em 0;
+}
+body main #sessao-seis p {
+  text-align: center;
+  font-size: 1em;
+  width: 80%;
+  margin: 0 auto 3em;
+}
+body main #sessao-seis #container-img-sessao-seis {
+  width: 90%;
+  margin: auto;
+}
+body main #sessao-seis a {
+  margin: 2em auto 8em;
+}
+body footer #svg-onda-footer {
+  fill: var(--cor7);
+}
+body footer #primeira-sessao-footer {
+  background-color: var(--cor7);
+  margin-top: -1em;
+  padding: 2em 0;
+}
+body footer #primeira-sessao-footer img {
+  display: block;
+  width: 90%;
+  margin: auto;
+}
+body footer #segunda-sessao-footer {
+  padding: 4em 1.25rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 1.875rem 1.25rem;
+}
+body footer #segunda-sessao-footer .elementos {
+  width: 45%;
+  height: 8.75rem;
+  margin: 0.937rem 0;
+}
+body footer #segunda-sessao-footer .elementos dt {
+  font: 500 1em var(--font0);
+  padding-bottom: 0.625rem;
+  width: 100%;
+  border-bottom: 0.19rem solid;
+  -o-border-image: linear-gradient(to right, var(--cor9) 30%, transparent 30%) 1;
+     border-image: linear-gradient(to right, var(--cor9) 30%, transparent 30%) 1;
+}
+body footer #segunda-sessao-footer .elementos li {
+  font-size: 0.8em;
+  width: 100%;
+  margin-top: 0.625rem;
+}
+body footer #segunda-sessao-footer .elementos li a:active {
+  color: var(--cor10);
+}
+body footer #segunda-sessao-footer .elementos #sessao-btn-footer a {
+  margin-top: 1em;
+  height: 3em;
+  min-width: 6em;
+  padding: 0.1em 0.2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body footer #segunda-sessao-footer .elementos #sessao-btn-footer a img {
+  width: 2em;
+  height: 2em;
+  margin-right: 0.6em;
+}
+body footer #segunda-sessao-footer .elementos #sessao-btn-footer a #conteudo-btn p {
+  font-size: 0.7em;
+  display: block;
+  margin-bottom: 0.5em;
+}
+body footer #segunda-sessao-footer .elementos #sessao-btn-footer a #conteudo-btn span {
+  font-size: 0.8em;
+  display: block;
+}
+body footer #segunda-sessao-footer .elementos #container-link-redes {
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+}
+body footer #segunda-sessao-footer .elementos #container-link-redes .icon-redes {
+  max-width: 2.7em;
+  margin: 1rem 0.1em 0 0;
+}
+body footer #segunda-sessao-footer .elementos #container-link-redes .icon-redes #Icon_awesome-facebook-square path, body footer #segunda-sessao-footer .elementos #container-link-redes .icon-redes #Icon_awesome-instagram path,
+body footer #segunda-sessao-footer .elementos #container-link-redes .icon-redes #Icon_awesome-linkedin path, #Icon_awesome-youtube-square path body footer #segunda-sessao-footer .elementos #container-link-redes .icon-redes:active {
+  fill: var(--cor0);
+}
+body footer #segunda-sessao-footer .elementos #container-link-redes .icon-redes #Icon_awesome-facebook-square path:active, body footer #segunda-sessao-footer .elementos #container-link-redes .icon-redes #Icon_awesome-instagram path:active,
+body footer #segunda-sessao-footer .elementos #container-link-redes .icon-redes #Icon_awesome-linkedin path:active, #Icon_awesome-youtube-square path body footer #segunda-sessao-footer .elementos #container-link-redes .icon-redes:active:active {
+  fill: var(--cor9);
+}
+body footer #rodape-footer {
+  border-top: 0.1em solid white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.25rem;
+  font-size: 0.875em;
+}
+body footer #rodape-footer #logo-footer {
+  width: 3em;
+}
+body footer #rodape-footer #logo-footer img {
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */
