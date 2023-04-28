@@ -30,65 +30,66 @@
     color: var(--cor0);
 }
 
-img{
-    width: 100%;
-}
-
-.btn-trans, .btn-princ{
-    border-radius: .5em;
-    padding: 1.1em !important;
-    display: block;
-    width: 13em !important;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: .75em;
-    color: var(--cor0) !important;
-    letter-spacing: .1em;
-}
-
-.btn-trans{
-    background-color: transparent;
-    border: .1em solid var(--cor0);
-
-    &:active{
-        background-color: var(--corHoverBtnTrans);
-    }
-}
-
-.btn-princ{
-    box-shadow: 0 0 .6em var(--cor9);
-    background-color: var(--cor10);
-
-    &:active{
-        background-color: var(--corHoverBtnPrinc);
-    }
-
-}
-
-.btn-down{
-    background-color:var(--cor10);
-    border-radius: .5em;
-    border: none;
-    box-shadow: 0 0 .6em var(--cor9); 
-
-    &:active{
-        background-color: var(--corHoverBtnPrinc);
-    }
-}
-
-h1, h2, h4, h5{
-    font: var(--fonte-titulo);
-}
-
 body{
     background-color: var(--cor6);
     font-family: var(--font1);
-    font-size: 16px;
+    font-size: 14px;
     width: 100vw;
+
+    img{
+        width: 100%;
+    }
+    
+    .btn-trans, .btn-princ{
+        border-radius: .5em;
+        padding: 1.1em !important;
+        display: block;
+        width: 13em !important;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: .70em;
+        color: var(--cor0) !important;
+        letter-spacing: .1em;
+    }
+    
+    .btn-trans{
+        background-color: transparent;
+        border: .1em solid var(--cor0);
+    
+        &:active{
+            background-color: var(--corHoverBtnTrans);
+        }
+    }
+    
+    .btn-princ{
+        box-shadow: 0 0 .6em var(--cor9);
+        background-color: var(--cor10);
+    
+        &:active{
+            background-color: var(--corHoverBtnPrinc);
+        }
+    
+    }
+    
+    .btn-down{
+        background-color:var(--cor10);
+        border-radius: .5em;
+        border: none;
+        box-shadow: 0 0 .6em var(--cor9); 
+    
+        &:active{
+            background-color: var(--corHoverBtnPrinc);
+        }
+    }
+    
+    h1, h2, h4, h5{
+        font: var(--fonte-titulo);
+    }
+    
 
     header{
         width: 100%;
-        padding: 0 0 .7em 0;
+        padding: 0 0 1em 0;
         box-shadow: 0 0 .6em hwb(0 0% 100% / 0.70);
     
         #container-header{
@@ -185,7 +186,6 @@ body{
         #sessao-dois{
             padding: 2em 2em;
 
-
             #img-sessao-dois{
                 max-width: 18em;
                 margin: 3em auto;
@@ -242,6 +242,7 @@ body{
         }
 
         #sessao-quatro{
+            
 
             #svg-onda-sessao-quatro{
                 fill: var(--cor6);
@@ -251,6 +252,7 @@ body{
             #img-sessao-quatro{
                 width: 100%;
                 padding: 3em 1rem 0;
+                box-sizing: border-box;
             } 
             
             p{
@@ -506,7 +508,88 @@ body{
 @media screen and (min-width: 490px){
 
     body{
-        
+        font-size: 16px;
+
+        .btn-trans, .btn-princ{
+            font-size: .70em !important;
+        }
+    
+        header{
+
+            #container-header{
+                height: 4em;
+                padding: 0 3rem;
+
+                #logo{
+                    width: 5em;
+                }
+            
+                #menu{
+                    display: flex;
+                    align-items: center;
+                    overflow: hidden;
+                    padding: 1em 0 0 0;
+                    width: 2em;
+
+                    img{
+                        width: 2em
+                    }
+                }
+    
+            }
+
+            #icon-menu{
+    
+                &:checked ~ nav{
+                    max-height: 17em;
+                }
+            }
+
+            #navbar{
+                top: 5em;
+                ul{
+                    li{
+    
+                        a{
+                            font-size: 1em;
+                        }
+                    }
+                }
+    
+            }
+        }
+
+        main{
+            #sessao-um{
+                padding: 0 3em;
+
+                #img-sessao-um{
+                    max-width: 100%;
+                }
+
+                #conteudo-sessao-um{
+                    width: 100%;
+                    margin: 3rem auto;
+    
+                    h1{
+                        max-width: 100%;
+                        font-size: 2rem;
+                    }
+    
+                    p{
+                        font-size: 1.1em;
+                        text-align: center;
+                        width: 100%;
+                        margin: .625rem auto 3rem;
+                    }
+    
+                    a{
+                        margin: 0 auto;
+                    }
+                }
+    
+            }
+        }
     }
 }
 
