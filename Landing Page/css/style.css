@@ -41,7 +41,7 @@ body .btn-trans, body .btn-princ {
   border-radius: 0.5em;
   padding: 1.1em !important;
   display: block;
-  width: 13em !important;
+  width: 13em;
   text-align: center;
   text-transform: uppercase;
   font-size: 0.7em;
@@ -249,28 +249,28 @@ body main #sessao-cinco #conteudo-sessao-cinco p {
   font-size: 1em;
   margin: 0.312rem 0;
 }
-body main #sessao-cinco #sessao-btn {
+body main #sessao-cinco #sessao-btn-sessao-cinco {
   margin: 2.3rem 0;
   display: flex;
   justify-content: space-evenly;
 }
-body main #sessao-cinco #sessao-btn a {
+body main #sessao-cinco #sessao-btn-sessao-cinco a {
   height: 3rem;
   min-width: 6em;
   padding: 0.1em 1em;
   display: flex;
   justify-content: center;
 }
-body main #sessao-cinco #sessao-btn a img {
+body main #sessao-cinco #sessao-btn-sessao-cinco a img {
   width: 2em;
   margin-right: 0.6em;
 }
-body main #sessao-cinco #sessao-btn a #conteudo-btn p {
+body main #sessao-cinco #sessao-btn-sessao-cinco a #conteudo-btn p {
   font-size: 0.8em;
   display: block;
   margin-top: 0.2em;
 }
-body main #sessao-cinco #sessao-btn a #conteudo-btn span {
+body main #sessao-cinco #sessao-btn-sessao-cinco a #conteudo-btn span {
   font-size: 1em;
   margin: 0.5em 0 0 0;
   display: block;
@@ -410,6 +410,7 @@ body footer #rodape-footer #logo-footer img {
   body header #container-header {
     height: 4em;
     padding: 0 3rem;
+    margin-top: -0.5em;
   }
   body header #container-header #logo {
     width: 5em;
@@ -417,8 +418,7 @@ body footer #rodape-footer #logo-footer img {
   body header #container-header #menu {
     display: flex;
     align-items: center;
-    overflow: hidden;
-    padding: 1em 0 0 0;
+    padding: 1.8em 0 0 0;
     width: 2em;
   }
   body header #container-header #menu img {
@@ -455,5 +455,59 @@ body footer #rodape-footer #logo-footer img {
   }
   body main #sessao-um #conteudo-sessao-um a {
     margin: 0 auto;
+  }
+  body main #sessao-dois #img-sessao-dois {
+    max-width: 70%;
+  }
+  body main #sessao-dois h2 {
+    width: auto;
+  }
+  body main #sessao-dois p {
+    max-width: 25rem;
+    margin-bottom: 3em;
+  }
+  body main #sessao-tres #container-sessao-tres {
+    padding: 2em 5em 5em;
+    justify-content: space-between;
+  }
+  body main #sessao-tres #container-sessao-tres .elementos {
+    width: 40%;
+  }
+  body main #sessao-quatro #img-sessao-quatro {
+    padding: 0 3rem;
+  }
+  body main #sessao-quatro p {
+    font-size: 1.3em;
+  }
+  body main #sessao-quatro #img-cartoes-sessao-quatro {
+    padding: 0 3em;
+    width: 70%;
+  }
+  body main #sessao-cinco #sessao-btn-sessao-cinco {
+    justify-content: space-evenly;
+    width: 70%;
+    margin: 3em auto 2em;
+  }
+  body main #sessao-cinco #sessao-btn-sessao-cinco a {
+    width: 11em;
+  }
+  body main #sessao-seis #container-img-sessao-seis {
+    width: 85%;
+    margin: 0 auto;
+  }
+  body footer #primeira-sessao-footer {
+    padding: 0 3em;
+  }
+  body footer #segunda-sessao-footer {
+    justify-content: end;
+  }
+  body footer #segunda-sessao-footer #sessao-btn-footer a {
+    width: 12em;
+  }
+  body footer #segunda-sessao-footer #container-link-redes {
+    width: 13em;
+  }
+  body footer #segunda-sessao-footer #rodape-footer {
+    padding: 0 3em;
   }
 }/*# sourceMappingURL=style.css.map */

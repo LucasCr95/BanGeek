@@ -44,7 +44,7 @@ body{
         border-radius: .5em;
         padding: 1.1em !important;
         display: block;
-        width: 13em !important;
+        width: 13em;
         text-align: center;
         text-transform: uppercase;
         font-size: .70em;
@@ -266,10 +266,11 @@ body{
                 width: 85%;
                 margin: 1.87rem auto;
             }
-            
+
             a{
                 margin: 3.125rem auto 6rem;
             }
+            
         }
 
         #sessao-cinco{
@@ -304,7 +305,7 @@ body{
 
             }
 
-            #sessao-btn{
+            #sessao-btn-sessao-cinco{
                 margin: 2.3rem 0;
                 display: flex;
                 justify-content: space-evenly;
@@ -510,16 +511,17 @@ body{
     body{
         font-size: 16px;
 
+
         .btn-trans, .btn-princ{
             font-size: .70em !important;
         }
-    
+
         header{
 
             #container-header{
                 height: 4em;
                 padding: 0 3rem;
-
+                margin-top: -.5em;
                 #logo{
                     width: 5em;
                 }
@@ -527,12 +529,11 @@ body{
                 #menu{
                     display: flex;
                     align-items: center;
-                    overflow: hidden;
-                    padding: 1em 0 0 0;
+                    padding: 1.8em 0 0 0;
                     width: 2em;
 
                     img{
-                        width: 2em
+                        width: 2em;
                     }
                 }
     
@@ -588,6 +589,91 @@ body{
                     }
                 }
     
+            }
+
+            #sessao-dois{
+                #img-sessao-dois{
+                    max-width: 70%;
+                }
+
+                h2{
+                    width: auto;
+                }
+
+                p{
+                    max-width: 25rem;
+                    margin-bottom: 3em;
+                }
+            }
+
+            #sessao-tres{
+                
+                #container-sessao-tres{
+                    padding: 2em 5em 5em;
+                    justify-content: space-between;
+                    
+                    .elementos{
+                        width: 40%;
+                    }
+                    
+                }
+            }
+
+            #sessao-quatro{
+
+                #img-sessao-quatro{
+                    padding: 0 3rem;
+                }
+
+                p{
+                    font-size: 1.3em;
+                }
+                #img-cartoes-sessao-quatro{
+                    padding: 0 3em;
+                    width: 70%;
+                }
+            }
+
+            #sessao-cinco{
+                #sessao-btn-sessao-cinco{
+                    justify-content: space-evenly;
+                    width: 70%;
+                    margin: 3em auto 2em;
+                    
+                    a{
+                        width: 11em;
+                    }
+                }
+            }
+
+            #sessao-seis{
+                #container-img-sessao-seis{
+                    width: 85%;
+                    margin: 0 auto;
+                }
+            }
+        }
+
+        footer{
+
+            #primeira-sessao-footer{
+                padding: 0 3em;
+            }
+            #segunda-sessao-footer{
+                justify-content: end;
+                #sessao-btn-footer{
+                    a{
+                        width: 12em;
+                    }
+                }
+    
+                #container-link-redes{
+                    width: 13em;
+                }
+    
+                #rodape-footer{
+                    padding: 0 3em;
+                }
             }
         }
     }
