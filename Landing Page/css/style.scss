@@ -507,10 +507,9 @@ body{
 }
 
 @media screen and (min-width: 490px){
-
+    
     body{
         font-size: 16px;
-
 
         .btn-trans, .btn-princ{
             font-size: .70em !important;
@@ -547,7 +546,7 @@ body{
             }
 
             #navbar{
-                top: 5em;
+                top: 4em;
                 ul{
                     li{
     
@@ -578,7 +577,7 @@ body{
                     }
     
                     p{
-                        font-size: 1.1em;
+                        font-size: 1.2em;
                         text-align: center;
                         width: 100%;
                         margin: .625rem auto 3rem;
@@ -597,10 +596,12 @@ body{
                 }
 
                 h2{
+                    font-size: 2em;
                     width: auto;
                 }
 
                 p{
+                    font-size: 1.2em;
                     max-width: 25rem;
                     margin-bottom: 3em;
                 }
@@ -614,6 +615,10 @@ body{
                     
                     .elementos{
                         width: 40%;
+
+                        h3{
+                            font-size: 1.1em;
+                        }
                     }
                     
                 }
@@ -635,6 +640,7 @@ body{
             }
 
             #sessao-cinco{
+
                 #sessao-btn-sessao-cinco{
                     justify-content: space-evenly;
                     width: 70%;
@@ -647,6 +653,11 @@ body{
             }
 
             #sessao-seis{
+
+                p{
+                    font-size: 1.1em;
+                }
+
                 #container-img-sessao-seis{
                     width: 85%;
                     margin: 0 auto;
@@ -679,6 +690,68 @@ body{
     }
 }
 
-@media screen and (min-width: 800px){ 
+@media screen and (min-width: 885px){ 
+    body{
+        .btn-princ, .btn-trans{
+            width: 12em;
+        }
+
+
+        header{
+            background-color: var(--cor6);
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            height: 5em;
+            padding: 0;
+            position: fixed;
+            top: 0;
+
+            #container-header{
+                height: auto;
+                padding: 0 0 0 3em;
+
     
+                    #menu{
+                        display: none;
+                    }
+        
+                }
+
+            #navbar{
+                position: relative;
+                top: 0;
+                right: 0;
+                max-height: 5em;
+                box-sizing: border-box;
+                box-shadow: none;
+                width: 80%;
+
+                ul{
+                    display: flex;
+                    align-items: center;
+                    background-color: #C5ACFF;
+                    padding: 0;
+
+                    li{
+                        background-color: yellow;
+                        margin: 0;
+                        padding: 0;
+                        
+                        &:nth-child(n+4){
+                            margin-left: 1em;
+                        }
+
+                        a{
+                            padding: .5em 1em;
+                            font-size: .8em;
+                            background-color: #26E55F;
+
+                        }
+                    }
+                }
+            }
+        }
+
+    }
 }

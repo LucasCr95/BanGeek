@@ -428,7 +428,7 @@ body footer #rodape-footer #logo-footer img {
     max-height: 17em;
   }
   body header #navbar {
-    top: 5em;
+    top: 4em;
   }
   body header #navbar ul li a {
     font-size: 1em;
@@ -448,7 +448,7 @@ body footer #rodape-footer #logo-footer img {
     font-size: 2rem;
   }
   body main #sessao-um #conteudo-sessao-um p {
-    font-size: 1.1em;
+    font-size: 1.2em;
     text-align: center;
     width: 100%;
     margin: 0.625rem auto 3rem;
@@ -460,9 +460,11 @@ body footer #rodape-footer #logo-footer img {
     max-width: 70%;
   }
   body main #sessao-dois h2 {
+    font-size: 2em;
     width: auto;
   }
   body main #sessao-dois p {
+    font-size: 1.2em;
     max-width: 25rem;
     margin-bottom: 3em;
   }
@@ -472,6 +474,9 @@ body footer #rodape-footer #logo-footer img {
   }
   body main #sessao-tres #container-sessao-tres .elementos {
     width: 40%;
+  }
+  body main #sessao-tres #container-sessao-tres .elementos h3 {
+    font-size: 1.1em;
   }
   body main #sessao-quatro #img-sessao-quatro {
     padding: 0 3rem;
@@ -491,6 +496,9 @@ body footer #rodape-footer #logo-footer img {
   body main #sessao-cinco #sessao-btn-sessao-cinco a {
     width: 11em;
   }
+  body main #sessao-seis p {
+    font-size: 1.1em;
+  }
   body main #sessao-seis #container-img-sessao-seis {
     width: 85%;
     margin: 0 auto;
@@ -509,5 +517,55 @@ body footer #rodape-footer #logo-footer img {
   }
   body footer #segunda-sessao-footer #rodape-footer {
     padding: 0 3em;
+  }
+}
+@media screen and (min-width: 885px) {
+  body .btn-princ, body .btn-trans {
+    width: 12em;
+  }
+  body header {
+    background-color: var(--cor6);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 5em;
+    padding: 0;
+    position: fixed;
+    top: 0;
+  }
+  body header #container-header {
+    height: auto;
+    padding: 0 0 0 3em;
+  }
+  body header #container-header #menu {
+    display: none;
+  }
+  body header #navbar {
+    position: relative;
+    top: 0;
+    right: 0;
+    max-height: 5em;
+    box-sizing: border-box;
+    box-shadow: none;
+    width: 80%;
+  }
+  body header #navbar ul {
+    display: flex;
+    align-items: center;
+    background-color: #C5ACFF;
+    padding: 0;
+  }
+  body header #navbar ul li {
+    background-color: yellow;
+    margin: 0;
+    padding: 0;
+  }
+  body header #navbar ul li:nth-child(n+4) {
+    margin-left: 1em;
+  }
+  body header #navbar ul li a {
+    padding: 0.5em 1em;
+    font-size: 0.8em;
+    background-color: #26E55F;
   }
 }/*# sourceMappingURL=style.css.map */
