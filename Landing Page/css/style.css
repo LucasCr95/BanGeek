@@ -520,18 +520,23 @@ body footer #rodape-footer #logo-footer img {
   }
 }
 @media screen and (min-width: 885px) {
-  body .btn-princ, body .btn-trans {
-    width: 14em;
+  body * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
   }
+  body .btn-princ, body .btn-trans {
+    width: 12em;
+  }
   body header {
-    padding: 0 10rem;
+    width: 100vw;
+    padding: 0 2rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    height: 5em;
   }
   body header #container-header {
-    padding: 0;
     height: auto;
     display: inline-block;
     box-sizing: border-box;
@@ -552,7 +557,7 @@ body footer #rodape-footer #logo-footer img {
   body header #navbar ul {
     display: flex;
     align-items: center;
-    padding: 1rem;
+    padding: 1rem 0 1rem 1rem;
     height: auto;
   }
   body header #navbar ul li {
@@ -561,7 +566,9 @@ body footer #rodape-footer #logo-footer img {
     width: auto;
     height: auto;
     margin: 0 0.5rem;
-    box-sizing: border-box;
+  }
+  body header #navbar ul li:last-child {
+    margin-right: 0;
   }
   body header #navbar ul li a {
     padding: 0.7rem 1.2rem;
@@ -575,15 +582,38 @@ body footer #rodape-footer #logo-footer img {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
-    background-color: gray;
     padding: 0 10rem;
+    height: 85vh;
   }
   body main #sessao-um #img-sessao-um {
-    background-color: red;
     width: 50%;
+    padding: 2.6rem 0;
+    height: auto;
+    align-items: center;
+  }
+  body main #sessao-um #img-sessao-um img {
+    width: 100%;
   }
   body main #sessao-um #conteudo-sessao-um {
-    background-color: yellow;
     width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0;
+  }
+  body main #sessao-um #conteudo-sessao-um h1 {
+    width: auto;
+    text-align: left;
+    margin: 0;
+    font-size: 2.8rem;
+  }
+  body main #sessao-um #conteudo-sessao-um p {
+    text-align: left;
+    font-size: 1em;
+    margin: 2em 0;
+  }
+  body main #sessao-um #conteudo-sessao-um a {
+    margin: 0;
   }
 }/*# sourceMappingURL=style.css.map */

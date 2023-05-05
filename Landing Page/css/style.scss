@@ -693,19 +693,25 @@ body{
 @media screen and (min-width: 885px){ 
     body{
 
-        .btn-princ, .btn-trans{
-            width: 14em;
+        *{
+            margin: 0;
+            padding: 0;
             box-sizing: border-box;
         }
 
+        .btn-princ, .btn-trans{
+            width: 12em;
+        }
+
         header{
-            padding: 0 10rem;
+            width: 100vw;
+            padding: 0 2rem;
             display: flex;
             align-items: center;
             justify-content: space-between;
+            height: 5em;
 
             #container-header{
-                padding: 0 ;
                 height: auto;
                 display: inline-block;
                 box-sizing: border-box;
@@ -724,11 +730,11 @@ body{
                 box-sizing: border-box;
                 display: flex;
                 align-items: center;
-
+                
                 ul{
                     display: flex;
                     align-items: center;
-                    padding: 1rem;
+                    padding: 1rem 0 1rem 1rem;
                     height: auto;
 
 
@@ -738,7 +744,10 @@ body{
                         width: auto;
                         height: auto;
                         margin: 0 .5rem;
-                        box-sizing: border-box;
+
+                        &:last-child{
+                            margin-right: 0;
+                        }
 
                         a{
                             padding: .7rem 1.2rem;
@@ -755,22 +764,48 @@ body{
 
         main{
             width: 100vw;
+
             #sessao-um{
                 display: flex;
                 flex-direction: row-reverse;
                 justify-content: space-between;
-                background-color: gray;
                 padding: 0 10rem;
-
+                height: 85vh;
+                
                 #img-sessao-um{
-                    background-color: red;
                     width: 50%;
+                    padding: 2.6rem 0;
+                    height: auto;
+                    align-items: center;
+                    img{
+                        width: 100%;
+                    }
                 }
-
+                
                 #conteudo-sessao-um{
-                    background-color: yellow;
                     width: 50%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: center;
+                    padding: 0;
+                    
+                    h1{
+                        width: auto;
+                        text-align: left;
+                        margin: 0;
+                        font-size: 2.8rem;
+                    }
+                    
+                    p{
+                        text-align: left;
+                        font-size: 1em;
+                        margin: 2em 0;
+                    }
 
+                    a{
+                        margin: 0;
+                    }
                 }
             }
         }
