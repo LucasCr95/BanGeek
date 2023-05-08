@@ -31,6 +31,8 @@
     box-sizing: border-box;
 }
 
+//  REDIMENSIONAR IMG LOGO =============================
+
 body{
     background-color: var(--cor6);
     font-family: var(--font1);
@@ -53,7 +55,7 @@ body{
     
     .btn-trans{
         background-color: transparent;
-        border: .1em solid var(--cor0);
+        border: .1em solid var(--cor0) !important;
     
         &:active{
             background-color: var(--corHoverBtnTrans);
@@ -63,6 +65,7 @@ body{
     .btn-princ{
         box-shadow: 0 0 .6em var(--cor9);
         background-color: var(--cor10);
+        border: none !important;
     
         &:active{
             background-color: var(--corHoverBtnPrinc);
@@ -273,6 +276,7 @@ body{
         }
 
         #sessao-cinco{
+
             width: 100%;
             background-color: var(--cor7);
 
@@ -700,6 +704,26 @@ body{
 
         .btn-princ, .btn-trans{
             width: 8.4rem;
+            transition: all .5s;
+        }
+
+        .btn-trans{
+            &:hover{
+                background-color: var(--corHoverBtnTrans);
+            }
+        }
+
+        .btn-princ{
+            &:hover{
+                background-color: var(--corHoverBtnPrinc);
+            }
+        }
+
+        .btn-down{
+            &:hover{
+                transition: all .5s;
+                background-color: var(--corHoverBtnPrinc);
+            }
         }
 
         header{
@@ -754,6 +778,11 @@ body{
                             padding: 1rem .5rem;
                             font-size: .8em;
                             display: block;
+                            border-bottom: 2px solid transparent;
+                            &:hover{
+                                transition: all .7s;
+                                border-bottom:  2px solid var(--cor9);
+                            }
                         }
                     }
                 }
@@ -771,10 +800,8 @@ body{
                 flex-direction: row-reverse;
                 justify-content: space-between;
                 padding: 3rem;
-                background-color: #8B68DF;
 
                 #img-sessao-um{
-                    background-color: #C5ACFF;
                     width: 48%;
                     display: flex;
                     align-items: center;
@@ -810,7 +837,6 @@ body{
                 display: flex;
                 justify-content: space-between;
                 padding: 3rem;
-                background-color: #453172;
                 
                 #img-sessao-dois{
                     width: 48%;
@@ -842,10 +868,6 @@ body{
 
             #sessao-tres{
 
-                #svg-onda-sessao-tres{
-
-                }
-
                 #container-sessao-tres{
                     padding: 2rem 3rem 10rem;
 
@@ -865,24 +887,84 @@ body{
 
             #sessao-quatro{
 
-                #svg-onda-sessao-quatro{
-                }
-
-                #img-sessao-quatro{
-
-                }
-
-                #conteudo-sessao-quatro{
-
-                }
-
-                #img-cartoes-sessao-quatro{
-
-                }
+                padding: 0 0 5rem 0;
 
                 #container-btn-sessao-quatro{
-
+                    a{
+                        width: 12rem;
+                    }
                 }
+            }
+
+            #sessao-cinco{
+                #svg-onda-sessao-cinco{
+                    margin-top: -4rem;
+                }
+
+                #conteudo-sessao-cinco{
+                    h4{
+                        font-size: 2rem;
+                    }
+
+                    p{
+
+                    }
+                }
+
+                #sessao-btn-sessao-cinco{
+                    a{
+                        width: 12rem;
+                    }
+                }
+            }
+
+            #sessao-seis{
+//      REDIMENSIONAR IMG SESSAO SEIS =================
+                #svg-onda-sessao-seis{
+                    margin: -4rem 0 0 0;
+                }
+
+                #conteudo-sessao-seis{
+                    h5{
+                        font-size: 2rem;
+                    }   
+                }
+
+                a{
+                    width: 10rem;
+                }
+            }
+        }
+
+        footer{
+
+            #segunda-sessao-footer{
+
+                .elementos{
+                    width: 20rem;
+                    margin: 1rem;
+
+                    a:hover{
+                        transition: all .5s;
+                        color: var(--corHoverBtnPrinc);
+                        fill: var(--corHoverBtnPrinc);
+                    }
+
+                    #container-link-redes{
+                        .icon-redes{
+                            #Icon_awesome-facebook-square path, #Icon_awesome-instagram path, 
+                            #Icon_awesome-linkedin path,
+                            #Icon_awesome-youtube-square path{
+                                &:hover{
+                                    fill: var(--corHoverBtnPrinc);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            #rodape-footer{
+                padding: 0 3rem;
             }
         }
     }

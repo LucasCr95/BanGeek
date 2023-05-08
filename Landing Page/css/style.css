@@ -49,7 +49,7 @@ body .btn-trans, body .btn-princ {
 }
 body .btn-trans {
   background-color: transparent;
-  border: 0.1em solid var(--cor0);
+  border: 0.1em solid var(--cor0) !important;
 }
 body .btn-trans:active {
   background-color: var(--corHoverBtnTrans);
@@ -57,6 +57,7 @@ body .btn-trans:active {
 body .btn-princ {
   box-shadow: 0 0 0.6em var(--cor9);
   background-color: var(--cor10);
+  border: none !important;
 }
 body .btn-princ:active {
   background-color: var(--corHoverBtnPrinc);
@@ -526,6 +527,17 @@ body footer #rodape-footer #logo-footer img {
   }
   body .btn-princ, body .btn-trans {
     width: 8.4rem;
+    transition: all 0.5s;
+  }
+  body .btn-trans:hover {
+    background-color: var(--corHoverBtnTrans);
+  }
+  body .btn-princ:hover {
+    background-color: var(--corHoverBtnPrinc);
+  }
+  body .btn-down:hover {
+    transition: all 0.5s;
+    background-color: var(--corHoverBtnPrinc);
   }
   body header {
     width: 100%;
@@ -575,6 +587,11 @@ body footer #rodape-footer #logo-footer img {
     padding: 1rem 0.5rem;
     font-size: 0.8em;
     display: block;
+    border-bottom: 2px solid transparent;
+  }
+  body header #navbar ul li a:hover {
+    transition: all 0.7s;
+    border-bottom: 2px solid var(--cor9);
   }
   body main {
     width: 100%;
@@ -584,10 +601,8 @@ body footer #rodape-footer #logo-footer img {
     flex-direction: row-reverse;
     justify-content: space-between;
     padding: 3rem;
-    background-color: #8B68DF;
   }
   body main #sessao-um #img-sessao-um {
-    background-color: #C5ACFF;
     width: 48%;
     display: flex;
     align-items: center;
@@ -617,7 +632,6 @@ body footer #rodape-footer #logo-footer img {
     display: flex;
     justify-content: space-between;
     padding: 3rem;
-    background-color: #453172;
   }
   body main #sessao-dois #img-sessao-dois {
     width: 48%;
@@ -653,5 +667,46 @@ body footer #rodape-footer #logo-footer img {
   }
   body main #sessao-tres #container-sessao-tres .elementos p {
     font-size: 1em;
+  }
+  body main #sessao-quatro {
+    padding: 0 0 5rem 0;
+  }
+  body main #sessao-quatro #container-btn-sessao-quatro a {
+    width: 12rem;
+  }
+  body main #sessao-cinco #svg-onda-sessao-cinco {
+    margin-top: -4rem;
+  }
+  body main #sessao-cinco #conteudo-sessao-cinco h4 {
+    font-size: 2rem;
+  }
+  body main #sessao-cinco #sessao-btn-sessao-cinco a {
+    width: 12rem;
+  }
+  body main #sessao-seis #svg-onda-sessao-seis {
+    margin: -4rem 0 0 0;
+  }
+  body main #sessao-seis #conteudo-sessao-seis h5 {
+    font-size: 2rem;
+  }
+  body main #sessao-seis a {
+    width: 10rem;
+  }
+  body footer #segunda-sessao-footer .elementos {
+    width: 20rem;
+    margin: 1rem;
+  }
+  body footer #segunda-sessao-footer .elementos a:hover {
+    transition: all 0.5s;
+    color: var(--corHoverBtnPrinc);
+    fill: var(--corHoverBtnPrinc);
+  }
+  body footer #segunda-sessao-footer .elementos #container-link-redes .icon-redes #Icon_awesome-facebook-square path:hover, body footer #segunda-sessao-footer .elementos #container-link-redes .icon-redes #Icon_awesome-instagram path:hover,
+  body footer #segunda-sessao-footer .elementos #container-link-redes .icon-redes #Icon_awesome-linkedin path:hover,
+  body footer #segunda-sessao-footer .elementos #container-link-redes .icon-redes #Icon_awesome-youtube-square path:hover {
+    fill: var(--corHoverBtnPrinc);
+  }
+  body footer #rodape-footer {
+    padding: 0 3rem;
   }
 }/*# sourceMappingURL=style.css.map */
