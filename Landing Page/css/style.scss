@@ -969,3 +969,64 @@ body{
         }
     }
 }
+
+@media screen and (min-width: 1024px){ 
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    
+    body{
+
+        
+        header{
+            padding: 0 10rem;
+        }
+
+        main{
+
+            #sessao-um{
+                padding: 4rem 6rem;
+                width: 100%;
+
+                #img-sessao-um{
+                    width: auto;
+                    img{
+                        width: 100%;
+                    }
+                }
+
+                #conteudo-sessao-um{
+                    width: 35%;
+
+                }
+            }
+
+            #sessao-dois{
+                padding: 0 6rem;
+                #img-sessao-dois{
+                    background-color: #F3709C;
+                }
+
+                #conteudo-sessao-dois{
+                    background-color: #8B68DF;
+                }
+            }
+
+            #sessao-tres{
+                #container-sessao-tres{
+                    display: grid;
+                    grid-template-columns: auto auto auto;
+                    justify-items: center;
+                    row-gap: 3em;
+
+                    .elementos{
+                        width: 50%;
+                    }
+                }
+            }
+        }
+        
+    }
+}

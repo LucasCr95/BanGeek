@@ -709,4 +709,45 @@ body footer #rodape-footer #logo-footer img {
   body footer #rodape-footer {
     padding: 0 3rem;
   }
+}
+@media screen and (min-width: 1024px) {
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body header {
+    padding: 0 10rem;
+  }
+  body main #sessao-um {
+    padding: 4rem 6rem;
+    width: 100%;
+  }
+  body main #sessao-um #img-sessao-um {
+    width: auto;
+  }
+  body main #sessao-um #img-sessao-um img {
+    width: 100%;
+  }
+  body main #sessao-um #conteudo-sessao-um {
+    width: 35%;
+  }
+  body main #sessao-dois {
+    padding: 0 6rem;
+  }
+  body main #sessao-dois #img-sessao-dois {
+    background-color: #F3709C;
+  }
+  body main #sessao-dois #conteudo-sessao-dois {
+    background-color: #8B68DF;
+  }
+  body main #sessao-tres #container-sessao-tres {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-items: center;
+    row-gap: 3em;
+  }
+  body main #sessao-tres #container-sessao-tres .elementos {
+    width: 50%;
+  }
 }/*# sourceMappingURL=style.css.map */
