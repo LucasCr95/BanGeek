@@ -759,48 +759,63 @@ body footer #rodape-footer #logo-footer img {
   body main #sessao-tres #container-sessao-tres .elementos {
     width: 50%;
   }
-  body main #sessao-quatro #img-sessao-quatro {
-    padding: 0;
-  }
   body main #sessao-quatro #img-sessao-quatro img {
     width: 100%;
   }
-  body main #sessao-quatro #grid-container-sessao-quatro {
-    display: grid;
-    grid-template-columns: auto 50%;
-    border: 2px solid white;
-    padding: 0 6rem;
-    justify-content: center;
-    justify-self: center;
-    justify-items: center;
+  body main #sessao-quatro #container-sessao-quatro {
+    padding: 0 8rem;
+    display: flex;
+    height: -moz-max-content;
+    height: max-content;
     align-items: center;
-    align-self: center;
-    align-content: center;
+    width: 100%;
+    margin: 0 0 14rem 0;
   }
-  body main #sessao-quatro #grid-container-sessao-quatro #conteudo-sessao-quatro {
-    background-color: #26E55F;
-    grid-column: 1;
-    height: 6rem;
-    padding: 1rem 0;
+  body main #sessao-quatro #container-sessao-quatro #conteudo-sessao-quatro {
+    height: -moz-max-content;
+    height: max-content;
+    padding: 0;
+  }
+  body main #sessao-quatro #container-sessao-quatro #conteudo-sessao-quatro p {
     margin: 0;
+    padding: 2rem 0;
     border-bottom: 0.2rem solid;
     -o-border-image: linear-gradient(to right, var(--cor10) 30%, transparent 30%) 1;
        border-image: linear-gradient(to right, var(--cor10) 30%, transparent 30%) 1;
-  }
-  body main #sessao-quatro #grid-container-sessao-quatro #conteudo-sessao-quatro p {
-    width: 100%;
-    margin: 0;
     text-align: left;
+    width: 25rem;
   }
-  body main #sessao-quatro #grid-container-sessao-quatro #img-cartoes-sessao-quatro {
-    background-color: #8B68DF;
-    grid-column: 2;
+  body main #sessao-quatro #container-sessao-quatro #conteudo-sessao-quatro #container-btn-sessao-quatro {
+    width: -moz-max-content;
+    width: max-content;
+    margin: 0;
+    padding: 2rem 0;
+  }
+  body main #sessao-quatro #container-sessao-quatro #conteudo-sessao-quatro #container-btn-sessao-quatro a {
+    margin: 0;
+  }
+  body main #sessao-quatro #container-sessao-quatro #img-cartoes-sessao-quatro {
+    max-width: 40rem;
+  }
+  body main #sessao-quatro #container-sessao-quatro #img-cartoes-sessao-quatro img {
     width: 100%;
   }
-  body main #sessao-quatro #grid-container-sessao-quatro #container-btn-sessao-quatro {
-    grid-column: 1;
+  body main #sessao-cinco {
+    background-color: #26E55F;
+    height: -moz-max-content;
+    height: max-content;
   }
-  body main #sessao-quatro #grid-container-sessao-quatro #container-btn-sessao-quatro a {
-    margin: 0;
+  body main #sessao-cinco #svg-onda-sessao-cinco {
+    margin-top: -6rem;
+  }
+  body main #sessao-cinco #container-sessao-cinco {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 0 6rem;
+  }
+  body main #sessao-cinco #container-sessao-cinco #container-img-sessao-cinco {
+    margin: -15rem 0 0 0;
+    background-color: #F3709C;
+    max-width: 35rem;
   }
 }/*# sourceMappingURL=style.css.map */
