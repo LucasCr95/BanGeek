@@ -1127,22 +1127,98 @@ body{
             }
 
             #sessao-seis{
+                padding-bottom: 6rem;
                 #svg-onda-sessao-seis{
                     margin-top: -8rem;
                 }
 
-                #conteudo-sessao-seis{
+                #container-sessao-seis{
+                    display: flex;
+                    padding: 0 8rem;
+
+                    #conteudo-sessao-seis{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        h5{
+                            padding: 0;
+                            margin: 0;
+                            text-align: left;
+                        }
+
+                        p{
+                            padding: 0;
+                            margin: 2rem 0;
+                            text-align: left;
+                        }
+                        
+                        a{
+                            display: block;
+                            margin: 0;
+                        }
+        
+                    }
+    
+                    #container-img-sessao-seis{
+                        max-width: 40rem;
+                    }
                 }
 
-                #container-img-sessao-seis{
 
-                }
+            }
+        }
 
-                .btn-princ{
+        footer{
+            #svg-onda-footer{
 
+            }
+
+            #primeira-sessao-footer{
+                padding: 0 6rem;
+                img{
                 }
             }
-            
+
+            #segunda-sessao-footer{
+                padding: 6rem;
+                justify-content: space-around;
+
+                .elementos{
+                    width: fit-content;
+                    height: fit-content;
+                    margin: 0;
+
+                    dt{
+                        width: 10rem;
+                        padding-bottom: 1rem;
+                    }
+
+                    li{
+                        margin-top: 1rem;
+                    }
+
+                    #sessao-btn-footer{
+                        a{
+                            width: auto;
+                        }
+                    }
+                }
+            }
+
+            #rodape-footer{
+                padding: 0 8rem ;
+                align-items: center;
+                display: flex;
+                justify-content: center;
+                #logo-footer{
+                    width: 4rem;
+                    margin: 0 2rem;
+                }
+
+                p{
+
+                }
+            }   
         }
         
     }

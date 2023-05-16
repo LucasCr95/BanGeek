@@ -830,7 +830,70 @@ body footer #rodape-footer #logo-footer img {
     max-width: 35rem;
     padding: 1rem;
   }
+  body main #sessao-seis {
+    padding-bottom: 6rem;
+  }
   body main #sessao-seis #svg-onda-sessao-seis {
     margin-top: -8rem;
+  }
+  body main #sessao-seis #container-sessao-seis {
+    display: flex;
+    padding: 0 8rem;
+  }
+  body main #sessao-seis #container-sessao-seis #conteudo-sessao-seis {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  body main #sessao-seis #container-sessao-seis #conteudo-sessao-seis h5 {
+    padding: 0;
+    margin: 0;
+    text-align: left;
+  }
+  body main #sessao-seis #container-sessao-seis #conteudo-sessao-seis p {
+    padding: 0;
+    margin: 2rem 0;
+    text-align: left;
+  }
+  body main #sessao-seis #container-sessao-seis #conteudo-sessao-seis a {
+    display: block;
+    margin: 0;
+  }
+  body main #sessao-seis #container-sessao-seis #container-img-sessao-seis {
+    max-width: 40rem;
+  }
+  body footer #primeira-sessao-footer {
+    padding: 0 6rem;
+  }
+  body footer #segunda-sessao-footer {
+    padding: 6rem;
+    justify-content: space-around;
+  }
+  body footer #segunda-sessao-footer .elementos {
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin: 0;
+  }
+  body footer #segunda-sessao-footer .elementos dt {
+    width: 10rem;
+    padding-bottom: 1rem;
+  }
+  body footer #segunda-sessao-footer .elementos li {
+    margin-top: 1rem;
+  }
+  body footer #segunda-sessao-footer .elementos #sessao-btn-footer a {
+    width: auto;
+  }
+  body footer #rodape-footer {
+    padding: 0 8rem;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+  body footer #rodape-footer #logo-footer {
+    width: 4rem;
+    margin: 0 2rem;
   }
 }/*# sourceMappingURL=style.css.map */
