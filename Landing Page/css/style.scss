@@ -970,7 +970,7 @@ body{
     }
 }
 
-@media screen and (min-width: 1024px){ 
+@media screen and (min-width: 1090px){ 
     *{
         padding: 0;
         margin: 0;
@@ -1054,7 +1054,7 @@ body{
                     height: max-content;
                     align-items: center;
                     width: 100%;
-                    margin: 0 0 14rem 0;
+                    margin: -5rem 0 12rem 0;
 
                     #conteudo-sessao-quatro{
                         height: max-content;
@@ -1094,27 +1094,52 @@ body{
             }
 
             #sessao-cinco{
-                background-color: #26E55F;
                 height: max-content;
+                padding-bottom: 4rem;
+                
                 #svg-onda-sessao-cinco{
-                    margin-top: -6rem;
+                    margin-top: -15rem;
                 }
 
                 #container-sessao-cinco{
                     display: flex;
                     flex-direction: row-reverse;
+                    justify-content: space-around;
+                    margin-top: -4rem;
                     padding: 0 6rem;
 
                     #itens-texto-sessao-cinco{
-
+                        padding: 1rem 0;
+                        #sessao-btn-sessao-cinco{
+                            width: min-content;
+                            a{
+                                margin: 0 1rem;
+                            }
+                        }
                     }
 
                     #container-img-sessao-cinco{
-                        margin: -15rem 0 0 0;
-                        background-color: #F3709C;
+                        margin: -10rem 0 0;
                         max-width: 35rem;
-                        
+                        padding: 1rem;
                     }
+                }
+            }
+
+            #sessao-seis{
+                #svg-onda-sessao-seis{
+                    margin-top: -8rem;
+                }
+
+                #conteudo-sessao-seis{
+                }
+
+                #container-img-sessao-seis{
+
+                }
+
+                .btn-princ{
+
                 }
             }
             

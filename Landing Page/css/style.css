@@ -710,7 +710,7 @@ body footer #rodape-footer #logo-footer img {
     padding: 0 3rem;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1090px) {
   * {
     padding: 0;
     margin: 0;
@@ -769,7 +769,7 @@ body footer #rodape-footer #logo-footer img {
     height: max-content;
     align-items: center;
     width: 100%;
-    margin: 0 0 14rem 0;
+    margin: -5rem 0 12rem 0;
   }
   body main #sessao-quatro #container-sessao-quatro #conteudo-sessao-quatro {
     height: -moz-max-content;
@@ -801,21 +801,36 @@ body footer #rodape-footer #logo-footer img {
     width: 100%;
   }
   body main #sessao-cinco {
-    background-color: #26E55F;
     height: -moz-max-content;
     height: max-content;
+    padding-bottom: 4rem;
   }
   body main #sessao-cinco #svg-onda-sessao-cinco {
-    margin-top: -6rem;
+    margin-top: -15rem;
   }
   body main #sessao-cinco #container-sessao-cinco {
     display: flex;
     flex-direction: row-reverse;
+    justify-content: space-around;
+    margin-top: -4rem;
     padding: 0 6rem;
   }
+  body main #sessao-cinco #container-sessao-cinco #itens-texto-sessao-cinco {
+    padding: 1rem 0;
+  }
+  body main #sessao-cinco #container-sessao-cinco #itens-texto-sessao-cinco #sessao-btn-sessao-cinco {
+    width: -moz-min-content;
+    width: min-content;
+  }
+  body main #sessao-cinco #container-sessao-cinco #itens-texto-sessao-cinco #sessao-btn-sessao-cinco a {
+    margin: 0 1rem;
+  }
   body main #sessao-cinco #container-sessao-cinco #container-img-sessao-cinco {
-    margin: -15rem 0 0 0;
-    background-color: #F3709C;
+    margin: -10rem 0 0;
     max-width: 35rem;
+    padding: 1rem;
+  }
+  body main #sessao-seis #svg-onda-sessao-seis {
+    margin-top: -8rem;
   }
 }/*# sourceMappingURL=style.css.map */
