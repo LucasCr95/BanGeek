@@ -13,9 +13,8 @@
   --cor10: #E2306C;
   --cor11: #393939;
   ---cor12: #000000;
-  --corHoverBtnPrinc:#F56394;
-  --corHoverBtnTrans:#5B31C1;
-  --fonte-titulo: 600 1.5em var(--font0);
+  --corHoverBtnPrinc: #F56394;
+  --corHoverBtnTrans: #5B31C1;
   --font0: "Montserrat", sans-serif;
   --font1: "Roboto", sans-serif;
 }
@@ -39,13 +38,15 @@ body img {
 }
 body .btn-trans, body .btn-princ {
   border-radius: 0.5em;
-  padding: 1.1em !important;
+  padding: 0.7rem 4rem !important;
   display: block;
-  width: 13em;
+  width: -moz-fit-content;
+  width: fit-content;
   text-align: center;
   text-transform: uppercase;
   color: var(--cor0) !important;
   letter-spacing: 0.1em;
+  font-size: 12px !important;
 }
 body .btn-trans {
   background-color: transparent;
@@ -72,48 +73,53 @@ body .btn-down:active {
   background-color: var(--corHoverBtnPrinc);
 }
 body h1, body h2, body h4, body h5 {
-  font: var(--fonte-titulo);
+  font: 600 1.6rem var(--font0);
 }
 body header {
   width: 100%;
-  padding: 0 0 1em 0;
   box-shadow: 0 0 0.6em hwb(0 0% 100%/0.7);
 }
 body header #container-header {
-  height: 3.2em;
+  height: -moz-fit-content;
+  height: fit-content;
   display: flex;
   justify-content: space-between;
-  padding: 0 1em 0.3em;
+  align-items: center;
+  padding: 0 2rem;
   background-color: var(--cor6);
 }
 body header #container-header #logo {
-  width: 4em;
+  width: 4.2rem;
+  height: -moz-max-content;
+  height: max-content;
 }
 body header #container-header #menu {
   width: 1.7em;
-  padding: 1.5em 0;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 body header #icon-menu {
   display: none;
 }
 body header #icon-menu:checked ~ nav {
-  max-height: 15em;
+  max-height: 17em;
 }
 body header #navbar {
   transition: all 0.5s;
   max-height: 0;
   overflow: hidden;
   position: absolute;
-  top: 4em;
+  top: 5em;
   background-color: var(--cor6);
   width: 100%;
   box-shadow: 0 0.4em 0.5em 0 hwb(0 0% 100%/0.35);
 }
 body header #navbar ul {
   text-align: center;
+  padding-bottom: 1rem;
 }
 body header #navbar ul li {
-  margin: 1em auto;
+  margin: 1.2em auto;
   width: 100%;
 }
 body header #navbar ul li a {
@@ -129,50 +135,50 @@ body main {
   width: 100%;
 }
 body main #sessao-um {
-  padding: 0 1em;
+  padding: 0 2rem;
 }
 body main #sessao-um #img-sessao-um {
-  max-width: 21.26em;
-  margin: 0.7em auto;
+  width: 100%;
+  margin-top: 2rem;
 }
 body main #sessao-um #conteudo-sessao-um {
   width: 100%;
-  margin: 0.625rem auto;
+  margin: 2rem auto;
 }
 body main #sessao-um #conteudo-sessao-um h1 {
   text-align: center;
-  max-width: 16.25rem;
-  margin: 0 auto;
+  max-width: 17rem;
+  margin: 1rem auto;
 }
 body main #sessao-um #conteudo-sessao-um p {
-  font-size: 0.937em;
+  font-size: 1rem;
   text-align: center;
   width: 15rem;
-  margin: 0.625rem auto 1.2rem;
+  margin: 1rem auto 3rem;
 }
 body main #sessao-um #conteudo-sessao-um a {
   margin: 0 auto;
 }
 body main #sessao-dois {
-  padding: 2em 2em;
+  padding: 2rem;
+  margin: 3rem 0;
 }
 body main #sessao-dois #img-sessao-dois {
-  max-width: 18em;
-  margin: 3em auto;
+  margin: 0 auto;
 }
 body main #sessao-dois h2 {
   text-align: center;
-  width: 16.25rem;
-  margin: auto;
+  max-width: 17rem;
+  margin: 2rem auto 0;
 }
 body main #sessao-dois p {
-  font-size: 1em;
+  font-size: 1rem;
   text-align: center;
-  margin: 1.5rem auto 0;
+  margin: 1rem auto 0;
   max-width: 17rem;
 }
 body main #sessao-tres #svg-onda-sessao-tres {
-  margin-bottom: -3em;
+  margin-bottom: -2em;
   fill: var(--cor7);
 }
 body main #sessao-tres #container-sessao-tres {
@@ -181,7 +187,7 @@ body main #sessao-tres #container-sessao-tres {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 3em 1.25rem 5em;
+  padding: 3em 2rem 5em;
 }
 body main #sessao-tres #container-sessao-tres .elementos {
   width: 45%;
@@ -189,15 +195,15 @@ body main #sessao-tres #container-sessao-tres .elementos {
   margin: 0.937rem 0;
 }
 body main #sessao-tres #container-sessao-tres .elementos h3 {
-  font: 500 1em var(--font0);
-  padding-bottom: 0.625rem;
+  font: 500 1rem var(--font0);
+  padding-bottom: 0.7rem;
   width: 100%;
   border-bottom: 0.2rem solid;
   -o-border-image: linear-gradient(to right, var(--cor10) 30%, transparent 30%) 1;
      border-image: linear-gradient(to right, var(--cor10) 30%, transparent 30%) 1;
 }
 body main #sessao-tres #container-sessao-tres .elementos p {
-  font-size: 0.85em;
+  font-size: 0.8rem;
   width: 100%;
   margin: 0.625rem 0;
 }
@@ -207,102 +213,108 @@ body main #sessao-quatro #svg-onda-sessao-quatro {
 }
 body main #sessao-quatro #img-sessao-quatro {
   width: 100%;
-  padding: 3em 1rem 0;
-  box-sizing: border-box;
-}
-body main #sessao-quatro p {
-  text-align: center;
-  width: 80%;
-  margin: auto;
-  font-size: 1em;
-}
-body main #sessao-quatro #img-cartoes-sessao-quatro {
-  width: 85%;
-  margin: 1.87rem auto;
-}
-body main #sessao-quatro a {
-  margin: 3.125rem auto 6rem;
+  margin-top: 3rem;
 }
 body main #sessao-cinco {
-  width: 100%;
-  background-color: var(--cor7);
+  padding: 0 2rem 3rem;
 }
-body main #sessao-cinco #svg-onda-sessao-cinco {
-  margin-top: -2em;
-  fill: var(--cor7);
-}
-body main #sessao-cinco #logo-sessao-cinco {
-  height: 6em;
-  width: 6em;
-  margin: -1em auto 1rem;
-}
-body main #sessao-cinco #conteudo-sessao-cinco {
-  padding: 0 1.25rem;
-  margin: 0 auto;
+body main #sessao-cinco p {
   text-align: center;
-}
-body main #sessao-cinco #conteudo-sessao-cinco h4 {
-  text-align: center;
-}
-body main #sessao-cinco #conteudo-sessao-cinco p {
-  text-align: center;
-  font-size: 1em;
-  margin: 0.312rem 0;
-}
-body main #sessao-cinco #sessao-btn-sessao-cinco {
-  margin: 2.3rem 0;
-  display: flex;
-  justify-content: space-evenly;
-}
-body main #sessao-cinco #sessao-btn-sessao-cinco a {
-  height: 3rem;
-  min-width: 6em;
-  padding: 0.1em 1em;
-  display: flex;
-  justify-content: center;
-}
-body main #sessao-cinco #sessao-btn-sessao-cinco a img {
-  width: 2em;
-  margin-right: 0.6em;
-}
-body main #sessao-cinco #sessao-btn-sessao-cinco a #conteudo-btn p {
-  font-size: 0.8em;
-  display: block;
-  margin-top: 0.2em;
-}
-body main #sessao-cinco #sessao-btn-sessao-cinco a #conteudo-btn span {
-  font-size: 1em;
-  margin: 0.5em 0 0 0;
-  display: block;
-}
-body main #sessao-cinco #container-img-sessao-cinco {
-  width: 80%;
   margin: auto;
+  font-size: 1rem;
+  max-width: 18rem;
+}
+body main #sessao-cinco a {
+  margin: 2rem auto;
+}
+body main #sessao-cinco #img-cartoes-sessao-cinco {
+  margin: 3rem auto;
 }
 body main #sessao-seis {
   width: 100%;
+  background-color: var(--cor7);
 }
 body main #sessao-seis #svg-onda-sessao-seis {
+  margin-top: -2em;
+  fill: var(--cor7);
+}
+body main #sessao-seis #container-sessao-seis {
+  padding: 0 2rem;
+  margin-top: -2rem;
+}
+body main #sessao-seis #container-sessao-seis #conteudo-sessao-seis #logo-sessao-seis {
+  height: 6em;
+  width: 6em;
+  margin: 1rem auto;
+}
+body main #sessao-seis #container-sessao-seis #conteudo-sessao-seis #txt-sessao-seis {
+  margin-top: 2rem;
+}
+body main #sessao-seis #container-sessao-seis #conteudo-sessao-seis #txt-sessao-seis h4 {
+  text-align: center;
+}
+body main #sessao-seis #container-sessao-seis #conteudo-sessao-seis #txt-sessao-seis p {
+  text-align: center;
+  font-size: 1rem;
+  margin: 1rem 0;
+}
+body main #sessao-seis #container-sessao-seis #conteudo-sessao-seis #sessao-btn-sessao-seis {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+body main #sessao-seis #container-sessao-seis #conteudo-sessao-seis #sessao-btn-sessao-seis a {
+  height: 3rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+}
+body main #sessao-seis #container-sessao-seis #conteudo-sessao-seis #sessao-btn-sessao-seis a img {
+  width: 1.8em;
+  margin-right: 0.6em;
+}
+body main #sessao-seis #container-sessao-seis #conteudo-sessao-seis #sessao-btn-sessao-seis a #conteudo-btn p {
+  font-size: 0.7em;
+  display: block;
+}
+body main #sessao-seis #container-sessao-seis #conteudo-sessao-seis #sessao-btn-sessao-seis a #conteudo-btn span {
+  font-size: 0.8em;
+  display: block;
+}
+body main #sessao-seis #container-sessao-seis #container-img-sessao-seis {
+  margin-top: 3rem;
+}
+body main #sessao-sete {
+  width: 100%;
+}
+body main #sessao-sete #svg-onda-sessao-sete {
   width: 100%;
   fill: var(--cor6);
   margin-top: -2em;
 }
-body main #sessao-seis h5 {
+body main #sessao-sete #container-sessao-sete {
+  padding: 0 2rem;
+}
+body main #sessao-sete #container-sessao-sete #conteudo-sessao-sete {
+  margin-top: 2rem;
+}
+body main #sessao-sete #container-sessao-sete #conteudo-sessao-sete h5 {
   text-align: center;
-  margin: 1.5em 0 0.8em 0;
 }
-body main #sessao-seis p {
+body main #sessao-sete #container-sessao-sete #conteudo-sessao-sete p {
   text-align: center;
-  font-size: 1em;
-  width: 80%;
-  margin: 0 auto 3em;
+  font-size: 1rem;
+  margin: 1rem auto 0;
+  max-width: 18rem;
 }
-body main #sessao-seis #container-img-sessao-seis {
-  width: 90%;
-  margin: auto;
+body main #sessao-sete #container-sessao-sete #conteudo-sessao-sete a {
+  margin: 3rem auto 0;
 }
-body main #sessao-seis a {
-  margin: 2em auto 8em;
+body main #sessao-sete #container-sessao-sete #container-img-sessao-sete {
+  width: 100%;
+  margin: 4rem 0 2rem;
 }
 body footer #svg-onda-footer {
   fill: var(--cor7);
@@ -310,37 +322,43 @@ body footer #svg-onda-footer {
 body footer #primeira-sessao-footer {
   background-color: var(--cor7);
   margin-top: -1em;
-  padding: 2em 0;
-}
-body footer #primeira-sessao-footer img {
-  display: block;
-  width: 90%;
-  margin: auto;
+  padding: 2em 2rem 0;
 }
 body footer #segunda-sessao-footer {
-  padding: 4em 1.25rem 0;
+  padding: 3rem 2rem 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 1.875rem 1.25rem;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 body footer #segunda-sessao-footer .elementos {
   width: 45%;
-  height: 8.75rem;
-  margin: 0.937rem 0;
+  min-height: 14rem;
+  margin: 1rem 0;
+}
+body footer #segunda-sessao-footer .elementos #container-link-redes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
 }
 body footer #segunda-sessao-footer .elementos dt {
-  font: 500 1em var(--font0);
-  padding-bottom: 0.625rem;
+  font: 500 1rem var(--font0);
+  padding-bottom: 0.7rem;
   width: 100%;
   border-bottom: 0.19rem solid;
   -o-border-image: linear-gradient(to right, var(--cor9) 30%, transparent 30%) 1;
      border-image: linear-gradient(to right, var(--cor9) 30%, transparent 30%) 1;
 }
 body footer #segunda-sessao-footer .elementos li {
-  font-size: 0.8em;
+  font-size: 0.8rem;
   width: 100%;
-  margin-top: 0.625rem;
+  margin-top: 0.2rem;
+}
+body footer #segunda-sessao-footer .elementos li a {
+  padding: 0.5rem 0;
+  display: block;
 }
 body footer #segunda-sessao-footer .elementos li a:active {
   color: var(--cor10);
@@ -369,19 +387,23 @@ body footer #segunda-sessao-footer .elementos #sessao-btn-footer a #conteudo-btn
   display: block;
 }
 body footer #segunda-sessao-footer .elementos #container-link-redes {
-  display: flex;
-  justify-content: space-between;
-  text-align: left;
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: start;
 }
 body footer #segunda-sessao-footer .elementos #container-link-redes .icon-redes {
-  max-width: 2.7em;
-  margin: 1rem 0.1em 0 0;
+  width: 2.7em;
 }
-body footer #segunda-sessao-footer .elementos #container-link-redes .icon-redes #Icon_awesome-facebook-square path, body footer #segunda-sessao-footer .elementos #container-link-redes .icon-redes #Icon_awesome-instagram path,
+body footer #segunda-sessao-footer .elementos #container-link-redes .icon-redes:nth-child(2n+2) {
+  margin-left: 2rem;
+}
+body footer #segunda-sessao-footer .elementos #container-link-redes .icon-redes #Icon_awesome-facebook-square path,
+body footer #segunda-sessao-footer .elementos #container-link-redes .icon-redes #Icon_awesome-instagram path,
 body footer #segunda-sessao-footer .elementos #container-link-redes .icon-redes #Icon_awesome-linkedin path, #Icon_awesome-youtube-square path body footer #segunda-sessao-footer .elementos #container-link-redes .icon-redes:active {
   fill: var(--cor0);
 }
-body footer #segunda-sessao-footer .elementos #container-link-redes .icon-redes #Icon_awesome-facebook-square path:active, body footer #segunda-sessao-footer .elementos #container-link-redes .icon-redes #Icon_awesome-instagram path:active,
+body footer #segunda-sessao-footer .elementos #container-link-redes .icon-redes #Icon_awesome-facebook-square path:active,
+body footer #segunda-sessao-footer .elementos #container-link-redes .icon-redes #Icon_awesome-instagram path:active,
 body footer #segunda-sessao-footer .elementos #container-link-redes .icon-redes #Icon_awesome-linkedin path:active, #Icon_awesome-youtube-square path body footer #segunda-sessao-footer .elementos #container-link-redes .icon-redes:active:active {
   fill: var(--cor9);
 }
@@ -390,7 +412,7 @@ body footer #rodape-footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 1.25rem;
+  padding: 0 2rem;
   font-size: 0.875em;
 }
 body footer #rodape-footer #logo-footer {
@@ -404,7 +426,8 @@ body footer #rodape-footer #logo-footer img {
   body {
     font-size: 16px;
   }
-  body .btn-trans, body .btn-princ {
+  body .btn-trans,
+  body .btn-princ {
     font-size: 0.7em !important;
   }
   body header #container-header {
@@ -488,18 +511,18 @@ body footer #rodape-footer #logo-footer img {
     padding: 0 3em;
     width: 70%;
   }
-  body main #sessao-cinco #sessao-btn-sessao-cinco {
+  body main #sessao-seis #sessao-btn-sessao-seis {
     justify-content: space-evenly;
     width: 70%;
     margin: 3em auto 2em;
   }
-  body main #sessao-cinco #sessao-btn-sessao-cinco a {
+  body main #sessao-seis #sessao-btn-sessao-seis a {
     width: 11em;
   }
-  body main #sessao-seis p {
+  body main #sessao-sete p {
     font-size: 1.1em;
   }
-  body main #sessao-seis #container-img-sessao-seis {
+  body main #sessao-sete #container-img-sessao-sete {
     width: 85%;
     margin: 0 auto;
   }
@@ -525,7 +548,8 @@ body footer #rodape-footer #logo-footer img {
     padding: 0;
     box-sizing: border-box;
   }
-  body .btn-princ, body .btn-trans {
+  body .btn-princ,
+  body .btn-trans {
     width: 8.4rem;
     transition: all 0.5s;
   }
@@ -674,22 +698,22 @@ body footer #rodape-footer #logo-footer img {
   body main #sessao-quatro #container-btn-sessao-quatro a {
     width: 12rem;
   }
-  body main #sessao-cinco #svg-onda-sessao-cinco {
+  body main #sessao-seis #svg-onda-sessao-seis {
     margin-top: -4rem;
   }
-  body main #sessao-cinco #conteudo-sessao-cinco h4 {
+  body main #sessao-seis #conteudo-sessao-seis h4 {
     font-size: 2rem;
   }
-  body main #sessao-cinco #sessao-btn-sessao-cinco a {
+  body main #sessao-seis #sessao-btn-sessao-seis a {
     width: 12rem;
   }
-  body main #sessao-seis #svg-onda-sessao-seis {
+  body main #sessao-sete #svg-onda-sessao-sete {
     margin: -4rem 0 0 0;
   }
-  body main #sessao-seis #conteudo-sessao-seis h5 {
+  body main #sessao-sete #conteudo-sessao-sete h5 {
     font-size: 2rem;
   }
-  body main #sessao-seis a {
+  body main #sessao-sete a {
     width: 10rem;
   }
   body footer #segunda-sessao-footer .elementos {
@@ -701,7 +725,8 @@ body footer #rodape-footer #logo-footer img {
     color: var(--corHoverBtnPrinc);
     fill: var(--corHoverBtnPrinc);
   }
-  body footer #segunda-sessao-footer .elementos #container-link-redes .icon-redes #Icon_awesome-facebook-square path:hover, body footer #segunda-sessao-footer .elementos #container-link-redes .icon-redes #Icon_awesome-instagram path:hover,
+  body footer #segunda-sessao-footer .elementos #container-link-redes .icon-redes #Icon_awesome-facebook-square path:hover,
+  body footer #segunda-sessao-footer .elementos #container-link-redes .icon-redes #Icon_awesome-instagram path:hover,
   body footer #segunda-sessao-footer .elementos #container-link-redes .icon-redes #Icon_awesome-linkedin path:hover,
   body footer #segunda-sessao-footer .elementos #container-link-redes .icon-redes #Icon_awesome-youtube-square path:hover {
     fill: var(--corHoverBtnPrinc);
@@ -800,66 +825,66 @@ body footer #rodape-footer #logo-footer img {
   body main #sessao-quatro #container-sessao-quatro #img-cartoes-sessao-quatro img {
     width: 100%;
   }
-  body main #sessao-cinco {
+  body main #sessao-seis {
     height: -moz-max-content;
     height: max-content;
     padding-bottom: 4rem;
   }
-  body main #sessao-cinco #svg-onda-sessao-cinco {
+  body main #sessao-seis #svg-onda-sessao-seis {
     margin-top: -15rem;
   }
-  body main #sessao-cinco #container-sessao-cinco {
+  body main #sessao-seis #container-sessao-seis {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-around;
     margin-top: -4rem;
     padding: 0 6rem;
   }
-  body main #sessao-cinco #container-sessao-cinco #itens-texto-sessao-cinco {
+  body main #sessao-seis #container-sessao-seis #itens-texto-sessao-seis {
     padding: 1rem 0;
   }
-  body main #sessao-cinco #container-sessao-cinco #itens-texto-sessao-cinco #sessao-btn-sessao-cinco {
+  body main #sessao-seis #container-sessao-seis #itens-texto-sessao-seis #sessao-btn-sessao-seis {
     width: -moz-min-content;
     width: min-content;
   }
-  body main #sessao-cinco #container-sessao-cinco #itens-texto-sessao-cinco #sessao-btn-sessao-cinco a {
+  body main #sessao-seis #container-sessao-seis #itens-texto-sessao-seis #sessao-btn-sessao-seis a {
     margin: 0 1rem;
   }
-  body main #sessao-cinco #container-sessao-cinco #container-img-sessao-cinco {
+  body main #sessao-seis #container-sessao-seis #container-img-sessao-seis {
     margin: -10rem 0 0;
     max-width: 35rem;
     padding: 1rem;
   }
-  body main #sessao-seis {
+  body main #sessao-sete {
     padding-bottom: 6rem;
   }
-  body main #sessao-seis #svg-onda-sessao-seis {
+  body main #sessao-sete #svg-onda-sessao-sete {
     margin-top: -8rem;
   }
-  body main #sessao-seis #container-sessao-seis {
+  body main #sessao-sete #container-sessao-sete {
     display: flex;
     padding: 0 8rem;
   }
-  body main #sessao-seis #container-sessao-seis #conteudo-sessao-seis {
+  body main #sessao-sete #container-sessao-sete #conteudo-sessao-sete {
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
-  body main #sessao-seis #container-sessao-seis #conteudo-sessao-seis h5 {
+  body main #sessao-sete #container-sessao-sete #conteudo-sessao-sete h5 {
     padding: 0;
     margin: 0;
     text-align: left;
   }
-  body main #sessao-seis #container-sessao-seis #conteudo-sessao-seis p {
+  body main #sessao-sete #container-sessao-sete #conteudo-sessao-sete p {
     padding: 0;
     margin: 2rem 0;
     text-align: left;
   }
-  body main #sessao-seis #container-sessao-seis #conteudo-sessao-seis a {
+  body main #sessao-sete #container-sessao-sete #conteudo-sessao-sete a {
     display: block;
     margin: 0;
   }
-  body main #sessao-seis #container-sessao-seis #container-img-sessao-seis {
+  body main #sessao-sete #container-sessao-sete #container-img-sessao-sete {
     max-width: 40rem;
   }
   body footer #primeira-sessao-footer {
