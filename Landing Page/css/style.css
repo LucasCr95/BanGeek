@@ -38,7 +38,7 @@ body img {
 }
 body .btn-trans, body .btn-princ {
   border-radius: 0.5em;
-  padding: 0.7rem 4rem !important;
+  padding: 0.7rem 2rem !important;
   display: block;
   width: -moz-fit-content;
   width: fit-content;
@@ -94,7 +94,7 @@ body header #container-header #logo {
   height: max-content;
 }
 body header #container-header #menu {
-  width: 1.7em;
+  width: 1.6rem;
   height: -moz-fit-content;
   height: fit-content;
 }
@@ -426,26 +426,23 @@ body footer #rodape-footer #logo-footer img {
   body {
     font-size: 16px;
   }
-  body .btn-trans,
-  body .btn-princ {
-    font-size: 0.7em !important;
+  body .btn-trans, body .btn-princ {
+    font-size: 0.8rem !important;
+    padding: 0.8rem 3rem !important;
+  }
+  body h1, body h2, body h4, body h5 {
+    font-size: 2rem;
   }
   body header #container-header {
-    height: 4em;
-    padding: 0 3rem;
-    margin-top: -0.5em;
-  }
-  body header #container-header #logo {
-    width: 5em;
+    height: -moz-fit-content;
+    height: fit-content;
+    align-items: center;
+    padding: 0 4rem;
   }
   body header #container-header #menu {
-    display: flex;
-    align-items: center;
-    padding: 1.8em 0 0 0;
-    width: 2em;
-  }
-  body header #container-header #menu img {
-    width: 2em;
+    height: -moz-fit-content;
+    height: fit-content;
+    width: 1.8rem;
   }
   body header #icon-menu:checked ~ nav {
     max-height: 17em;
@@ -453,11 +450,8 @@ body footer #rodape-footer #logo-footer img {
   body header #navbar {
     top: 4em;
   }
-  body header #navbar ul li a {
-    font-size: 1em;
-  }
   body main #sessao-um {
-    padding: 0 3em;
+    padding: 0 4em;
   }
   body main #sessao-um #img-sessao-um {
     max-width: 100%;
@@ -467,39 +461,35 @@ body footer #rodape-footer #logo-footer img {
     margin: 3rem auto;
   }
   body main #sessao-um #conteudo-sessao-um h1 {
-    max-width: 100%;
-    font-size: 2rem;
+    display: block;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
   }
   body main #sessao-um #conteudo-sessao-um p {
-    font-size: 1.2em;
-    text-align: center;
+    margin: 1rem auto;
+    display: block;
     width: 100%;
-    margin: 0.625rem auto 3rem;
   }
   body main #sessao-um #conteudo-sessao-um a {
-    margin: 0 auto;
+    margin: 4rem auto;
   }
-  body main #sessao-dois #img-sessao-dois {
-    max-width: 70%;
+  body main #sessao-dois {
+    padding: 0 4rem 2rem;
   }
-  body main #sessao-dois h2 {
-    font-size: 2em;
-    width: auto;
+  body main #sessao-dois #conteudo-sessao-dois h2 {
+    max-width: -moz-fit-content;
+    max-width: fit-content;
   }
-  body main #sessao-dois p {
-    font-size: 1.2em;
-    max-width: 25rem;
-    margin-bottom: 3em;
+  body main #sessao-dois #conteudo-sessao-dois p {
+    font-size: 1rem;
+    min-width: 90%;
   }
   body main #sessao-tres #container-sessao-tres {
-    padding: 2em 5em 5em;
+    padding: 2rem 4rem 5rem;
     justify-content: space-between;
   }
   body main #sessao-tres #container-sessao-tres .elementos {
-    width: 40%;
-  }
-  body main #sessao-tres #container-sessao-tres .elementos h3 {
-    font-size: 1.1em;
+    width: 45%;
   }
   body main #sessao-quatro #img-sessao-quatro {
     padding: 0 3rem;

@@ -41,7 +41,7 @@ body {
 
     .btn-trans, .btn-princ{
         border-radius: .5em;
-        padding: .7rem 4rem !important;
+        padding: .7rem 2rem !important;
         display: block;
         width: fit-content;
         text-align: center;
@@ -86,7 +86,6 @@ body {
         font: 600 1.6rem var(--font0);
     }
 
-
     header{
         width: 100%;
         box-shadow: 0 0 .6em hwb(0 0% 100% / 0.70);
@@ -105,7 +104,7 @@ body {
             }
 
             #menu {
-                width: 1.7em;
+                width: 1.6rem;
                 height: fit-content;
             }
         }
@@ -537,31 +536,25 @@ body {
     body {
         font-size: 16px;
 
-        .btn-trans,
-        .btn-princ {
-            font-size: .70em !important;
+        .btn-trans, .btn-princ {
+            font-size: .8rem !important;
+            padding: .8rem 3rem !important;
+        }
+
+        h1, h2, h4, h5{
+            font-size: 2rem;
         }
 
         header {
-
             #container-header {
-                height: 4em;
-                padding: 0 3rem;
-                margin-top: -.5em;
+                height: fit-content;
+                align-items: center;
+                padding: 0 4rem;
 
-                #logo {
-                    width: 5em;
-                }
 
                 #menu {
-                    display: flex;
-                    align-items: center;
-                    padding: 1.8em 0 0 0;
-                    width: 2em;
-
-                    img {
-                        width: 2em;
-                    }
+                    height: fit-content;
+                    width: 1.8rem;
                 }
 
             }
@@ -575,22 +568,12 @@ body {
 
             #navbar {
                 top: 4em;
-
-                ul {
-                    li {
-
-                        a {
-                            font-size: 1em;
-                        }
-                    }
-                }
-
             }
         }
 
         main {
             #sessao-um {
-                padding: 0 3em;
+                padding: 0 4em;
 
                 #img-sessao-um {
                     max-width: 100%;
@@ -601,53 +584,47 @@ body {
                     margin: 3rem auto;
 
                     h1 {
-                        max-width: 100%;
-                        font-size: 2rem;
+                        display: block;
+                        max-width: fit-content;
                     }
 
                     p {
-                        font-size: 1.2em;
-                        text-align: center;
+                        margin: 1rem auto;
+                        display: block;
                         width: 100%;
-                        margin: .625rem auto 3rem;
                     }
 
                     a {
-                        margin: 0 auto;
+                        margin: 4rem auto;
                     }
                 }
-
             }
 
             #sessao-dois {
-                #img-sessao-dois {
-                    max-width: 70%;
+                padding: 0 4rem 2rem;
+
+                #conteudo-sessao-dois{
+
+                    h2 {
+                        max-width: fit-content;
+                    }
+    
+                    p {
+                        font-size: 1rem;
+                        min-width: 90%;
+                    }
                 }
 
-                h2 {
-                    font-size: 2em;
-                    width: auto;
-                }
-
-                p {
-                    font-size: 1.2em;
-                    max-width: 25rem;
-                    margin-bottom: 3em;
-                }
             }
 
             #sessao-tres {
 
                 #container-sessao-tres {
-                    padding: 2em 5em 5em;
+                    padding: 2rem 4rem 5rem;
                     justify-content: space-between;
 
                     .elementos {
-                        width: 40%;
-
-                        h3 {
-                            font-size: 1.1em;
-                        }
+                        width: 45%;
                     }
 
                 }
