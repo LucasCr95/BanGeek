@@ -191,7 +191,8 @@ body main #sessao-tres #container-sessao-tres {
 }
 body main #sessao-tres #container-sessao-tres .elementos {
   width: 45%;
-  height: 8.75rem;
+  height: -moz-fit-content;
+  height: fit-content;
   margin: 0.937rem 0;
 }
 body main #sessao-tres #container-sessao-tres .elementos h3 {
@@ -485,62 +486,77 @@ body footer #rodape-footer #logo-footer img {
     min-width: 90%;
   }
   body main #sessao-tres #container-sessao-tres {
-    padding: 2rem 4rem 5rem;
-    justify-content: space-between;
+    padding: 2rem 4rem 6rem;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-evenly;
   }
   body main #sessao-tres #container-sessao-tres .elementos {
-    width: 45%;
+    width: 11rem;
+    height: -moz-fit-content;
+    height: fit-content;
   }
-  body main #sessao-quatro #img-sessao-quatro {
-    padding: 0 3rem;
+  body main #sessao-tres #container-sessao-tres .elementos p {
+    font-size: 0.9rem;
   }
-  body main #sessao-quatro p {
-    font-size: 1.3em;
+  body main #sessao-quatro #svg-onda-sessao-quatro {
+    margin-top: -3rem;
   }
-  body main #sessao-quatro #img-cartoes-sessao-quatro {
-    padding: 0 3em;
-    width: 70%;
+  body main #sessao-cinco {
+    padding: 0 4rem 3rem;
   }
-  body main #sessao-seis #sessao-btn-sessao-seis {
-    justify-content: space-evenly;
-    width: 70%;
-    margin: 3em auto 2em;
+  body main #sessao-cinco #conteudo-sessao-cinco p {
+    max-width: 100%;
+    font-size: 1.3rem;
   }
-  body main #sessao-seis #sessao-btn-sessao-seis a {
-    width: 11em;
+  body main #sessao-seis #container-sessao-seis {
+    padding: 0 4rem;
   }
-  body main #sessao-sete p {
-    font-size: 1.1em;
+  body main #sessao-seis #container-sessao-seis #conteudo-sessao-seis #txt-sessao-seis h4 {
+    max-width: 100%;
   }
-  body main #sessao-sete #container-img-sessao-sete {
-    width: 85%;
-    margin: 0 auto;
+  body main #sessao-seis #container-sessao-seis #conteudo-sessao-seis #txt-sessao-seis p {
+    font-size: 1rem;
   }
-  body footer #primeira-sessao-footer {
-    padding: 0 3em;
+  body main #sessao-seis #container-sessao-seis #conteudo-sessao-seis #sessao-btn-sessao-seis {
+    justify-content: space-between;
+    width: 22rem;
+    margin: 3em auto;
+  }
+  body main #sessao-seis #container-sessao-seis #conteudo-sessao-seis #sessao-btn-sessao-seis a {
+    width: 10rem;
+  }
+  body main #sessao-sete #container-sessao-sete {
+    padding: 0 4rem;
+  }
+  body main #sessao-sete #container-sessao-sete #conteudo-sessao-sete p {
+    width: 20rem;
+    background-color: #320995;
+    font-size: 1em;
+  }
+  body main #sessao-sete #container-sessao-sete #container-img-sessao-sete {
+    width: 100%;
   }
   body footer #segunda-sessao-footer {
-    justify-content: end;
+    padding: 4rem;
+    justify-content: space-between;
   }
   body footer #segunda-sessao-footer #sessao-btn-footer a {
-    width: 12em;
+    width: 10em;
   }
-  body footer #segunda-sessao-footer #container-link-redes {
-    width: 13em;
-  }
-  body footer #segunda-sessao-footer #rodape-footer {
-    padding: 0 3em;
+  body footer #rodape-footer {
+    padding: 0 4rem;
   }
 }
-@media screen and (min-width: 885px) {
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@media screen and (min-width: 920px) {
+  body {
+    font-size: 16px;
   }
-  body .btn-princ,
-  body .btn-trans {
-    width: 8.4rem;
+  body .btn-princ, body .btn-trans {
+    padding: 0.6rem 1rem !important;
+    width: -moz-fit-content;
+    width: fit-content;
+    font-size: 0.7rem !important;
     transition: all 0.5s;
   }
   body .btn-trans:hover {
@@ -554,26 +570,25 @@ body footer #rodape-footer #logo-footer img {
     background-color: var(--corHoverBtnPrinc);
   }
   body header {
-    width: 100%;
-    padding: 0 3rem;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 0 4rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 5em;
   }
   body header #container-header {
-    height: auto;
     padding: 0;
   }
   body header #container-header #logo {
     width: 5rem;
-    align-items: center;
   }
   body header #container-header #menu {
     display: none;
   }
   body header #navbar {
-    max-height: 5em;
+    max-height: -moz-fit-content;
+    max-height: fit-content;
     box-shadow: none;
     width: auto;
     position: relative;
@@ -585,7 +600,8 @@ body footer #rodape-footer #logo-footer img {
     display: flex;
     align-items: center;
     padding: 1rem 0.5rem 1rem 1rem;
-    height: auto;
+    height: -moz-fit-content;
+    height: fit-content;
   }
   body header #navbar ul li {
     display: flex;
@@ -599,7 +615,7 @@ body footer #rodape-footer #logo-footer img {
   }
   body header #navbar ul li a {
     padding: 1rem 0.5rem;
-    font-size: 0.8em;
+    font-size: 0.9em;
     display: block;
     border-bottom: 2px solid transparent;
   }
@@ -614,10 +630,10 @@ body footer #rodape-footer #logo-footer img {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
-    padding: 3rem;
+    padding: 3rem 4rem;
   }
   body main #sessao-um #img-sessao-um {
-    width: 48%;
+    width: 50%;
     display: flex;
     align-items: center;
   }
@@ -632,15 +648,18 @@ body footer #rodape-footer #logo-footer img {
     text-align: left;
     margin: 0;
     font-size: 2rem;
+    max-width: 22rem;
   }
   body main #sessao-um #conteudo-sessao-um p {
     text-align: left;
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin: 1.5rem 0;
+    width: 19rem;
   }
   body main #sessao-um #conteudo-sessao-um a {
-    margin: 0;
-    width: 10rem;
+    margin: 1.5rem 0;
+    font-size: 1rem !important;
+    padding: 0.8rem 3rem !important;
   }
   body main #sessao-dois {
     display: flex;

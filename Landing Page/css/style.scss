@@ -222,7 +222,7 @@ body {
 
                 .elementos {
                     width: 45%;
-                    height: 8.75rem;
+                    height: fit-content;
                     margin: .937rem 0;
 
                     h3 {
@@ -233,7 +233,7 @@ body {
                         border-image: linear-gradient(to right, var(--cor10) 30%, transparent 30%) 1;
                     }
 
-                    p {
+                    p{
                         font-size: .8rem;
                         width: 100%;
                         margin: .625rem 0;
@@ -254,7 +254,6 @@ body {
                 width: 100%;
                 margin-top: 3rem;
             }
-
         }
 
         #sessao-cinco{
@@ -349,12 +348,6 @@ body {
                     margin-top: 3rem;
                 }
             }
-
-
-
-
-
-
         }
 
         #sessao-sete{
@@ -620,134 +613,184 @@ body {
             #sessao-tres {
 
                 #container-sessao-tres {
-                    padding: 2rem 4rem 5rem;
-                    justify-content: space-between;
+                    padding: 2rem 4rem 6rem;
+                    display: grid;
+                    grid-template-columns: auto auto;
+                    justify-content: space-evenly;
 
                     .elementos {
-                        width: 45%;
+                        width: 11rem;
+                        height: fit-content;
+
+                        h3{
+                        }
+
+                        p{
+                            font-size:.9rem;
+                        }
                     }
 
                 }
             }
 
-            #sessao-quatro {
-
-                #img-sessao-quatro {
-                    padding: 0 3rem;
-                }
-
-                p {
-                    font-size: 1.3em;
-                }
-
-                #img-cartoes-sessao-quatro {
-                    padding: 0 3em;
-                    width: 70%;
+            #sessao-quatro{
+                #svg-onda-sessao-quatro{
+                    margin-top: -3rem;
                 }
             }
 
-            #sessao-seis {
+            #sessao-cinco{
+                padding: 0 4rem 3rem;
+                
+                #conteudo-sessao-cinco{
 
-                #sessao-btn-sessao-seis {
-                    justify-content: space-evenly;
-                    width: 70%;
-                    margin: 3em auto 2em;
+                    p{
+                        max-width: 100%;
+                        font-size: 1.3rem;
+                    }
 
-                    a {
-                        width: 11em;
+                    #container-btn-sessao-cinco{
+
+                    }
+                }
+
+                #img-cartoes-sessao-cinco{
+
+                }
+            }
+
+            #sessao-seis{
+                #container-sessao-seis{
+                    padding: 0 4rem;
+
+                    #conteudo-sessao-seis{
+                        #logo-sessao-seis{
+
+                        }
+
+                        #txt-sessao-seis{
+                            h4{
+                                max-width: 100%;
+                            }
+
+                            p{
+                                font-size: 1rem;
+                            }
+                        }
+
+                        #sessao-btn-sessao-seis {
+                            justify-content: space-between;
+                            width: 22rem;
+                            margin: 3em auto;
+                            
+                            a{
+                                width: 10rem;
+                            }
+                        }
+                    }
+
+                    #container-img-sessao-seis{
+
                     }
                 }
             }
 
-            #sessao-sete {
+            #sessao-sete{
+                #container-sessao-sete{
+                    padding: 0 4rem;
 
-                p {
-                    font-size: 1.1em;
-                }
+                    #conteudo-sessao-sete{
+                        h5{
 
-                #container-img-sessao-sete {
-                    width: 85%;
-                    margin: 0 auto;
+                        }
+
+                        p{
+                            width: 20rem;
+                            background-color: #320995;
+                            font-size: 1em;
+                        }
+
+                    }
+
+                    #container-img-sessao-sete {
+                        width: 100%;
+                        // margin: 4rem auto;
+                    }
                 }
             }
         }
 
-        footer {
-
+        footer{
             #primeira-sessao-footer {
-                padding: 0 3em;
             }
 
             #segunda-sessao-footer {
-                justify-content: end;
+                padding: 4rem;
+                justify-content: space-between;
+
+                .elementos{
+                }
 
                 #sessao-btn-footer {
-                    a {
-                        width: 12em;
+                    a{
+                        width: 10em;
                     }
                 }
 
                 #container-link-redes {
-                    width: 13em;
                 }
+            }
 
-                #rodape-footer {
-                    padding: 0 3em;
-                }
+            #rodape-footer {
+                padding: 0 4rem;
             }
         }
     }
 }
 
-@media screen and (min-width: 885px) {
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
+@media screen and (min-width: 920px) {
 
-    body {
+    body{
+        font-size: 16px;
 
-        .btn-princ,
-        .btn-trans {
-            width: 8.4rem;
+        .btn-princ,.btn-trans{
+            padding: .6rem 1rem !important;
+            width: fit-content;
+            font-size: .7rem !important;
             transition: all .5s;
         }
 
-        .btn-trans {
+        .btn-trans{
             &:hover {
                 background-color: var(--corHoverBtnTrans);
             }
         }
 
-        .btn-princ {
+        .btn-princ{
             &:hover {
                 background-color: var(--corHoverBtnPrinc);
             }
         }
 
-        .btn-down {
+        .btn-down{
             &:hover {
                 transition: all .5s;
                 background-color: var(--corHoverBtnPrinc);
             }
         }
 
-        header {
-            width: 100%;
-            padding: 0 3rem;
+        header{
+            height: fit-content;
+            padding: 0 4rem;
             display: flex;
             align-items: center;
             justify-content: space-between;
-            height: 5em;
 
             #container-header {
-                height: auto;
                 padding: 0;
 
                 #logo {
                     width: 5rem;
-                    align-items: center;
                 }
 
                 #menu {
@@ -756,7 +799,7 @@ body {
             }
 
             #navbar {
-                max-height: 5em;
+                max-height: fit-content;
                 box-shadow: none;
                 width: auto;
                 position: relative;
@@ -764,11 +807,11 @@ body {
                 display: flex;
                 align-items: center;
 
-                ul {
+                ul{
                     display: flex;
                     align-items: center;
                     padding: 1rem .5rem 1rem 1rem;
-                    height: auto;
+                    height: fit-content;
 
                     li {
                         display: flex;
@@ -781,9 +824,9 @@ body {
                             margin-right: 0;
                         }
 
-                        a {
+                        a{
                             padding: 1rem .5rem;
-                            font-size: .8em;
+                            font-size: .9em;
                             display: block;
                             border-bottom: 2px solid transparent;
 
@@ -800,43 +843,46 @@ body {
 
         }
 
-        main {
+        main{
             width: 100%;
 
-            #sessao-um {
+            #sessao-um{
                 display: flex;
                 flex-direction: row-reverse;
                 justify-content: space-between;
-                padding: 3rem;
+                padding: 3rem 4rem;
 
-                #img-sessao-um {
-                    width: 48%;
+                #img-sessao-um{
+                    width: 50%;
                     display: flex;
                     align-items: center;
                 }
 
-                #conteudo-sessao-um {
+                #conteudo-sessao-um{
                     width: 45%;
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
                     padding: 0;
 
-                    h1 {
+                    h1{
                         text-align: left;
                         margin: 0;
                         font-size: 2rem;
+                        max-width: 22rem;
                     }
 
-                    p {
+                    p{
                         text-align: left;
-                        font-size: 1rem;
+                        font-size: 1.2rem;
                         margin: 1.5rem 0;
+                        width: 19rem;
                     }
 
-                    a {
-                        margin: 0;
-                        width: 10rem;
+                    a{
+                        margin: 1.5rem 0;
+                        font-size: 1rem !important;
+                        padding: .8rem 3rem !important;
                     }
                 }
             }
