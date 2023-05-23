@@ -49,7 +49,7 @@ body .btn-trans, body .btn-princ {
 }
 body .btn-trans {
   background-color: transparent;
-  border: 0.1em solid var(--cor0);
+  border: 0.1em solid var(--cor0) !important;
 }
 body .btn-trans:active {
   background-color: var(--corHoverBtnTrans);
@@ -619,14 +619,10 @@ body footer #rodape-footer #logo-footer img {
   }
 }
 @media screen and (min-width: 920px) {
-  body {
-    font-size: 16px;
-  }
   body .btn-princ, body .btn-trans {
-    padding: 0.6rem 1rem !important;
-    width: -moz-fit-content;
-    width: fit-content;
-    font-size: 0.7rem !important;
+    width: 10rem;
+    padding: 0.7rem !important;
+    font-size: 0.8rem !important;
     transition: all 0.5s;
   }
   body .btn-trans:hover {
@@ -640,8 +636,6 @@ body footer #rodape-footer #logo-footer img {
     background-color: var(--corHoverBtnPrinc);
   }
   body header {
-    height: -moz-fit-content;
-    height: fit-content;
     padding: 0 4rem;
     display: flex;
     align-items: center;
@@ -649,9 +643,10 @@ body footer #rodape-footer #logo-footer img {
   }
   body header #container-header {
     padding: 0;
+    background-color: #26E55F;
   }
   body header #container-header #logo {
-    width: 5rem;
+    max-width: 4rem;
   }
   body header #container-header #menu {
     display: none;
@@ -660,52 +655,55 @@ body footer #rodape-footer #logo-footer img {
     max-height: -moz-fit-content;
     max-height: fit-content;
     box-shadow: none;
-    width: auto;
+    width: 100%;
     position: relative;
     top: 0;
     display: flex;
-    align-items: center;
+    justify-content: flex-end;
+    padding: 0;
+    background-color: #26E55F;
   }
   body header #navbar ul {
     display: flex;
     align-items: center;
-    padding: 1rem 0.5rem 1rem 1rem;
-    height: -moz-fit-content;
-    height: fit-content;
+    justify-content: center;
+    padding: 0.5rem;
   }
   body header #navbar ul li {
     display: flex;
     align-items: center;
     width: auto;
-    height: auto;
-    margin: 0 0.5rem;
+    margin: 0 0.7rem;
   }
   body header #navbar ul li:last-child {
     margin-right: 0;
   }
   body header #navbar ul li a {
-    padding: 1rem 0.5rem;
+    padding: 0.6rem 0;
     font-size: 0.9em;
     display: block;
     border-bottom: 2px solid transparent;
   }
   body header #navbar ul li a:hover {
-    transition: all 0.7s;
+    transition: all 0.8s;
     border-bottom: 2px solid var(--cor9);
   }
-  body main {
-    width: 100%;
-  }
   body main #sessao-um {
+    /* 
+    +++++++++++++++++++++++++++++++++
+    */
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
-    padding: 3rem 4rem;
+    align-items: center;
+    padding: 3rem 3rem;
+    background-color: #8B68DF;
   }
   body main #sessao-um #img-sessao-um {
-    width: 50%;
+    width: 45%;
     display: flex;
     align-items: center;
+    background-color: #26E55F;
   }
   body main #sessao-um #conteudo-sessao-um {
     width: 45%;
@@ -713,23 +711,20 @@ body footer #rodape-footer #logo-footer img {
     flex-direction: column;
     justify-content: center;
     padding: 0;
+    background-color: #26E55F;
   }
   body main #sessao-um #conteudo-sessao-um h1 {
     text-align: left;
     margin: 0;
-    font-size: 2rem;
     max-width: 22rem;
   }
   body main #sessao-um #conteudo-sessao-um p {
     text-align: left;
-    font-size: 1.2rem;
     margin: 1.5rem 0;
     width: 19rem;
   }
   body main #sessao-um #conteudo-sessao-um a {
     margin: 1.5rem 0;
-    font-size: 1rem !important;
-    padding: 0.8rem 3rem !important;
   }
   body main #sessao-dois {
     display: flex;
@@ -752,15 +747,16 @@ body footer #rodape-footer #logo-footer img {
   body main #sessao-dois #conteudo-sessao-dois h2 {
     text-align: left;
     margin: 1.5rem 0;
-    font-size: 2rem;
   }
   body main #sessao-dois #conteudo-sessao-dois p {
     text-align: left;
-    font-size: 1rem;
     margin: 1.5rem 0;
   }
+  body main #sessao-tres {
+    padding-bottom: 3rem;
+  }
   body main #sessao-tres #container-sessao-tres {
-    padding: 2rem 3rem 10rem;
+    padding: 2rem 4rem 10rem;
   }
   body main #sessao-tres #container-sessao-tres .elementos {
     width: 35%;
@@ -770,12 +766,6 @@ body footer #rodape-footer #logo-footer img {
   }
   body main #sessao-tres #container-sessao-tres .elementos p {
     font-size: 1em;
-  }
-  body main #sessao-quatro {
-    padding: 0 0 5rem 0;
-  }
-  body main #sessao-quatro #container-btn-sessao-quatro a {
-    width: 12rem;
   }
   body main #sessao-seis #svg-onda-sessao-seis {
     margin-top: -4rem;

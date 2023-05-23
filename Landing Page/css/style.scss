@@ -53,7 +53,7 @@ body{
 
     .btn-trans{
         background-color: transparent;
-        border: .1em solid var(--cor0);
+        border: .1em solid var(--cor0) !important;
 
         &:active {
             background-color: var(--corHoverBtnTrans);
@@ -862,6 +862,7 @@ body{
                     #container-link-redes {
                         display: flex;
                         justify-content: space-between;
+
                         .icon-redes{
                             margin: 0 !important;
                         }
@@ -873,14 +874,12 @@ body{
 }
 
 @media screen and (min-width: 920px) {
-
-    body{
-        font-size: 16px;
+    body{   
 
         .btn-princ,.btn-trans{
-            padding: .6rem 1rem !important;
-            width: fit-content;
-            font-size: .7rem !important;
+            width: 10rem;
+            padding: .7rem !important;
+            font-size: .8rem !important;
             transition: all .5s;
         }
 
@@ -904,82 +903,86 @@ body{
         }
 
         header{
-            height: fit-content;
             padding: 0 4rem;
             display: flex;
             align-items: center;
             justify-content: space-between;
 
-            #container-header {
+            #container-header{
                 padding: 0;
-
-                #logo {
-                    width: 5rem;
+                background-color: #26E55F;
+                #logo{
+                    max-width: 4rem;
                 }
 
-                #menu {
+                #menu{
                     display: none;
                 }
             }
 
-            #navbar {
+            #navbar{
                 max-height: fit-content;
                 box-shadow: none;
-                width: auto;
+                width: 100%;
                 position: relative;
                 top: 0;
                 display: flex;
-                align-items: center;
+                justify-content: flex-end;
+                padding: 0;
+                background-color: #26E55F;
 
                 ul{
                     display: flex;
                     align-items: center;
-                    padding: 1rem .5rem 1rem 1rem;
-                    height: fit-content;
+                    justify-content: center;
+                    padding: .5rem;
 
-                    li {
+                    li{
                         display: flex;
                         align-items: center;
                         width: auto;
-                        height: auto;
-                        margin: 0 .5rem;
+                        margin: 0 .7rem;
 
                         &:last-child {
                             margin-right: 0;
                         }
 
                         a{
-                            padding: 1rem .5rem;
+                            padding: .6rem 0;
                             font-size: .9em;
                             display: block;
                             border-bottom: 2px solid transparent;
 
-                            &:hover {
-                                transition: all .7s;
+
+                            &:hover{
+                                transition: all .8s;
                                 border-bottom: 2px solid var(--cor9);
                             }
+
+
                         }
                     }
                 }
             }
-
-
-
         }
 
         main{
-            width: 100%;
-
             #sessao-um{
+                /* 
+                +++++++++++++++++++++++++++++++++
+                */
                 display: flex;
                 flex-direction: row-reverse;
                 justify-content: space-between;
-                padding: 3rem 4rem;
+                align-items: center;
+                padding: 3rem 3rem;
+                background-color: #8B68DF;
 
                 #img-sessao-um{
-                    width: 50%;
+                    width: 45%;
                     display: flex;
                     align-items: center;
+                    background-color: #26E55F;
                 }
 
                 #conteudo-sessao-um{
@@ -988,41 +991,38 @@ body{
                     flex-direction: column;
                     justify-content: center;
                     padding: 0;
+                    background-color: #26E55F;
 
                     h1{
                         text-align: left;
                         margin: 0;
-                        font-size: 2rem;
                         max-width: 22rem;
                     }
 
                     p{
                         text-align: left;
-                        font-size: 1.2rem;
                         margin: 1.5rem 0;
                         width: 19rem;
                     }
 
                     a{
                         margin: 1.5rem 0;
-                        font-size: 1rem !important;
-                        padding: .8rem 3rem !important;
                     }
                 }
             }
 
-            #sessao-dois {
+            #sessao-dois{
                 display: flex;
                 justify-content: space-between;
                 padding: 3rem;
 
-                #img-sessao-dois {
+                #img-sessao-dois{
                     width: 48%;
                     display: flex;
                     align-items: center;
                 }
 
-                #conteudo-sessao-dois {
+                #conteudo-sessao-dois{
                     width: 45%;
                     display: flex;
                     flex-direction: column;
@@ -1030,24 +1030,23 @@ body{
                     justify-content: center;
                     padding: 0;
 
-                    h2 {
+                    h2{
                         text-align: left;
                         margin: 1.5rem 0;
-                        font-size: 2rem;
                     }
 
-                    p {
+                    p{
                         text-align: left;
-                        font-size: 1rem;
                         margin: 1.5rem 0;
                     }
                 }
             }
 
             #sessao-tres {
+                padding-bottom: 3rem;
 
                 #container-sessao-tres {
-                    padding: 2rem 3rem 10rem;
+                    padding: 2rem 4rem 10rem;
 
                     .elementos {
                         width: 35%;
@@ -1065,13 +1064,6 @@ body{
 
             #sessao-quatro {
 
-                padding: 0 0 5rem 0;
-
-                #container-btn-sessao-quatro {
-                    a {
-                        width: 12rem;
-                    }
-                }
             }
 
             #sessao-seis {
