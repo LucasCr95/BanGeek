@@ -543,11 +543,11 @@ body footer #rodape-footer #logo-footer img {
   body main #sessao-sete #container-sessao-sete #container-img-sessao-sete {
     width: 100%;
   }
-  body footer #segunda-sessao-footer {
+  body footer #container-segunda-sessao-footer {
     padding: 4rem;
     justify-content: space-between;
   }
-  body footer #segunda-sessao-footer #sessao-btn-footer a {
+  body footer #container-segunda-sessao-footer #sessao-btn-footer a {
     width: 10em;
   }
   body footer #rodape-footer {
@@ -607,22 +607,22 @@ body footer #rodape-footer #logo-footer img {
   body main #sessao-sete #container-sessao-sete #container-img-sessao-sete {
     width: 100%;
   }
-  body footer #segunda-sessao-footer {
+  body footer #container-segunda-sessao-footer {
     display: grid;
     grid-template-columns: auto auto;
     justify-content: space-around;
   }
-  body footer #segunda-sessao-footer .elementos {
+  body footer #container-segunda-sessao-footer .elementos {
     min-width: 15rem;
   }
-  body footer #segunda-sessao-footer .elementos li {
+  body footer #container-segunda-sessao-footer .elementos li {
     font-size: 0.9rem;
   }
-  body footer #segunda-sessao-footer .elementos #container-link-redes {
+  body footer #container-segunda-sessao-footer .elementos #container-link-redes {
     display: flex;
     justify-content: space-between;
   }
-  body footer #segunda-sessao-footer .elementos #container-link-redes .icon-redes {
+  body footer #container-segunda-sessao-footer .elementos #container-link-redes .icon-redes {
     margin: 0 !important;
   }
 }
@@ -854,24 +854,24 @@ body footer #rodape-footer #logo-footer img {
   body footer #primeira-sessao-footer {
     padding: 0 4rem;
   }
-  body footer #segunda-sessao-footer {
+  body footer #container-segunda-sessao-footer {
     display: grid;
     grid-template-columns: auto auto;
     justify-content: space-around;
   }
-  body footer #segunda-sessao-footer .elementos {
+  body footer #container-segunda-sessao-footer .elementos {
     width: 20rem;
     margin: 1rem;
   }
-  body footer #segunda-sessao-footer .elementos a:hover {
+  body footer #container-segunda-sessao-footer .elementos a:hover {
     transition: all 0.5s;
     color: var(--corHoverBtnPrinc);
     fill: var(--corHoverBtnPrinc);
   }
-  body footer #segunda-sessao-footer .elementos #container-link-redes .icon-redes #Icon_awesome-facebook-square path:hover,
-  body footer #segunda-sessao-footer .elementos #container-link-redes .icon-redes #Icon_awesome-instagram path:hover,
-  body footer #segunda-sessao-footer .elementos #container-link-redes .icon-redes #Icon_awesome-linkedin path:hover,
-  body footer #segunda-sessao-footer .elementos #container-link-redes .icon-redes #Icon_awesome-youtube-square path:hover {
+  body footer #container-segunda-sessao-footer .elementos #container-link-redes .icon-redes #Icon_awesome-facebook-square path:hover,
+  body footer #container-segunda-sessao-footer .elementos #container-link-redes .icon-redes #Icon_awesome-instagram path:hover,
+  body footer #container-segunda-sessao-footer .elementos #container-link-redes .icon-redes #Icon_awesome-linkedin path:hover,
+  body footer #container-segunda-sessao-footer .elementos #container-link-redes .icon-redes #Icon_awesome-youtube-square path:hover {
     fill: var(--corHoverBtnPrinc);
   }
   body footer #rodape-footer {
@@ -879,11 +879,76 @@ body footer #rodape-footer #logo-footer img {
   }
 }
 @media screen and (min-width: 1024px) {
-  body #container-header, body #sessao-um, body #sessao-dois, body #container-sessao-tres, body #img-sessao-quatro, body #sessao-cinco, body #container-sessao-seis, body #container-sessao-sete, body #primeira-sessao-footer, body #segunda-sessao-footer, body #rodape-footer {
+  body #container-header, body #sessao-um, body #sessao-dois, body #container-sessao-tres, body #img-sessao-quatro, body #sessao-cinco, body #container-sessao-seis, body #container-sessao-sete, body #primeira-sessao-footer, body #container-segunda-sessao-footer, body #rodape-footer {
     padding: 0 7rem !important;
   }
   body #container-sessao-tres {
-    padding-bottom: 1rem;
-    background-color: #26E55F;
+    padding-bottom: 8rem !important;
+    margin: 0 !important;
+  }
+  body #sessao-cinco {
+    padding-bottom: 6rem !important;
+    margin: 0 !important;
+  }
+  body #sessao-seis #svg-onda-sessao-seis {
+    margin-top: -1rem !important;
+  }
+  body #sessao-seis #container-sessao-seis {
+    padding-bottom: 1rem !important;
+  }
+  body #sessao-sete #svg-onda-sessao-sete {
+    margin-top: -6rem !important;
+  }
+}
+@media screen and (min-width: 1270px) {
+  body {
+    width: 100vw;
+  }
+  body #container-header, body #sessao-um, body #sessao-dois, body #container-sessao-tres, body #img-sessao-quatro, body #sessao-cinco, body #container-sessao-seis, body #container-sessao-sete {
+    max-width: 70rem;
+    margin: auto !important;
+    padding: 0 !important;
+  }
+  body #sessao-dois {
+    padding: 8rem 0 10rem !important;
+  }
+  body #sessao-tres {
+    background-color: var(--cor7);
+    padding-bottom: 10rem !important;
+  }
+  body #sessao-tres #svg-onda-sessao-tres {
+    margin-top: -6rem;
+  }
+  body #sessao-tres #container-sessao-tres {
+    margin-top: 3rem !important;
+  }
+  body #sessao-quatro #svg-onda-sessao-quatro {
+    margin-top: -6rem !important;
+  }
+  body #sessao-cinco {
+    padding-bottom: 5rem !important;
+    margin-bottom: 0 !important;
+  }
+  body #sessao-seis #svg-onda-sessao-seis {
+    margin-top: -1rem !important;
+  }
+  body #sessao-sete {
+    padding-bottom: 5rem !important;
+  }
+  body footer {
+    background-color: var(--cor7);
+  }
+  body footer #svg-onda-footer {
+    margin-top: -7rem;
+  }
+  body footer #container-full-footer {
+    width: 100%;
+  }
+  body footer #container-full-footer #primeira-sessao-footer, body footer #container-full-footer #container-segunda-sessao-footer {
+    max-width: 70rem;
+    margin: auto !important;
+  }
+  body footer #container-full-footer #segunda-sessao-footer, body footer #container-full-footer #rodape-footer {
+    background-color: var(--cor6);
   }
 }/*# sourceMappingURL=style.css.map */

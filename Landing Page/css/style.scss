@@ -738,7 +738,7 @@ body{
             #primeira-sessao-footer {
             }
 
-            #segunda-sessao-footer {
+            #container-segunda-sessao-footer {
                 padding: 4rem;
                 justify-content: space-between;
 
@@ -864,7 +864,7 @@ body{
         }
         
         footer{
-            #segunda-sessao-footer{
+            #container-segunda-sessao-footer{
                 display: grid;
                 grid-template-columns: auto auto;
                 justify-content: space-around;
@@ -1115,7 +1115,7 @@ body{
                     display: flex;
                     flex-direction: row-reverse;
                     align-items: center;
-                    padding: 0 4rem;
+                    padding: 0 4rem ;
 
                     #conteudo-sessao-seis{
                         width: 45%;
@@ -1190,7 +1190,7 @@ body{
                 padding: 0 4rem;
             }
 
-            #segunda-sessao-footer{
+            #container-segunda-sessao-footer{
                 display: grid;
                 grid-template-columns: auto auto;
                 justify-content: space-around;
@@ -1231,13 +1231,110 @@ body{
 @media screen and (min-width: 1024px){
 
     body{
-        #container-header, #sessao-um, #sessao-dois, #container-sessao-tres, #img-sessao-quatro, #sessao-cinco, #container-sessao-seis, #container-sessao-sete, #primeira-sessao-footer, #segunda-sessao-footer, #rodape-footer{
+        #container-header, #sessao-um, #sessao-dois, #container-sessao-tres, #img-sessao-quatro, #sessao-cinco, #container-sessao-seis, #container-sessao-sete, #primeira-sessao-footer, #container-segunda-sessao-footer, #rodape-footer{
             padding: 0 7rem !important;
         }
 
         #container-sessao-tres{
-            padding-bottom: 1rem;
-            background-color: #26E55F;
+            padding-bottom: 8rem !important;
+            margin: 0 !important;
+        }
+
+        #sessao-cinco{
+            padding-bottom: 6rem !important;
+            margin: 0 !important;
+        }
+
+        #sessao-seis{
+            #svg-onda-sessao-seis{
+                margin-top: -1rem !important;
+            }
+    
+            #container-sessao-seis{
+                padding-bottom: 1rem !important;
+            }
+        }
+
+        #sessao-sete{
+            #svg-onda-sessao-sete{
+                margin-top: -6rem !important;
+            }
+        }
+
+    }
+}
+
+@media screen and (min-width: 1270px){
+
+    body{
+        width: 100vw;
+
+        #container-header, #sessao-um, #sessao-dois, #container-sessao-tres, #img-sessao-quatro, #sessao-cinco, #container-sessao-seis, #container-sessao-sete{
+            max-width: 70rem;
+            margin: auto !important;
+            padding: 0 !important;
+        }
+
+        
+
+        #sessao-dois{
+            padding: 8rem 0  10rem!important;
+        }
+
+        #sessao-tres{
+            background-color: var(--cor7);
+            padding-bottom: 10rem !important;
+
+            #svg-onda-sessao-tres{
+                margin-top: -6rem;
+            }
+
+            #container-sessao-tres{
+                margin-top: 3rem !important;
+            }
+        }   
+
+        #sessao-quatro{
+            #svg-onda-sessao-quatro{
+                margin-top: -6rem !important;
+            }
+        }
+
+        #sessao-cinco{
+            padding-bottom: 5rem !important;
+            margin-bottom: 0 !important;
+        }
+
+        #sessao-seis{
+            #svg-onda-sessao-seis{
+                margin-top: -1rem !important;
+            }
+        }
+
+        #sessao-sete{
+            padding-bottom: 5rem !important;
+        }
+
+        footer{
+            background-color: var(--cor7);
+            
+            #svg-onda-footer{
+                margin-top: -7rem;
+            }
+
+            #container-full-footer{
+                width: 100%;
+                
+                #primeira-sessao-footer, #container-segunda-sessao-footer{
+                    max-width: 70rem;
+                    margin: auto !important;
+                }
+
+                #segunda-sessao-footer, #rodape-footer{
+                    background-color: var(--cor6);
+                }
+            }
         }
     }
+
 }
