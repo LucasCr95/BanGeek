@@ -319,12 +319,12 @@ body main #sessao-sete #container-sessao-sete #container-img-sessao-sete {
 body footer #svg-onda-footer {
   fill: var(--cor7);
 }
-body footer #primeira-sessao-footer {
+body footer #container-full-footer #primeira-sessao-footer {
   background-color: var(--cor7);
   margin-top: -1em;
   padding: 2em 2rem 0;
 }
-body footer #segunda-sessao-footer {
+body footer #container-full-footer #segunda-sessao-footer #container-segunda-sessao-footer {
   padding: 3rem 2rem 0;
   display: flex;
   flex-wrap: wrap;
@@ -332,7 +332,7 @@ body footer #segunda-sessao-footer {
   height: -moz-fit-content;
   height: fit-content;
 }
-body footer #segunda-sessao-footer .elementos {
+body footer #container-full-footer #segunda-sessao-footer #container-segunda-sessao-footer .elementos {
   width: 45%;
   min-height: 14rem;
   margin: 1rem 0;
@@ -343,7 +343,7 @@ body footer #segunda-sessao-footer .elementos {
       align-items: center;
   } */
 }
-body footer #segunda-sessao-footer .elementos dt {
+body footer #container-full-footer #segunda-sessao-footer #container-segunda-sessao-footer .elementos dt {
   font: 500 1rem var(--font0);
   padding-bottom: 0.7rem;
   width: 100%;
@@ -351,19 +351,19 @@ body footer #segunda-sessao-footer .elementos dt {
   -o-border-image: linear-gradient(to right, var(--cor9) 30%, transparent 30%) 1;
      border-image: linear-gradient(to right, var(--cor9) 30%, transparent 30%) 1;
 }
-body footer #segunda-sessao-footer .elementos li {
+body footer #container-full-footer #segunda-sessao-footer #container-segunda-sessao-footer .elementos li {
   font-size: 0.8rem;
   width: 100%;
   margin-top: 0.2rem;
 }
-body footer #segunda-sessao-footer .elementos li a {
+body footer #container-full-footer #segunda-sessao-footer #container-segunda-sessao-footer .elementos li a {
   padding: 0.5rem 0;
   display: block;
 }
-body footer #segunda-sessao-footer .elementos li a:active {
+body footer #container-full-footer #segunda-sessao-footer #container-segunda-sessao-footer .elementos li a:active {
   color: var(--cor10);
 }
-body footer #segunda-sessao-footer .elementos #sessao-btn-footer a {
+body footer #container-full-footer #segunda-sessao-footer #container-segunda-sessao-footer .elementos #sessao-btn-footer a {
   margin-top: 1em;
   height: 3em;
   min-width: 6em;
@@ -372,42 +372,42 @@ body footer #segunda-sessao-footer .elementos #sessao-btn-footer a {
   align-items: center;
   justify-content: center;
 }
-body footer #segunda-sessao-footer .elementos #sessao-btn-footer a img {
+body footer #container-full-footer #segunda-sessao-footer #container-segunda-sessao-footer .elementos #sessao-btn-footer a img {
   width: 2em;
   height: 2em;
   margin-right: 0.6em;
 }
-body footer #segunda-sessao-footer .elementos #sessao-btn-footer a #conteudo-btn p {
+body footer #container-full-footer #segunda-sessao-footer #container-segunda-sessao-footer .elementos #sessao-btn-footer a #conteudo-btn p {
   font-size: 0.7em;
   display: block;
   margin-bottom: 0.5em;
 }
-body footer #segunda-sessao-footer .elementos #sessao-btn-footer a #conteudo-btn span {
+body footer #container-full-footer #segunda-sessao-footer #container-segunda-sessao-footer .elementos #sessao-btn-footer a #conteudo-btn span {
   font-size: 0.8em;
   display: block;
 }
-body footer #segunda-sessao-footer .elementos #container-link-redes {
+body footer #container-full-footer #segunda-sessao-footer #container-segunda-sessao-footer .elementos #container-link-redes {
   display: grid;
   grid-template-columns: auto auto;
   justify-content: start;
 }
-body footer #segunda-sessao-footer .elementos #container-link-redes .icon-redes {
+body footer #container-full-footer #segunda-sessao-footer #container-segunda-sessao-footer .elementos #container-link-redes .icon-redes {
   width: 2.7em;
 }
-body footer #segunda-sessao-footer .elementos #container-link-redes .icon-redes:nth-child(2n+2) {
+body footer #container-full-footer #segunda-sessao-footer #container-segunda-sessao-footer .elementos #container-link-redes .icon-redes:nth-child(2n+2) {
   margin-left: 2rem;
 }
-body footer #segunda-sessao-footer .elementos #container-link-redes .icon-redes #Icon_awesome-facebook-square path,
-body footer #segunda-sessao-footer .elementos #container-link-redes .icon-redes #Icon_awesome-instagram path,
-body footer #segunda-sessao-footer .elementos #container-link-redes .icon-redes #Icon_awesome-linkedin path, #Icon_awesome-youtube-square path body footer #segunda-sessao-footer .elementos #container-link-redes .icon-redes:active {
+body footer #container-full-footer #segunda-sessao-footer #container-segunda-sessao-footer .elementos #container-link-redes .icon-redes #Icon_awesome-facebook-square path,
+body footer #container-full-footer #segunda-sessao-footer #container-segunda-sessao-footer .elementos #container-link-redes .icon-redes #Icon_awesome-instagram path,
+body footer #container-full-footer #segunda-sessao-footer #container-segunda-sessao-footer .elementos #container-link-redes .icon-redes #Icon_awesome-linkedin path, #Icon_awesome-youtube-square path body footer #container-full-footer #segunda-sessao-footer #container-segunda-sessao-footer .elementos #container-link-redes .icon-redes:active {
   fill: var(--cor0);
 }
-body footer #segunda-sessao-footer .elementos #container-link-redes .icon-redes #Icon_awesome-facebook-square path:active,
-body footer #segunda-sessao-footer .elementos #container-link-redes .icon-redes #Icon_awesome-instagram path:active,
-body footer #segunda-sessao-footer .elementos #container-link-redes .icon-redes #Icon_awesome-linkedin path:active, #Icon_awesome-youtube-square path body footer #segunda-sessao-footer .elementos #container-link-redes .icon-redes:active:active {
+body footer #container-full-footer #segunda-sessao-footer #container-segunda-sessao-footer .elementos #container-link-redes .icon-redes #Icon_awesome-facebook-square path:active,
+body footer #container-full-footer #segunda-sessao-footer #container-segunda-sessao-footer .elementos #container-link-redes .icon-redes #Icon_awesome-instagram path:active,
+body footer #container-full-footer #segunda-sessao-footer #container-segunda-sessao-footer .elementos #container-link-redes .icon-redes #Icon_awesome-linkedin path:active, #Icon_awesome-youtube-square path body footer #container-full-footer #segunda-sessao-footer #container-segunda-sessao-footer .elementos #container-link-redes .icon-redes:active:active {
   fill: var(--cor9);
 }
-body footer #rodape-footer {
+body footer #container-full-footer #rodape-footer {
   border-top: 0.1em solid white;
   display: flex;
   align-items: center;
@@ -415,10 +415,10 @@ body footer #rodape-footer {
   padding: 0 2rem;
   font-size: 0.875em;
 }
-body footer #rodape-footer #logo-footer {
+body footer #container-full-footer #rodape-footer #logo-footer {
   width: 3em;
 }
-body footer #rodape-footer #logo-footer img {
+body footer #container-full-footer #rodape-footer #logo-footer img {
   width: 100%;
 }
 
@@ -438,7 +438,7 @@ body footer #rodape-footer #logo-footer img {
     height: -moz-fit-content;
     height: fit-content;
     align-items: center;
-    padding: 0 4rem;
+    padding: 0 3rem;
   }
   body header #container-header #container-img-header #menu {
     height: -moz-fit-content;
@@ -452,7 +452,7 @@ body footer #rodape-footer #logo-footer img {
     top: 4em;
   }
   body main #sessao-um {
-    padding: 0 4em;
+    padding: 0 3em;
   }
   body main #sessao-um #img-sessao-um {
     max-width: 100%;
@@ -475,7 +475,7 @@ body footer #rodape-footer #logo-footer img {
     margin: 4rem auto;
   }
   body main #sessao-dois {
-    padding: 0 4rem 2rem;
+    padding: 0 3rem 2rem;
   }
   body main #sessao-dois #conteudo-sessao-dois h2 {
     max-width: -moz-fit-content;
@@ -486,10 +486,10 @@ body footer #rodape-footer #logo-footer img {
     min-width: 90%;
   }
   body main #sessao-tres #container-sessao-tres {
-    padding: 2rem 4rem 6rem;
+    padding: 2rem 3rem 6rem;
     display: grid;
     grid-template-columns: auto auto;
-    justify-content: space-evenly;
+    justify-content: space-between;
   }
   body main #sessao-tres #container-sessao-tres .elementos {
     width: 10rem;
@@ -503,7 +503,7 @@ body footer #rodape-footer #logo-footer img {
     margin-top: -3rem;
   }
   body main #sessao-cinco {
-    padding: 0 4rem 6rem;
+    padding: 0 3rem 6rem;
   }
   body main #sessao-cinco #conteudo-sessao-cinco p {
     max-width: 100%;
@@ -516,7 +516,7 @@ body footer #rodape-footer #logo-footer img {
     margin-top: -3rem;
   }
   body main #sessao-seis #container-sessao-seis {
-    padding: 0 4rem;
+    padding: 0 3rem;
   }
   body main #sessao-seis #container-sessao-seis #conteudo-sessao-seis #txt-sessao-seis h4 {
     max-width: 100%;
@@ -526,32 +526,41 @@ body footer #rodape-footer #logo-footer img {
   }
   body main #sessao-seis #container-sessao-seis #conteudo-sessao-seis #sessao-btn-sessao-seis {
     justify-content: space-between;
-    width: 22rem;
+    width: 24rem;
     margin: 3em auto;
   }
   body main #sessao-seis #container-sessao-seis #conteudo-sessao-seis #sessao-btn-sessao-seis a {
     width: 10rem;
   }
   body main #sessao-sete #container-sessao-sete {
-    padding: 0 4rem;
+    padding: 0 3rem;
   }
   body main #sessao-sete #container-sessao-sete #conteudo-sessao-sete p {
     width: 20rem;
-    background-color: #320995;
     font-size: 1em;
   }
   body main #sessao-sete #container-sessao-sete #container-img-sessao-sete {
     width: 100%;
   }
-  body footer #container-segunda-sessao-footer {
-    padding: 4rem;
+  body footer #container-full-footer #segunda-sessao-footer #container-segunda-sessao-footer {
+    padding: 3rem;
+    display: grid;
+    grid-template-columns: auto auto;
     justify-content: space-between;
   }
-  body footer #container-segunda-sessao-footer #sessao-btn-footer a {
+  body footer #container-full-footer #segunda-sessao-footer #container-segunda-sessao-footer .elementos {
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  body footer #container-full-footer #segunda-sessao-footer #container-segunda-sessao-footer .elementos dt {
+    width: 10rem;
+    padding-bottom: 1.2rem;
+  }
+  body footer #container-full-footer #segunda-sessao-footer #container-segunda-sessao-footer #sessao-btn-footer a {
     width: 10em;
   }
-  body footer #rodape-footer {
-    padding: 0 4rem;
+  body footer #container-full-footer #rodape-footer {
+    padding: 0 3rem;
   }
 }
 @media screen and (min-width: 750px) {
@@ -559,16 +568,28 @@ body footer #rodape-footer #logo-footer img {
     width: 13rem;
   }
   body header #container-header {
-    padding: 0 2rem;
+    padding: 0 4rem;
+  }
+  body header #container-header #container-img-header {
+    padding: 0;
+  }
+  body header #container-header #navbar {
+    width: 100%;
+  }
+  body main #sessao-um {
+    padding: 0 4rem;
   }
   body main #sessao-um #conteudo-sessao-um p {
     font-size: 1.1rem !important;
   }
   body main #sessao-dois {
-    padding-top: 5rem;
+    padding: 5rem 4rem 0;
   }
   body main #sessao-dois #conteudo-sessao-dois p {
     font-size: 1.1rem !important;
+  }
+  body main #sessao-tres #container-sessao-tres {
+    padding: 0 4rem 7rem;
   }
   body main #sessao-tres #container-sessao-tres .elementos {
     min-width: 13rem;
@@ -579,14 +600,17 @@ body footer #rodape-footer #logo-footer img {
   body main #sessao-tres #container-sessao-tres .elementos p {
     font-size: 1rem !important;
   }
+  body main #sessao-cinco {
+    padding: 0 4rem 7rem;
+  }
   body main #sessao-cinco #conteudo-sessao-cinco p {
     font-size: 1.4rem !important;
   }
-  body main #sessao-seis {
-    padding-bottom: 2rem;
-  }
   body main #sessao-seis #svg-onda-sessao-seis {
     margin-top: -4rem !important;
+  }
+  body main #sessao-seis #container-sessao-seis {
+    padding: 0 4rem 2.5rem;
   }
   body main #sessao-seis #container-sessao-seis #conteudo-sessao-seis #txt-sessao-seis p {
     font-size: 1.2rem !important;
@@ -600,6 +624,9 @@ body footer #rodape-footer #logo-footer img {
   body main #sessao-sete #svg-onda-sessao-sete {
     margin-top: -6rem;
   }
+  body main #sessao-sete #container-sessao-sete {
+    padding: 0 4rem;
+  }
   body main #sessao-sete #container-sessao-sete #conteudo-sessao-sete p {
     min-width: 23rem;
     font-size: 1.2rem !important;
@@ -607,23 +634,36 @@ body footer #rodape-footer #logo-footer img {
   body main #sessao-sete #container-sessao-sete #container-img-sessao-sete {
     width: 100%;
   }
-  body footer #container-segunda-sessao-footer {
+  body footer #container-full-footer #primeira-sessao-footer {
+    padding: 4rem;
+  }
+  body footer #container-full-footer #segunda-sessao-footer {
+    padding: 2rem 4rem;
+  }
+  body footer #container-full-footer #segunda-sessao-footer #container-segunda-sessao-footer {
+    padding: 0;
     display: grid;
     grid-template-columns: auto auto;
     justify-content: space-around;
   }
-  body footer #container-segunda-sessao-footer .elementos {
-    min-width: 15rem;
+  body footer #container-full-footer #segunda-sessao-footer #container-segunda-sessao-footer .elementos {
+    min-width: -moz-fit-content;
+    min-width: fit-content;
   }
-  body footer #container-segunda-sessao-footer .elementos li {
+  body footer #container-full-footer #segunda-sessao-footer #container-segunda-sessao-footer .elementos dt {
+    width: 10rem;
+  }
+  body footer #container-full-footer #segunda-sessao-footer #container-segunda-sessao-footer .elementos li {
     font-size: 0.9rem;
   }
-  body footer #container-segunda-sessao-footer .elementos #container-link-redes {
-    display: flex;
-    justify-content: space-between;
+  body footer #container-full-footer #segunda-sessao-footer #container-segunda-sessao-footer .elementos #container-link-redes {
+    display: grid;
   }
-  body footer #container-segunda-sessao-footer .elementos #container-link-redes .icon-redes {
-    margin: 0 !important;
+  body footer #container-full-footer #segunda-sessao-footer #container-segunda-sessao-footer .elementos #container-link-redes .icon-redes:nth-child(2n-1) {
+    margin-right: 1rem;
+  }
+  body footer #container-full-footer #rodape-footer {
+    padding: 0 4rem;
   }
 }
 @media screen and (min-width: 920px) {
@@ -732,7 +772,7 @@ body footer #rodape-footer #logo-footer img {
   body main #sessao-dois {
     display: flex;
     justify-content: space-between;
-    padding: 4rem;
+    padding: 0 4rem;
   }
   body main #sessao-dois #img-sessao-dois {
     width: 55%;
@@ -800,7 +840,7 @@ body footer #rodape-footer #logo-footer img {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-    padding: 0 4rem;
+    padding: 0 4rem 3.5rem;
   }
   body main #sessao-seis #container-sessao-seis #conteudo-sessao-seis {
     width: 45%;
@@ -844,43 +884,51 @@ body footer #rodape-footer #logo-footer img {
   }
   body main #sessao-sete #container-sessao-sete #conteudo-sessao-sete h5 {
     font-size: 2rem;
+    text-align: left;
+  }
+  body main #sessao-sete #container-sessao-sete #conteudo-sessao-sete p {
+    text-align: left;
   }
   body main #sessao-sete #container-sessao-sete #conteudo-sessao-sete a {
     width: 10rem;
+    margin-left: 0;
   }
   body main #sessao-sete #container-sessao-sete #container-img-sessao-sete {
     width: 55%;
   }
-  body footer #primeira-sessao-footer {
+  body footer #container-full-footer #primeira-sessao-footer {
     padding: 0 4rem;
   }
-  body footer #container-segunda-sessao-footer {
+  body footer #container-full-footer #segunda-sessao-footer #container-segunda-sessao-footer {
     display: grid;
     grid-template-columns: auto auto;
     justify-content: space-around;
   }
-  body footer #container-segunda-sessao-footer .elementos {
-    width: 20rem;
-    margin: 1rem;
+  body footer #container-full-footer #segunda-sessao-footer #container-segunda-sessao-footer .elementos {
+    width: -moz-fit-content;
+    width: fit-content;
   }
-  body footer #container-segunda-sessao-footer .elementos a:hover {
+  body footer #container-full-footer #segunda-sessao-footer #container-segunda-sessao-footer .elementos a:hover {
     transition: all 0.5s;
     color: var(--corHoverBtnPrinc);
     fill: var(--corHoverBtnPrinc);
   }
-  body footer #container-segunda-sessao-footer .elementos #container-link-redes .icon-redes #Icon_awesome-facebook-square path:hover,
-  body footer #container-segunda-sessao-footer .elementos #container-link-redes .icon-redes #Icon_awesome-instagram path:hover,
-  body footer #container-segunda-sessao-footer .elementos #container-link-redes .icon-redes #Icon_awesome-linkedin path:hover,
-  body footer #container-segunda-sessao-footer .elementos #container-link-redes .icon-redes #Icon_awesome-youtube-square path:hover {
+  body footer #container-full-footer #segunda-sessao-footer #container-segunda-sessao-footer .elementos #container-link-redes .icon-redes #Icon_awesome-facebook-square path:hover,
+  body footer #container-full-footer #segunda-sessao-footer #container-segunda-sessao-footer .elementos #container-link-redes .icon-redes #Icon_awesome-instagram path:hover,
+  body footer #container-full-footer #segunda-sessao-footer #container-segunda-sessao-footer .elementos #container-link-redes .icon-redes #Icon_awesome-linkedin path:hover,
+  body footer #container-full-footer #segunda-sessao-footer #container-segunda-sessao-footer .elementos #container-link-redes .icon-redes #Icon_awesome-youtube-square path:hover {
     fill: var(--corHoverBtnPrinc);
   }
-  body footer #rodape-footer {
+  body footer #container-full-footer #rodape-footer {
     justify-content: center;
   }
 }
 @media screen and (min-width: 1024px) {
   body #container-header, body #sessao-um, body #sessao-dois, body #container-sessao-tres, body #img-sessao-quatro, body #sessao-cinco, body #container-sessao-seis, body #container-sessao-sete, body #primeira-sessao-footer, body #container-segunda-sessao-footer, body #rodape-footer {
     padding: 0 7rem !important;
+  }
+  body #sessao-dois {
+    padding-top: 3rem !important;
   }
   body #container-sessao-tres {
     padding-bottom: 8rem !important;
@@ -894,7 +942,7 @@ body footer #rodape-footer #logo-footer img {
     margin-top: -1rem !important;
   }
   body #sessao-seis #container-sessao-seis {
-    padding-bottom: 1rem !important;
+    padding-bottom: 3rem !important;
   }
   body #sessao-sete #svg-onda-sessao-sete {
     margin-top: -6rem !important;
@@ -914,7 +962,7 @@ body footer #rodape-footer #logo-footer img {
   }
   body #sessao-tres {
     background-color: var(--cor7);
-    padding-bottom: 10rem !important;
+    padding-bottom: 13rem !important;
   }
   body #sessao-tres #svg-onda-sessao-tres {
     margin-top: -6rem;
@@ -926,14 +974,16 @@ body footer #rodape-footer #logo-footer img {
     margin-top: -6rem !important;
   }
   body #sessao-cinco {
-    padding-bottom: 5rem !important;
-    margin-bottom: 0 !important;
-  }
-  body #sessao-seis #svg-onda-sessao-seis {
-    margin-top: -1rem !important;
+    padding-bottom: 8rem !important;
   }
   body #sessao-sete {
-    padding-bottom: 5rem !important;
+    padding-bottom: 10rem;
+  }
+  body #sessao-sete #svg-sessao-sete {
+    margin-top: -5rem;
+  }
+  body #sessao-sete #container-sessao-sete #conteudo-sessao-sete p {
+    margin-left: 0 !important;
   }
   body footer {
     background-color: var(--cor7);
@@ -950,5 +1000,14 @@ body footer #rodape-footer #logo-footer img {
   }
   body footer #container-full-footer #segunda-sessao-footer, body footer #container-full-footer #rodape-footer {
     background-color: var(--cor6);
+  }
+  body footer #container-full-footer #segunda-sessao-footer #container-segunda-sessao-footer {
+    display: flex;
+    padding: 4rem 0 !important;
+    justify-content: space-around;
+  }
+  body footer #container-full-footer #rodape-footer #logo-footer {
+    width: 3.3rem;
+    margin-right: 2rem;
   }
 }/*# sourceMappingURL=style.css.map */
