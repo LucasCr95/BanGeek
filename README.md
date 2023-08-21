@@ -36,7 +36,7 @@
 <hr>
 <h4>Portifólio</h4>
 
-<img src="https://github.com/LucasCr95/Estudos/blob/master/CURSOS%20UDEMY/UIDesign/BanGeek/Portif%C3%B3lio%20-%20BanGeek.jpg">
+<img src="https://github.com/LucasCr95/BanGeek/blob/main/Design%20Landing%20Page/Portif%C3%B3lio%20-%20BanGeek.jpg">
 
 <div align="center">
  <a href="https://www.linkedin.com/in/lucascr95/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a>
