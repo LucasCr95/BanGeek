@@ -4,8 +4,7 @@
  <img src="https://github.com/LucasCr95/BanGeek/blob/main/Design%20Landing%20Page/img-tela.PNG" target="_blank">
 </div>
 <br>
-📚 Projeto desenvolvido no curso de <a href="https://www.udemy.com/course/design-de-interfaces-especialista/">UI & UX - Design de Aplicativos e Sites</a>
-<br>
+
 👉 O objetivo foi desenvolver a interface do App e Site nas vesões Mobile e Desktop.
 
 <h2>Sobre o Projeto:</h2>
