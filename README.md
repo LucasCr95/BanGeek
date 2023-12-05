@@ -1,7 +1,7 @@
 <h1 align="center">Projeto BanGeek - Banco Digital</h1>
 
 <div align="center">
- <img src="https://github.com/LucasCr95/BanGeek/blob/main/Design%20Landing%20Page/img-tela.PNG" target="_blank">
+ <img src="https://github.com/LucasCr95/BanGeek/blob/main/img/img-tela.PNG" target="_blank">
 </div>
 <br>
 
